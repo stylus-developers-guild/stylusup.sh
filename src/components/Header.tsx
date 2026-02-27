@@ -112,10 +112,6 @@ export function Header({ onSearchClick }: HeaderProps) {
                   <a href="https://github.com/OffchainLabs/stylus-by-example" target="_blank" rel="noopener noreferrer" className="px-4 py-2.5 text-sm text-gray-700 hover:bg-purple-50 hover:text-[#5F4DED] transition-colors font-medium flex justify-between items-center">
                     Stylus by Example <ExternalLink className="w-3.5 h-3.5 opacity-50" />
                   </a>
-                  <div className="border-t border-gray-100 my-1 mx-2"></div>
-                  <a href="https://www.youtube.com/@Arbitrum/search?query=stylus%20saturdays" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-xs text-gray-500 hover:bg-purple-50 hover:text-[#5F4DED] transition-colors flex justify-between items-center">
-                    Watch Stylus Saturdays <ExternalLink className="w-3 h-3 opacity-50" />
-                  </a>
                 </div>
               </div>
 
