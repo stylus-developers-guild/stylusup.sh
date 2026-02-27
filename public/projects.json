@@ -175,7 +175,7 @@
             "Rust"
         ],
         "fundingSource": "Community",
-        "status": "live",
+        "status": "shutdown",
         "tags": [
             "defi",
             "amm",
@@ -336,5 +336,29 @@
             "standard"
         ],
         "stylusUsage": "Complete ERC-721 contract written with stylus-sdk-rs macros, deployable on any Arbitrum chain."
-    }
+    },
+    {
+        "id": "arbos-foundry",
+        "name": "ArbOS-Foundry",
+        "tagline": "Support for Stylus in Foundry (Forge, Anvil, Chisel)",
+        "description": "Support for testing Stylus with Foundry.",
+        "url": "https://github.com/iosiro/arbos-foundry",
+        "githubUrl": "https://github.com/iosiro/arbos-foundry",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "tools",
+            "framework",
+            "sdk",
+            "development"
+        ],
+        "stylusUsage": "Supports Stylus alongside Solidity for testing using the familiar Forge testing suite."
+    },
+
 ]
