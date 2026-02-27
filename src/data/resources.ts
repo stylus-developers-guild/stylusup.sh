@@ -24,6 +24,11 @@ export const resourceCategories = {
           name: 'Stylus By Example',
           url: 'https://github.com/OffchainLabs/stylus-by-example',
           description: 'Learn Stylus through practical examples'
+        },
+        {
+          name: 'OpenZeppelin Stylus Docs',
+          url: 'https://docs.openzeppelin.com/contracts-stylus',
+          description: 'Audited contract library documentation'
         }
       ]
     },
@@ -44,6 +49,11 @@ export const resourceCategories = {
           name: 'Awesome Stylus',
           url: 'https://github.com/OffchainLabs/awesome-stylus',
           description: 'Curated list of resources and examples'
+        },
+        {
+          name: 'AI & Stylus Blog',
+          url: 'https://blog.arbitrum.foundation/ai-and-stylus-the-builders-new-toolkit/',
+          description: 'AI-assisted development with Stylus'
         }
       ]
     },
@@ -51,7 +61,7 @@ export const resourceCategories = {
       title: 'SDKs',
       resources: [
         {
-          name: 'Stylus Rust SDK',
+          name: 'Stylus Rust SDK (v0.10)',
           url: 'https://github.com/OffchainLabs/stylus-sdk-rs',
           description: 'Write smart contracts in Rust'
         },
@@ -59,6 +69,21 @@ export const resourceCategories = {
           name: 'Stylus C/C++ SDK',
           url: 'https://github.com/OffchainLabs/stylus-sdk-c',
           description: 'Write smart contracts in C/C++'
+        },
+        {
+          name: 'AssemblyScript SDK',
+          url: 'https://as-stylus.wakeuplabs.io',
+          description: 'Write contracts in TypeScript-like AssemblyScript'
+        },
+        {
+          name: 'OpenZeppelin Contracts for Stylus',
+          url: 'https://github.com/OpenZeppelin/rust-contracts-stylus',
+          description: 'Audited ERC-20, ERC-721, access control & more'
+        },
+        {
+          name: 'Bobcat SDK',
+          url: 'https://github.com/stylus-developers-guild/bobcat-sdk',
+          description: '~3x smaller alternative SDK'
         }
       ]
     },
@@ -69,48 +94,88 @@ export const resourceCategories = {
           name: 'Rust SDK Docs',
           url: 'https://docs.rs/stylus-sdk/latest/stylus_sdk/',
           description: 'API reference for Rust SDK'
+        },
+        {
+          name: 'CLI Guide',
+          url: 'https://docs.arbitrum.io/stylus/using-cli',
+          description: 'cargo-stylus CLI reference'
         }
       ]
     }
   ],
   build: [
     {
-      title: 'Editors',
+      title: 'Editors & IDEs',
       resources: [
         {
-          name: 'Stylus Playground',
+          name: 'Wizard IDE',
           url: 'https://thewizard.app',
-          description: 'Online IDE for Stylus'
+          description: 'Full-featured browser IDE for Stylus'
         },
         {
-          name: 'Stylus Remix Plugin',
-          url: 'https://welldonestudio.io/docs/code/stylus/remix',
-          description: 'Write and deploy in Remix IDE'
+          name: 'Remix IDE Stylus Plugin',
+          url: 'https://github.com/dsrvlabs/arbitrum-stylus',
+          description: 'Compile & deploy in Remix — zero setup'
+        },
+        {
+          name: 'CodeTracer (Metacraft Labs)',
+          url: 'https://www.github.com/metacraft-labs/codetracer',
+          description: 'Time-travelling debugger with VS Code extension'
         }
       ]
     },
     {
-      title: 'CLI Tools',
+      title: 'CLI & Testing Tools',
       resources: [
         {
           name: 'cargo-stylus',
           url: 'https://crates.io/crates/cargo-stylus',
           description: 'CLI tool for Stylus development'
+        },
+        {
+          name: 'ArbOS-Foundry (Iosiro)',
+          url: 'https://github.com/iosiro/arbos-foundry',
+          description: 'Foundry fork with native Stylus + ArbOS support'
+        },
+        {
+          name: 'Walnut: Stylus DB',
+          url: 'https://github.com/walnuthq/stylusdb',
+          description: 'Source-level debugger & call tracer'
+        },
+        {
+          name: 'Scribe / StylusFuzz',
+          url: 'https://kframework.org',
+          description: 'Property-based fuzzing for WASM bytecode'
         }
       ]
     },
     {
-      title: 'VSCode Extensions',
+      title: 'AI-Assisted Development',
       resources: [
         {
-          name: 'Rust Analyzer',
-          url: 'https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer',
-          description: 'Essential Rust support for VSCode'
+          name: 'Sifter (FairAI + EmberAI)',
+          url: 'https://siftstylus.xyz/',
+          description: 'AI assistant with RAG on Stylus docs'
+        },
+        {
+          name: 'OpenZeppelin MCP',
+          url: 'https://mcp.openzeppelin.com/',
+          description: 'Build OZ contracts in AI assistants'
+        },
+        {
+          name: 'Claude Code Skill',
+          url: 'https://github.com/hummusonrails/arbitrum-dapp-skill',
+          description: 'AI context for Stylus + Solidity workflow'
+        },
+        {
+          name: 'StylusPort MCP',
+          url: 'https://github.com/oak-security/stylusport/tree/main/mcp',
+          description: 'AI-assisted Solana → Stylus migration'
         }
       ]
     },
     {
-      title: 'Templates',
+      title: 'Templates & Infrastructure',
       resources: [
         {
           name: 'Stylus Hello World',
@@ -121,6 +186,16 @@ export const resourceCategories = {
           name: 'Stylus Rust Template',
           url: 'https://github.com/OffchainLabs/stylus-sdk-rs/tree/main/examples',
           description: 'Official Rust SDK examples'
+        },
+        {
+          name: 'Cache Manager GUI',
+          url: 'https://stylus.cobuilders.xyz/cache-status',
+          description: 'Manage Stylus contract cache activation'
+        },
+        {
+          name: 'thirdweb Stylus',
+          url: 'https://thirdweb.com',
+          description: 'Stylus contracts on thirdweb Explore'
         }
       ]
     }
@@ -130,39 +205,64 @@ export const resourceCategories = {
       title: 'DeFi',
       resources: [
         {
-          name: 'Stylus DEX Example',
-          url: 'https://github.com/OffchainLabs/stylus-tutorials',
-          description: 'Decentralized exchange patterns'
+          name: '9lives.so',
+          url: 'https://9lives.so',
+          description: 'Prediction market built entirely with Stylus'
+        },
+        {
+          name: 'Renegade',
+          url: 'https://renegade.fi',
+          description: 'On-chain dark pool with ZK privacy'
+        },
+        {
+          name: 'OrderBook Kit',
+          url: 'https://code.markovgeist.org/orderbookkit.xyz/dir',
+          description: 'One-click on-chain orderbook'
+        },
+        {
+          name: 'Fairblock / DeBid',
+          url: 'https://github.com/Fairblock/DeBid',
+          description: 'Sealed-bid auctions for DeFi & RWA'
         }
       ]
     },
     {
-      title: 'Gaming',
+      title: 'Oracles & Bridges',
       resources: [
         {
-          name: 'On-chain Gaming',
-          url: 'https://github.com/OffchainLabs/awesome-stylus#gaming',
-          description: 'Game development examples'
+          name: 'RedStone Oracles',
+          url: 'https://redstone.finance',
+          description: 'Rust-based pull/push oracles'
         }
       ]
     },
     {
-      title: 'NFTs',
+      title: 'Security & Verification',
       resources: [
         {
-          name: 'ERC-721 Example',
-          url: 'https://github.com/OffchainLabs/stylus-by-example',
-          description: 'NFT contracts in Stylus'
+          name: 'Solang Stylus Target',
+          url: 'https://github.com/trail-of-forks/solang',
+          description: 'Solidity → WASM compiler by Trail of Bits'
+        },
+        {
+          name: 'Scribe / StylusFuzz',
+          url: 'https://kframework.org',
+          description: 'WASM bytecode fuzzer by Runtime Verification'
         }
       ]
     },
     {
-      title: 'Infrastructure',
+      title: 'Language Expansion',
       resources: [
         {
-          name: 'Stylus Core',
-          url: 'https://github.com/OffchainLabs/stylus-sdk-rs/',
-          description: 'Core Stylus VM and fraud prover'
+          name: 'AssemblyScript SDK',
+          url: 'https://as-stylus.wakeuplabs.io',
+          description: 'TypeScript-like contracts for Stylus'
+        },
+        {
+          name: 'Moving Stylus (Move)',
+          url: 'https://github.com/rather-labs',
+          description: 'Move bytecode → WASM compiler'
         }
       ]
     }

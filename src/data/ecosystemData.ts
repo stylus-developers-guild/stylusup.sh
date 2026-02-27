@@ -36,7 +36,7 @@ export const CATEGORIES = [
     'Bridges & Oracles',
 ] as const;
 
-export const LANGUAGES = ['Rust', 'Move', 'C/C++'] as const;
+export const LANGUAGES = ['Rust', 'Move', 'C/C++', 'AssemblyScript'] as const;
 
 export const FUNDING_SOURCES = [
     'Stylus Sprint',

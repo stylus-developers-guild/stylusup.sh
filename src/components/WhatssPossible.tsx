@@ -1,4 +1,4 @@
-import { Coins, Gamepad2, Code, Network, Lock, Wrench } from 'lucide-react';
+import { Coins, Gamepad2, Code, Network, Lock, Wrench, Shield, Bot } from 'lucide-react';
 
 const useCases = [
   {
@@ -10,7 +10,7 @@ const useCases = [
       { name: 'stylus-by-example', url: 'https://github.com/OffchainLabs/stylus-by-example' },
       { name: 'wizard', url: 'https://thewizard.app/' },
       { name: 'bobcat-sdk', url: 'https://github.com/stylus-developers-guild/bobcat-sdk' },
-      { name: 'awesome-stylus', url: 'https://github.com/OffchainLabs/awesome-stylus' },
+      { name: 'assemblyscript-sdk', url: 'https://as-stylus.wakeuplabs.io' },
     ],
   },
   {
@@ -19,19 +19,19 @@ const useCases = [
     description: 'Build high-performance DeFi applications with complex mathematical operations at a fraction of the gas cost.',
     packages: [
       { name: '9lives.so', url: 'https://9lives.so' },
-      { name: 'longtail', url: 'https://github.com/fluidity-money/long.so' },
+      { name: 'orderbookkit.xyz', url: 'https://code.markovgeist.org/orderbookkit.xyz/dir' },
       { name: 'renegade', url: 'https://github.com/renegade-fi/renegade-stylus-contracts' },
-      { name: 'stylus-sdk', url: 'https://github.com/OffchainLabs/stylus-sdk-rs' },
+      { name: 'fairblock/debid', url: 'https://github.com/Fairblock/DeBid' },
     ],
   },
   {
-    icon: Wrench,
-    title: 'Developer Experience',
-    description: 'Compile, debug, and deploy Rust smart contracts with enhanced tooling for Arbitrum Stylus.',
+    icon: Bot,
+    title: 'AI-Assisted Development',
+    description: 'Leverage AI to generate Stylus contracts, port existing codebases, and answer ecosystem questions.',
     packages: [
-      { name: 'cargo-stylus-walnut', url: 'https://github.com/OffchainLabs/cargo-stylus-walnut' },
-      { name: 'arbitrum-stylus-starter-c', url: 'https://github.com/OffchainLabs/arbitrum-stylus-starter-c' },
-      { name: 'stylus-sdk-rs', url: 'https://github.com/OffchainLabs/stylus-sdk-rs' },
+      { name: 'claude-code-skill', url: 'https://github.com/hummusonrails/arbitrum-dapp-skill' },
+      { name: 'sifter (fairAI)', url: 'https://siftstylus.xyz/' },
+      { name: 'openzeppelin-mcp', url: 'https://mcp.openzeppelin.com/' },
     ],
   },
   {
@@ -45,20 +45,24 @@ const useCases = [
     ],
   },
   {
-    icon: Network,
-    title: 'Bridges & Oracles',
-    description: 'Build reliable cross-chain infrastructure and oracle networks with performance and safety guarantees.',
+    icon: Shield,
+    title: 'Security & Verification',
+    description: 'Battle-tested contract standards, property testing, and WASM bytecode fuzzing.',
     packages: [
-      { name: 'redstone-oracles', url: 'https://redstone.finance' },
+      { name: 'openzeppelin-stylus', url: 'https://github.com/OpenZeppelin/rust-contracts-stylus' },
+      { name: 'solang-stylus', url: 'https://github.com/trail-of-forks/solang' },
+      { name: 'scribe-fuzz', url: 'https://kframework.org' },
     ],
   },
   {
-    icon: Gamepad2,
-    title: 'Gaming & NFTs',
-    description: 'Create on-chain games and NFT systems with complex logic that would be too expensive in Solidity.',
+    icon: Wrench,
+    title: 'Developer Experience',
+    description: 'Compile, debug, and trace execution with enhanced tooling across the Solidity/Stylus boundary.',
     packages: [
-      { name: 'stylus-by-example', url: 'https://github.com/OffchainLabs/stylus-by-example' },
-      { name: 'erc721', url: 'https://docs.openzeppelin.com/contracts/4.x/erc721' },
+      { name: 'cargo-stylus', url: 'https://github.com/OffchainLabs/cargo-stylus-walnut' },
+      { name: 'arbos-foundry', url: 'https://github.com/iosiro/arbos-foundry' },
+      { name: 'walnut-stylusdb', url: 'https://github.com/walnuthq/stylusdb' },
+      { name: 'codetracer', url: 'https://www.github.com/metacraft-labs/codetracer' },
     ],
   },
 ];

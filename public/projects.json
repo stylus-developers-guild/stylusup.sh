@@ -47,8 +47,8 @@
     {
         "id": "wizard",
         "name": "The Wizard",
-        "tagline": "Project wizard & scaffolding tool for Stylus contracts",
-        "description": "The Wizard provides an interactive web interface to generate a ready-to-deploy Stylus project. Choose your language, contract template, and chain target; download a pre-configured ZIP in seconds.",
+        "tagline": "Full-featured Stylus IDE in your browser",
+        "description": "Wizard IDE is a full-featured Stylus IDE in your browser. Edit, compile, and deploy Stylus contracts with one click — no local setup required.",
         "url": "https://thewizard.app/",
         "categories": [
             "Dev Tools"
@@ -61,6 +61,7 @@
         "status": "live",
         "tags": [
             "wizard",
+            "ide",
             "scaffolding",
             "tools"
         ],
@@ -68,14 +69,13 @@
     },
     {
         "id": "bobcat-sdk",
-        "name": "bobcat-sdk",
-        "tagline": "Low level Stylus SDK for gas efficiency and flexibility",
-        "description": "bobcat-sdk is a low level Stylus SDK with a focus on gas efficiency and advanced programming features.",
+        "name": "Bobcat SDK",
+        "tagline": "~3x smaller alternative to the official Stylus SDK",
+        "description": "Bobcat SDK is a low-level Stylus SDK with a focus on gas efficiency and advanced programming features. It produces ~3x smaller contract binaries compared to the official SDK, with fewer external dependencies for instant compilation.",
         "url": "https://github.com/stylus-developers-guild/bobcat-sdk",
         "githubUrl": "https://github.com/stylus-developers-guild/bobcat-sdk",
         "categories": [
-            "Dev Tools",
-            "DeFi"
+            "Dev Tools"
         ],
         "language": [
             "Rust"
@@ -85,9 +85,15 @@
         "tags": [
             "sdk",
             "tools",
-            "development"
+            "development",
+            "lightweight"
         ],
-        "stylusUsage": "Built separately from stylus-sdk with few external dependencies for instant compilation, better support for unconventional development, and a smaller codesize profile."
+        "stylusUsage": "Built separately from stylus-sdk with few external dependencies for instant compilation, better support for unconventional development, and a smaller codesize profile.",
+        "highlights": [
+            "~3x smaller binary output than official SDK",
+            "Fewer external dependencies",
+            "Focus on gas efficiency"
+        ]
     },
     {
         "id": "awesome-stylus",
@@ -238,9 +244,11 @@
     {
         "id": "redstone-oracles",
         "name": "RedStone Oracles",
-        "tagline": "Cross-chain oracle data feeds for Stylus contracts",
-        "description": "RedStone delivers modular, low-latency price feeds and arbitrary off-chain data to Arbitrum. By providing Stylus-compatible push and pull oracle integrations, RedStone enables DeFi protocols to get accurate, manipulation-resistant price data in their Rust contracts.",
+        "tagline": "Rust-based pull and push oracles with significant gas savings",
+        "description": "RedStone delivers modular, low-latency price feeds and arbitrary off-chain data to Arbitrum. By providing Stylus-compatible push and pull oracle integrations in Rust, RedStone enables DeFi protocols to get accurate, manipulation-resistant price data with significant gas savings over Solidity equivalents.",
         "url": "https://redstone.finance",
+        "githubUrl": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/stylus-connector/stylus",
+        "docsUrl": "https://github.com/redstone-finance/rust-sdk",
         "categories": [
             "Bridges & Oracles",
             "Infrastructure"
@@ -259,16 +267,18 @@
         "highlights": [
             "Pull-based oracle with sub-second data freshness",
             "Rust SDK for seamless Stylus integration",
-            "Supports 1,000+ price feeds"
+            "Supports 1,000+ price feeds",
+            "Significant gas savings over Solidity equivalents"
         ]
     },
     {
         "id": "stylus-sdk-rs",
         "name": "Stylus SDK (Rust)",
         "tagline": "The official Rust SDK for writing Stylus smart contracts",
-        "description": "stylus-sdk-rs is the foundation of the Stylus ecosystem. It provides the #[entrypoint] macro, storage types, ABI generation, and error handling that all Rust Stylus contracts build on. Maintained by Offchain Labs.",
+        "description": "stylus-sdk-rs is the foundation of the Stylus ecosystem. v0.10 adds multi-contract workspaces, cross-contract calls, and contracts-as-libraries. It provides the #[entrypoint] macro, storage types, ABI generation, and error handling that all Rust Stylus contracts build on. cargo-stylus CLI is now bundled in the same repo. Maintained by Offchain Labs.",
         "url": "https://github.com/OffchainLabs/stylus-sdk-rs",
         "githubUrl": "https://github.com/OffchainLabs/stylus-sdk-rs",
+        "docsUrl": "https://docs.arbitrum.io/stylus/reference/rust-sdk-guide",
         "categories": [
             "Infrastructure",
             "Dev Tools"
@@ -285,8 +295,9 @@
         ],
         "stylusUsage": "IS the Stylus SDK — every Rust Stylus contract depends on this crate for the core macros and runtime.",
         "highlights": [
-            "Official Offchain Labs SDK",
+            "Official Offchain Labs SDK (v0.10)",
             "#[entrypoint] macro for zero-boilerplate contracts",
+            "Multi-contract workspaces and cross-contract calls",
             "Type-safe Solidity ABI generation",
             "Storage: sol_storage! for structured on-chain state"
         ]
@@ -340,32 +351,42 @@
     {
         "id": "arbos-foundry",
         "name": "ArbOS-Foundry",
-        "tagline": "Support for Stylus in Foundry (Forge, Anvil, Chisel)",
-        "description": "Support for testing Stylus with Foundry.",
+        "tagline": "Foundry fork with native Stylus + ArbOS support",
+        "description": "Foundry fork with native Stylus + ArbOS support. Local testing without network forks. Custom cheatcodes for .wasm deployment, 13 Arbitrum precompiles, gas-to-ink conversion, remote state forking, and full tracing. Provides arbos-forge, arbos-cast, and arbos-anvil.",
         "url": "https://github.com/iosiro/arbos-foundry",
         "githubUrl": "https://github.com/iosiro/arbos-foundry",
+        "docsUrl": "https://www.iosiro.com/blog/introducing-arbos-foundry-native-stylus-testing-with-foundry",
         "categories": [
-            "Infrastructure"
+            "Infrastructure",
+            "Dev Tools"
         ],
         "language": [
             "Rust"
         ],
-        "fundingSource": "None",
+        "fundingSource": "Stylus Sprint",
         "status": "live",
         "tags": [
             "tools",
             "framework",
-            "sdk",
+            "testing",
+            "foundry",
             "development"
         ],
-        "stylusUsage": "Supports Stylus alongside Solidity for testing using the familiar Forge testing suite."
+        "stylusUsage": "Supports Stylus alongside Solidity for testing using the familiar Forge testing suite, with custom cheatcodes for WASM deployment and Arbitrum precompiles.",
+        "highlights": [
+            "Native Stylus + ArbOS support in Foundry",
+            "Custom cheatcodes for .wasm deployment",
+            "13 Arbitrum precompiles supported",
+            "Gas-to-ink conversion and remote state forking",
+            "Full tracing across Solidity/Stylus boundary"
+        ]
     },
     {
         "id": "orderbookkit-xyz",
-        "name": "Orderbookkit.xyz",
-        "tagline": "Permissionless RFQ and CLOB hybrid trading engine.",
-        "description": "A permissionless trading platform for Arbitrum Orbit chains with a novel permissionless plugin and agent execution engine.",
-        "url": "https://orderbookkit.xyz",
+        "name": "OrderBook Kit",
+        "tagline": "One-click on-chain orderbook with Stylus",
+        "description": "A permissionless trading platform for Arbitrum Orbit chains with a novel permissionless plugin and agent execution engine. One-click on-chain orderbook deployment powered by Stylus.",
+        "url": "https://code.markovgeist.org/orderbookkit.xyz/dir",
         "githubUrl": "https://code.markovgeist.org/orderbookkit.xyz",
         "categories": [
             "DeFi"
@@ -378,8 +399,475 @@
         "tags": [
             "defi",
             "protocol",
+            "orderbook",
             "finance"
         ],
         "stylusUsage": "Uses Stylus for the entire application, also built with extension from other stylus-sdk developers in mind."
+    },
+    {
+        "id": "claude-code-stylus-skill",
+        "name": "Claude Code Skill for Arbitrum",
+        "tagline": "AI context files encoding the full Stylus + Solidity + React workflow",
+        "description": "Structured context files for Claude Code encoding the full Stylus + Solidity + React workflow with SDK v0.10 patterns. Enables AI-assisted Arbitrum development with deep knowledge of the Stylus ecosystem.",
+        "url": "https://blog.arbitrum.foundation/ai-and-stylus-the-builders-new-toolkit/",
+        "githubUrl": "https://github.com/hummusonrails/arbitrum-dapp-skill",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "ai",
+            "claude",
+            "development",
+            "skill"
+        ],
+        "stylusUsage": "Provides structured AI context for Stylus SDK v0.10 patterns, enabling AI-assisted smart contract development on Arbitrum.",
+        "highlights": [
+            "Full Stylus + Solidity + React workflow encoding",
+            "SDK v0.10 patterns built-in",
+            "AI-assisted smart contract development"
+        ]
+    },
+    {
+        "id": "openzeppelin-mcp",
+        "name": "OpenZeppelin Contracts MCP",
+        "tagline": "Build OZ-standard Stylus contracts in any MCP-compatible AI assistant",
+        "description": "Build OpenZeppelin-standard Stylus contracts directly in Cursor, Claude, Windsurf, or any MCP-compatible AI assistant. Leverages the Model Context Protocol to bring audited contract standards into your AI development workflow.",
+        "url": "https://mcp.openzeppelin.com/",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "ai",
+            "mcp",
+            "openzeppelin",
+            "tools"
+        ],
+        "stylusUsage": "Enables AI-assisted generation and deployment of OpenZeppelin Stylus contracts via the MCP protocol.",
+        "highlights": [
+            "Works with Cursor, Claude, Windsurf, and any MCP client",
+            "OpenZeppelin audited contract standards",
+            "Seamless AI-assisted Stylus development"
+        ]
+    },
+    {
+        "id": "sifter",
+        "name": "Sifter (FairAI + EmberAI)",
+        "tagline": "AI assistant for Stylus with RAG on docs and porting assistant",
+        "description": "AI assistant for Stylus with RAG on docs, porting assistant, conversation history, and admin dashboard. Available via MCP (Arbitrum Vibekit). Provides intelligent assistance for Stylus development with deep documentation knowledge.",
+        "url": "https://siftstylus.xyz/",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "ai",
+            "assistant",
+            "rag",
+            "porting"
+        ],
+        "stylusUsage": "Built specifically for Stylus developers — provides AI-powered documentation search, code porting assistance, and development guidance.",
+        "highlights": [
+            "RAG-powered documentation search",
+            "Porting assistant for migrating contracts to Stylus",
+            "Conversation history and admin dashboard",
+            "Available via MCP (Arbitrum Vibekit)"
+        ]
+    },
+    {
+        "id": "stylus-sdk-c",
+        "name": "Stylus C/C++ SDK",
+        "tagline": "Write Stylus contracts in C or C++ and compile to WASM",
+        "description": "The official C/C++ SDK for writing Stylus smart contracts. Compile C or C++ code to WASM and deploy on any Arbitrum chain. Ideal for systems programmers and existing C/C++ codebases.",
+        "url": "https://github.com/OffchainLabs/stylus-sdk-c",
+        "githubUrl": "https://github.com/OffchainLabs/stylus-sdk-c",
+        "categories": [
+            "Infrastructure",
+            "Dev Tools"
+        ],
+        "language": [
+            "C/C++"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "sdk",
+            "c",
+            "cpp",
+            "official"
+        ],
+        "stylusUsage": "The official C/C++ SDK for Stylus — provides low-level access to the Stylus ABI from C/C++ code compiled to WASM.",
+        "highlights": [
+            "Official Offchain Labs C/C++ SDK",
+            "Compile C/C++ to WASM for Stylus",
+            "Low-level control for systems programmers"
+        ]
+    },
+    {
+        "id": "openzeppelin-stylus",
+        "name": "OpenZeppelin Contracts for Stylus",
+        "tagline": "Audited Rust contract library: ERC-20, ERC-721, access control & more",
+        "description": "Audited contract library for Stylus featuring ERC-20, ERC-721, access control, proxies, and upgradeable patterns. Current version 0.3.0-rc.1. The gold standard for secure Stylus smart contract development.",
+        "url": "https://github.com/OpenZeppelin/rust-contracts-stylus",
+        "githubUrl": "https://github.com/OpenZeppelin/rust-contracts-stylus",
+        "docsUrl": "https://docs.openzeppelin.com/contracts-stylus",
+        "categories": [
+            "Infrastructure",
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "openzeppelin",
+            "contracts",
+            "erc20",
+            "erc721",
+            "security",
+            "audited"
+        ],
+        "stylusUsage": "Provides audited, battle-tested smart contract implementations in Rust for the Stylus VM — the standard building blocks for secure dApps.",
+        "highlights": [
+            "Audited by OpenZeppelin",
+            "ERC-20, ERC-721, access control, proxies",
+            "Upgradeable patterns",
+            "Current version 0.3.0-rc.1"
+        ]
+    },
+    {
+        "id": "thirdweb-stylus",
+        "name": "thirdweb Stylus Integration",
+        "tagline": "Stylus contracts on thirdweb Explore with airdrop & ZK minting",
+        "description": "Stylus contracts on thirdweb Explore, airdrop module, ZK proof-based minting, and developer docs. Use promo code STYLUS-GROWTH for a free Growth tier month. Full thirdweb toolchain integration for Stylus developers.",
+        "url": "https://thirdweb.com",
+        "categories": [
+            "Dev Tools",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "thirdweb",
+            "airdrop",
+            "zk-minting",
+            "tools"
+        ],
+        "stylusUsage": "Provides thirdweb Explore integration for Stylus contracts, including airdrop modules and ZK proof-based minting capabilities.",
+        "highlights": [
+            "Stylus contracts on thirdweb Explore",
+            "Airdrop module for token distribution",
+            "ZK proof-based minting",
+            "Promo code STYLUS-GROWTH for free Growth tier"
+        ]
+    },
+    {
+        "id": "walnut-stylusdb",
+        "name": "Walnut: Stylus DB (Debugger)",
+        "tagline": "Source-level debugging and call tracing across Solidity/Stylus",
+        "description": "Source-level debugging and call tracing across the Solidity/Stylus boundary. Delivered user trace command, interactive replay, and cross-environment tracing. First community contribution merged into the official Stylus SDK.",
+        "url": "https://github.com/walnuthq/stylusdb",
+        "githubUrl": "https://github.com/walnuthq/stylusdb",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "debugger",
+            "tracing",
+            "tools",
+            "development"
+        ],
+        "stylusUsage": "Provides source-level debugging for Stylus contracts with cross-environment tracing across the Solidity/Stylus boundary.",
+        "highlights": [
+            "Source-level debugging for Stylus contracts",
+            "Cross-environment tracing (Solidity ↔ Stylus)",
+            "Interactive replay of transactions",
+            "First community contribution merged into official SDK"
+        ]
+    },
+    {
+        "id": "remix-stylus-plugin",
+        "name": "Remix IDE Stylus Plugin",
+        "tagline": "Compile, deploy, and interact with Stylus contracts in the browser",
+        "description": "Compile, deploy, and interact with Stylus contracts in the browser via the Remix IDE. Zero local setup required — built by DSRV Labs. Ideal for quick prototyping and learning.",
+        "url": "https://github.com/dsrvlabs/arbitrum-stylus",
+        "githubUrl": "https://github.com/dsrvlabs/arbitrum-stylus",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "remix",
+            "ide",
+            "browser",
+            "tools"
+        ],
+        "stylusUsage": "Adds Stylus compilation and deployment support directly inside the Remix IDE, enabling zero-setup development in the browser.",
+        "highlights": [
+            "Zero local setup required",
+            "Compile, deploy, and interact in browser",
+            "Built by DSRV Labs"
+        ]
+    },
+    {
+        "id": "cache-manager-gui",
+        "name": "Cache Manager GUI",
+        "tagline": "GUI for the Stylus contract caching system with automated bidding",
+        "description": "GUI for the Stylus contract caching system. Automated bidding, real-time monitoring, and Slack/Telegram alerts. Essential tool for managing Stylus contract cache activation. Built by CoBuilders.",
+        "url": "https://stylus.cobuilders.xyz/cache-status",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "cache",
+            "management",
+            "monitoring",
+            "tools"
+        ],
+        "stylusUsage": "Provides a GUI for the Stylus contract caching system — essential for managing Stylus contract cache activation and reducing gas costs.",
+        "highlights": [
+            "Automated bidding for cache slots",
+            "Real-time monitoring dashboard",
+            "Slack/Telegram alert integration",
+            "Built by CoBuilders"
+        ]
+    },
+    {
+        "id": "codetracer",
+        "name": "CodeTracer",
+        "tagline": "Time-travelling debugger with VS Code extension for Stylus",
+        "description": "Time-travelling debugger with VS Code extension. Multi-language trace recording and DAP protocol integration. Record and replay execution traces for Stylus contracts. Built by Metacraft Labs.",
+        "url": "https://www.github.com/metacraft-labs/codetracer",
+        "githubUrl": "https://www.github.com/metacraft-labs/codetracer",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "debugger",
+            "vscode",
+            "tracing",
+            "tools"
+        ],
+        "stylusUsage": "Provides time-travelling debugging for Stylus contracts with multi-language trace recording and VS Code integration.",
+        "highlights": [
+            "Time-travelling debugger",
+            "VS Code extension via DAP protocol",
+            "Multi-language trace recording",
+            "Built by Metacraft Labs"
+        ]
+    },
+    {
+        "id": "solang-stylus",
+        "name": "Solang Stylus Target",
+        "tagline": "Compile Solidity code to WASM for Stylus via adapted Solang compiler",
+        "description": "Adapted the Solang compiler so Solidity code compiles to WASM for Stylus. Tested against Uniswap V2 and Multi Collateral Dai. Enables Solidity developers to target Stylus without learning Rust. Built by Trail of Bits.",
+        "url": "https://github.com/trail-of-forks/solang",
+        "githubUrl": "https://github.com/trail-of-forks/solang",
+        "categories": [
+            "Dev Tools",
+            "Cryptography"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "compiler",
+            "solidity",
+            "wasm",
+            "security"
+        ],
+        "stylusUsage": "Compiles Solidity source code to WASM bytecode targeting the Stylus VM, enabling Solidity developers to benefit from Stylus performance.",
+        "highlights": [
+            "Solidity → WASM compilation for Stylus",
+            "Tested against Uniswap V2",
+            "Tested against Multi Collateral Dai",
+            "Built by Trail of Bits"
+        ]
+    },
+    {
+        "id": "scribe-stylusfuzz",
+        "name": "Scribe / StylusFuzz",
+        "tagline": "Property-based testing and fuzzing for Stylus WASM bytecode",
+        "description": "Property-based testing and fuzzing built on the K Framework. Fuzzes actual WASM bytecode on-chain. Tests writable in Rust or Solidity. Supports Foundry cheat codes. Built by Runtime Verification.",
+        "url": "https://kframework.org",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "fuzzing",
+            "testing",
+            "security",
+            "verification"
+        ],
+        "stylusUsage": "Fuzzes actual Stylus WASM bytecode on-chain, enabling property-based security testing for Stylus smart contracts.",
+        "highlights": [
+            "Property-based testing on K Framework",
+            "Fuzzes actual WASM bytecode on-chain",
+            "Tests writable in Rust or Solidity",
+            "Supports Foundry cheat codes"
+        ]
+    },
+    {
+        "id": "assemblyscript-sdk",
+        "name": "AssemblyScript SDK",
+        "tagline": "Write Stylus contracts in TypeScript-like AssemblyScript",
+        "description": "Write Stylus contracts in TypeScript-like AssemblyScript. Core SDK with benchmarking, production docs, and advanced mapping support. Lowers the barrier for web developers entering the Stylus ecosystem. Built by WakeUp Labs.",
+        "url": "https://as-stylus.wakeuplabs.io",
+        "docsUrl": "https://as-stylus.wakeuplabs.io",
+        "githubUrl": "https://github.com/OffchainLabs/stylus-as-example",
+        "categories": [
+            "Infrastructure",
+            "Dev Tools"
+        ],
+        "language": [
+            "AssemblyScript"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "sdk",
+            "assemblyscript",
+            "typescript",
+            "wasm"
+        ],
+        "stylusUsage": "Provides a full SDK for writing Stylus smart contracts in AssemblyScript, a TypeScript-like language that compiles to WASM.",
+        "highlights": [
+            "TypeScript-like syntax for Stylus contracts",
+            "Core SDK with benchmarking suite",
+            "Advanced mapping support",
+            "Built by WakeUp Labs"
+        ]
+    },
+    {
+        "id": "moving-stylus",
+        "name": "Moving Stylus: Move Compiler",
+        "tagline": "Deploy Move smart contracts on Arbitrum via WASM compilation",
+        "description": "Move bytecode → WASM compiler. Deploy Move smart contracts on Arbitrum. Includes compiler, runtime, SDK, and tooling. Bridges the Move ecosystem to Arbitrum Stylus. Built by Rather Labs.",
+        "url": "https://github.com/rather-labs",
+        "githubUrl": "https://github.com/rather-labs",
+        "categories": [
+            "Infrastructure",
+            "Dev Tools"
+        ],
+        "language": [
+            "Move"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "building",
+        "tags": [
+            "move",
+            "compiler",
+            "wasm",
+            "language"
+        ],
+        "stylusUsage": "Compiles Move bytecode to WASM for deployment on the Stylus VM, enabling Move developers to build on Arbitrum.",
+        "highlights": [
+            "Move bytecode → WASM compilation",
+            "Full compiler, runtime, SDK, and tooling",
+            "Bridges Move ecosystem to Arbitrum",
+            "Built by Rather Labs"
+        ]
+    },
+    {
+        "id": "fairblock-debid",
+        "name": "Fairblock / DeBid",
+        "tagline": "Sealed-bid auction infrastructure for DeFi and RWA using Stylus",
+        "description": "Sealed-bid auction infrastructure for DeFi, RWA, and tokenization using Stylus. Provides privacy-preserving auction mechanisms on Arbitrum with cryptographic bid sealing.",
+        "url": "https://github.com/Fairblock/DeBid",
+        "githubUrl": "https://github.com/Fairblock/DeBid",
+        "docsUrl": "https://docs.fairblock.network/docs/build/Arbitrum/sealedbid_auction",
+        "categories": [
+            "DeFi",
+            "Cryptography"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "building",
+        "tags": [
+            "defi",
+            "auction",
+            "sealed-bid",
+            "rwa"
+        ],
+        "stylusUsage": "Implements sealed-bid auction logic as Stylus contracts, leveraging Rust for cryptographic bid sealing and privacy-preserving DeFi.",
+        "highlights": [
+            "Sealed-bid auctions for DeFi and RWA",
+            "Privacy-preserving auction mechanisms",
+            "Cryptographic bid sealing on Arbitrum"
+        ]
+    },
+    {
+        "id": "stylusport",
+        "name": "StylusPort",
+        "tagline": "Solana-to-Stylus migration framework with MCP server",
+        "description": "Solana-to-Stylus migration framework. Migration handbook, workshops, and MCP server for AI-assisted porting. Helps Solana developers migrate their smart contracts to Arbitrum Stylus. Built by Oak Security & Range.",
+        "url": "https://github.com/oak-security/stylusport/blob/main/handbook/src/introduction.md",
+        "githubUrl": "https://github.com/oak-security/stylusport/tree/main/mcp",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": [
+            "migration",
+            "solana",
+            "porting",
+            "mcp"
+        ],
+        "stylusUsage": "Provides a complete migration framework for porting Solana smart contracts to Stylus, with AI-assisted porting via MCP server.",
+        "highlights": [
+            "Solana-to-Stylus migration framework",
+            "Migration handbook and workshops",
+            "MCP server for AI-assisted porting",
+            "Built by Oak Security & Range"
+        ]
     }
 ]

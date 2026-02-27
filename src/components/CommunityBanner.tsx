@@ -54,7 +54,7 @@ export function CommunityBanner() {
                         <div className="text-sm text-white/80 font-normal">Developers</div>
                     </div>
                     <div className="space-y-1">
-                        <div className="text-4xl font-light font-['Outfit']">15+</div>
+                        <div className="text-4xl font-light font-['Outfit']">30+</div>
                         <div className="text-sm text-white/80 font-normal">Projects</div>
                     </div>
                     <div className="space-y-1">
