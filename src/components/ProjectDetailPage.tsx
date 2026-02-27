@@ -286,10 +286,10 @@ export function ProjectDetailPage({ projectId }: ProjectDetailPageProps) {
                             <span className="text-lg">ℹ️</span>
                             Does this information seem accurate? If not, you can{' '}
                             <a
-                                href={`mailto:alex@iometelabs.io?subject=Correction for ${encodeURIComponent(project.name)}`}
+                                href="https://github.com/stylus-developers-guild/stylusup.sh/issues/new"
                                 className="font-medium underline hover:text-blue-900"
                             >
-                                request a change
+                                request a change here
                             </a>
                             .
                         </div>
