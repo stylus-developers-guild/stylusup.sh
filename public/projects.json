@@ -87,7 +87,7 @@
             "tools",
             "development"
         ],
-        "stylusUsage": "Built on top of stylus-sdk-rs, exposes Stylus-native storage slots and call patterns to power complex DeFi composability."
+        "stylusUsage": "Built separately from stylus-sdk with few external dependencies for instant compilation, better support for unconventional development, and a smaller codesize profile."
     },
     {
         "id": "awesome-stylus",
