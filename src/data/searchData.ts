@@ -7,6 +7,7 @@ export interface SearchItem {
     description: string;
     url: string;
     githubUrl?: string;
+    category: string;
     categories: string[];
     language: string[];
     fundingSource: string;
@@ -14,7 +15,7 @@ export interface SearchItem {
     tags: string[];
     stylusUsage: string;
     highlights?: string[];
-    icon: any; // Lucide icon component
+    icon: any;
 }
 
 // Aggregate all searchable content from use cases
@@ -26,6 +27,7 @@ export const searchData: SearchItem[] = [
         description: 'Scaffold Stylus is a batteries-included starter kit for Arbitrum Stylus. Inspired by Scaffold-ETH, it provides a Hardhat-based development environment, Rust contract templates, and a Next.js front-end wired up to your local Stylus node — so you can go from zero to deployed in minutes.',
         url: 'https://github.com/rkdud007/scaffold-stylus',
         githubUrl: 'https://github.com/rkdud007/scaffold-stylus',
+        category: 'Dev Tools',
         categories: ['Dev Tools'],
         language: ['Rust'],
         fundingSource: 'Community',
@@ -41,6 +43,7 @@ export const searchData: SearchItem[] = [
         description: 'Stylus by Example is an open-source repository of annotated Rust code snippets that demonstrate core Stylus concepts — from storage and events to ERC-20/ERC-721 implementations and cryptographic primitives.',
         url: 'https://github.com/OffchainLabs/stylus-by-example',
         githubUrl: 'https://github.com/OffchainLabs/stylus-by-example',
+        category: 'Dev Tools',
         categories: ['Dev Tools'],
         language: ['Rust'],
         fundingSource: 'None',
@@ -55,6 +58,7 @@ export const searchData: SearchItem[] = [
         tagline: 'Project wizard & scaffolding tool for Stylus contracts',
         description: 'The Wizard provides an interactive web interface to generate a ready-to-deploy Stylus project. Choose your language, contract template, and chain target; download a pre-configured ZIP in seconds.',
         url: 'https://thewizard.app/',
+        category: 'Dev Tools',
         categories: ['Dev Tools'],
         language: ['Rust', 'C/C++'],
         fundingSource: 'Stylus Sprint',
@@ -70,6 +74,7 @@ export const searchData: SearchItem[] = [
         description: 'bobcat-sdk is a low level Stylus SDK with a focus on gas efficiency and advanced programming features.',
         url: 'https://github.com/stylus-developers-guild/bobcat-sdk',
         githubUrl: 'https://github.com/stylus-developers-guild/bobcat-sdk',
+        category: 'Dev Tools',
         categories: ['Dev Tools', 'DeFi'],
         language: ['Rust'],
         fundingSource: 'Stylus Sprint',
@@ -85,6 +90,7 @@ export const searchData: SearchItem[] = [
         description: 'A community-maintained GitHub repository listing every notable Stylus project, SDK, tutorial, and tooling resource — the starting point for any Stylus developer.',
         url: 'https://github.com/OffchainLabs/awesome-stylus',
         githubUrl: 'https://github.com/OffchainLabs/awesome-stylus',
+        category: 'Dev Tools',
         categories: ['Dev Tools'],
         language: ['Rust'],
         fundingSource: 'None',
@@ -100,6 +106,7 @@ export const searchData: SearchItem[] = [
         description: 'cargo-stylus is the canonical CLI tool for compiling, checking, and deploying Rust smart contracts to Arbitrum Stylus. It handles WASM compilation, ABI export, activation, and gas estimation in one unified workflow.',
         url: 'https://github.com/OffchainLabs/cargo-stylus-walnut',
         githubUrl: 'https://github.com/OffchainLabs/cargo-stylus-walnut',
+        category: 'Dev Tools',
         categories: ['Dev Tools', 'Infrastructure'],
         language: ['Rust'],
         fundingSource: 'None',
@@ -120,6 +127,7 @@ export const searchData: SearchItem[] = [
         tagline: 'Prediction market built with Stylus',
         description: '9lives is a permissionless prediction market, supporting short-term predictions and the permissionless creation of markets with AI resolution.',
         url: 'https://9lives.so',
+        category: 'DeFi',
         categories: ['DeFi'],
         language: ['Rust'],
         fundingSource: 'Stylus Sprint',
@@ -135,6 +143,7 @@ export const searchData: SearchItem[] = [
         description: 'Longtail is an automated market maker built on Fluidity Money\'s Superposition. It adds a rewards layer on top of standard AMM mechanics, incentivising both LPs and traders with fluid assets.',
         url: 'https://github.com/fluidity-money/long.so',
         githubUrl: 'https://github.com/fluidity-money/long.so',
+        category: 'DeFi',
         categories: ['DeFi'],
         language: ['Rust'],
         fundingSource: 'Community',
@@ -150,6 +159,7 @@ export const searchData: SearchItem[] = [
         description: 'Renegade is a fully on-chain dark pool where trades are matched inside zero-knowledge proofs and settled on Arbitrum. By running ZK verifiers as Stylus contracts, Renegade achieves private, trust-minimised order matching at scale.',
         url: 'https://renegade.fi',
         githubUrl: 'https://github.com/renegade-fi/renegade-stylus-contracts',
+        category: 'DeFi',
         categories: ['DeFi', 'Cryptography'],
         language: ['Rust'],
         fundingSource: 'D.A.O Program',
@@ -170,6 +180,7 @@ export const searchData: SearchItem[] = [
         description: 'A ed25519 precompile library for verifying ed25519 signatures.',
         url: 'https://github.com/fluidity-money/superposition-precompiles',
         githubUrl: 'https://github.com/fluidity-money/superposition-precompiles',
+        category: 'Cryptography',
         categories: ['Cryptography', 'Bridges & Oracles'],
         language: ['Rust'],
         fundingSource: 'Stylus Sprint',
@@ -184,6 +195,7 @@ export const searchData: SearchItem[] = [
         tagline: 'Cross-chain oracle data feeds for Stylus contracts',
         description: 'RedStone delivers modular, low-latency price feeds and arbitrary off-chain data to Arbitrum. By providing Stylus-compatible push and pull oracle integrations, RedStone enables DeFi protocols to get accurate, manipulation-resistant price data in their Rust contracts.',
         url: 'https://redstone.finance',
+        category: 'Bridges & Oracles',
         categories: ['Bridges & Oracles', 'Infrastructure'],
         language: ['Rust'],
         fundingSource: 'None',
@@ -204,6 +216,7 @@ export const searchData: SearchItem[] = [
         description: 'stylus-sdk-rs is the foundation of the Stylus ecosystem. It provides the #[entrypoint] macro, storage types, ABI generation, and error handling that all Rust Stylus contracts build on. Maintained by Offchain Labs.',
         url: 'https://github.com/OffchainLabs/stylus-sdk-rs',
         githubUrl: 'https://github.com/OffchainLabs/stylus-sdk-rs',
+        category: 'Infrastructure',
         categories: ['Infrastructure', 'Dev Tools'],
         language: ['Rust'],
         fundingSource: 'None',
@@ -225,6 +238,7 @@ export const searchData: SearchItem[] = [
         description: 'An official Offchain Labs template for writing Stylus contracts in C, using the Stylus WASM runtime directly. A perfect entry point for systems programmers who want to bring existing C codebases on-chain.',
         url: 'https://github.com/OffchainLabs/arbitrum-stylus-starter-c',
         githubUrl: 'https://github.com/OffchainLabs/arbitrum-stylus-starter-c',
+        category: 'Dev Tools',
         categories: ['Dev Tools', 'Infrastructure'],
         language: ['C/C++'],
         fundingSource: 'None',
@@ -240,6 +254,7 @@ export const searchData: SearchItem[] = [
         description: 'A full ERC-721 implementation in Rust targeting the Stylus VM. By moving NFT minting and transfer logic to Rust, this library achieves 10–30% gas savings over equivalent Solidity on Arbitrum.',
         url: 'https://github.com/OffchainLabs/stylus-by-example',
         githubUrl: 'https://github.com/OffchainLabs/stylus-by-example',
+        category: 'Gaming & NFTs',
         categories: ['Gaming & NFTs', 'Infrastructure'],
         language: ['Rust'],
         fundingSource: 'None',
@@ -255,6 +270,7 @@ export const searchData: SearchItem[] = [
         description: 'Support for testing Stylus with Foundry.',
         url: 'https://github.com/iosiro/arbos-foundry',
         githubUrl: 'https://github.com/iosiro/arbos-foundry',
+        category: 'Infrastructure',
         categories: ['Infrastructure'],
         language: ['Rust'],
         fundingSource: 'None',
