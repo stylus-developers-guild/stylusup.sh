@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, GitPullRequest, FileJson, GitBranch, CheckCircle, ExternalLink } from 'lucide-react';
 import { Footer } from './Footer';
 
-const GITHUB_REPO = 'https://github.com/ivanzinho09/StylusUp';
+const GITHUB_REPO = 'https://github.com/stylus-developers-guild/stylusup.sh';
 const PROJECTS_JSON_PATH = 'public/projects.json';
 
 const JSON_TEMPLATE = `{

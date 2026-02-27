@@ -55,8 +55,8 @@ The project data is **entirely community-maintained** via Pull Requests — no b
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/ivanzinho09/StylusUp.git
-cd StylusUp
+git clone github.com/stylus-developers-guild/stylusup.sh
+cd stylusup.sh
 
 # 2. Install dependencies
 npm install
