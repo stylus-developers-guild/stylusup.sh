@@ -163,7 +163,7 @@ export const searchData: SearchItem[] = [
         categories: ['DeFi', 'Cryptography'],
         language: ['Rust'],
         fundingSource: 'D.A.O Program',
-        status: 'building',
+        status: 'live',
         tags: ['defi', 'privacy', 'zk-proofs', 'dark-pool'],
         stylusUsage: 'ZK proof verifiers that are too gas-heavy for Solidity are implemented as Stylus Rust contracts, cutting verification cost by orders of magnitude.',
         highlights: [
