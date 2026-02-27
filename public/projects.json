@@ -359,6 +359,5 @@
             "development"
         ],
         "stylusUsage": "Supports Stylus alongside Solidity for testing using the familiar Forge testing suite."
-    },
-
+    }
 ]
