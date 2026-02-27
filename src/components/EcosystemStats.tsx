@@ -1,15 +1,14 @@
 import { Info } from 'lucide-react';
 import { useProjects } from '../hooks/useProjects';
 
-// Assuming we have these logos or will add them later. 
+// Assuming we have these logos or will add them later.
 // For now, we will use text/placeholders that look clean if logos are missing.
 const PROMINENT_PROJECTS = [
     { name: 'Arbitrum', logo: '/images/projects/arbitrum.svg' },
     { name: 'Superposition', logo: '/images/projects/superposition.svg' },
     { name: 'Robinhood', logo: '/images/projects/robinhood.svg' },
     { name: 'Renegade', logo: '/images/projects/renegade.svg' },
-    { name: 'RedStone', logo: '/images/projects/redstone.svg' },
-    { name: 'Wormhole', logo: '/images/projects/wormhole.svg' },
+    { name: 'Redstone', logo: '/images/projects/redstone.svg' },
 ];
 
 export function EcosystemStats() {

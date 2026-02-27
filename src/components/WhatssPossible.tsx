@@ -9,7 +9,7 @@ const useCases = [
       { name: 'scaffold-stylus', url: 'https://github.com/rkdud007/scaffold-stylus' },
       { name: 'stylus-by-example', url: 'https://github.com/OffchainLabs/stylus-by-example' },
       { name: 'wizard', url: 'https://thewizard.app/' },
-      { name: 'bobcat-sdk', url: 'https://github.com/Bobcat-BCAT/bobcat-sdk' },
+      { name: 'bobcat-sdk', url: 'https://github.com/stylus-developers-guild/bobcat-sdk' },
       { name: 'awesome-stylus', url: 'https://github.com/OffchainLabs/awesome-stylus' },
     ],
   },
@@ -39,8 +39,6 @@ const useCases = [
     title: 'Advanced Cryptography',
     description: 'Implement cutting-edge cryptographic primitives and zero-knowledge proofs with Rust\'s crypto ecosystem.',
     packages: [
-      { name: 'arkworks', url: 'https://github.com/arkworks-rs' },
-      { name: 'bellman', url: 'https://github.com/zkcrypto/bellman' },
       { name: 'ed25519-dalek', url: 'https://github.com/fluidity-money/superposition-precompiles' },
       { name: 'secp256k1', url: 'https://github.com/rust-bitcoin/rust-secp256k1' },
       { name: 'bulletproofs', url: 'https://github.com/dalek-cryptography/bulletproofs' },
@@ -52,7 +50,6 @@ const useCases = [
     description: 'Build reliable cross-chain infrastructure and oracle networks with performance and safety guarantees.',
     packages: [
       { name: 'redstone-oracles', url: 'https://redstone.finance' },
-      { name: 'wormhole', url: 'https://wormhole.com' },
     ],
   },
   {
