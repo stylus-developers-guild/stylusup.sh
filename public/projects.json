@@ -359,5 +359,27 @@
             "development"
         ],
         "stylusUsage": "Supports Stylus alongside Solidity for testing using the familiar Forge testing suite."
+    },
+    {
+        "id": "orderbookkit-xyz",
+        "name": "Orderbookkit.xyz",
+        "tagline": "Permissionless RFQ and CLOB hybrid trading engine.",
+        "description": "A permissionless trading platform for Arbitrum Orbit chains with a novel permissionless plugin and agent execution engine.",
+        "url": "https://orderbookkit.xyz",
+        "githubUrl": "https://code.markovgeist.org/orderbookkit.xyz",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "building",
+        "tags": [
+            "defi",
+            "protocol",
+            "finance"
+        ],
+        "stylusUsage": "Uses Stylus for the entire application, also built with extension from other stylus-sdk developers in mind."
     }
 ]

@@ -278,5 +278,20 @@ export const searchData: SearchItem[] = [
         tags: ['tools', 'framework', 'sdk', 'development'],
         stylusUsage: 'Supports Stylus alongside Solidity for testing using the familiar Forge testing suite.',
         icon: Wrench,
-    }
+    },
+    {
+        id: 'orderbookkit-xyz',
+        name: 'Orderbookkit.xyz',
+        tagline: 'Permissionless RFQ and CLOB hybrid trading engine.',
+        description: 'A permissionless trading platform for Arbitrum Orbit chains with a novel permissionless plugin and agent execution engine.',
+        url: 'https://orderbookkit.xyz',
+        category: 'DeFi',
+        categories: ['DeFi'],
+        language: ['Rust'],
+        fundingSource: 'Stylus Sprint',
+        status: 'live',
+        tags: ['defi', 'protocol', 'finance'],
+        stylusUsage: 'Uses Stylus for the entire application, also built with extension from other stylus-sdk developers in mind.',
+        icon: Coins,
+    },
 ];
