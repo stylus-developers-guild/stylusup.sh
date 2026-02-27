@@ -68,11 +68,11 @@
     },
     {
         "id": "bobcat-sdk",
-        "name": "Bobcat SDK",
-        "tagline": "SDK for building high-performance Stylus applications",
-        "description": "Bobcat SDK is a Rust library that extends the Stylus SDK with higher-level abstractions for common DeFi patterns, including vaults, AMMs, and price-feed integrations.",
-        "url": "https://github.com/Bobcat-BCAT/bobcat-sdk",
-        "githubUrl": "https://github.com/Bobcat-BCAT/bobcat-sdk",
+        "name": "bobcat-sdk",
+        "tagline": "Low level Stylus SDK for gas efficiency and flexibility",
+        "description": "bobcat-sdk is a low level Stylus SDK with a focus on gas efficiency and advanced programming features.",
+        "url": "https://github.com/stylus-developers-guild/bobcat-sdk",
+        "githubUrl": "https://github.com/stylus-developers-guild/bobcat-sdk",
         "categories": [
             "Dev Tools",
             "DeFi"
@@ -143,8 +143,8 @@
     {
         "id": "9lives",
         "name": "9lives.so",
-        "tagline": "High-performance DeFi protocol built with Stylus",
-        "description": "9lives is a cutting-edge DeFi protocol that leverages Stylus's computational headroom to run complex on-chain trading logic — including options pricing and liquidity management — that would be cost-prohibitive in solidity.",
+        "tagline": "Prediction market built with Stylus",
+        "description": "9lives is a permissionless prediction market, supporting short-term predictions and the permissionless creation of markets with AI resolution.",
         "url": "https://9lives.so",
         "categories": [
             "DeFi"
@@ -159,13 +159,13 @@
             "protocol",
             "finance"
         ],
-        "stylusUsage": "Core pricing and settlement logic is written in Rust Stylus contracts, enabling on-chain Black-Scholes calculations without prohibitive gas costs."
+        "stylusUsage": "The entire product is written using Stylus at every level."
     },
     {
         "id": "longtail",
         "name": "Longtail",
         "tagline": "Rewards-based AMM powered by Stylus",
-        "description": "Longtail is an automated market maker built on Fluidity Money's Superposition testnet. It adds a rewards layer on top of standard AMM mechanics, incentivising both LPs and traders with fluid assets.",
+        "description": "Longtail is an automated market maker built on Fluidity Money's Superposition. It adds a rewards layer on top of standard AMM mechanics, incentivising both LPs and traders with fluid assets.",
         "url": "https://github.com/fluidity-money/long.so",
         "githubUrl": "https://github.com/fluidity-money/long.so",
         "categories": [
@@ -213,54 +213,10 @@
         ]
     },
     {
-        "id": "arkworks",
-        "name": "Arkworks",
-        "tagline": "Rust ecosystem for zkSNARK programming on Stylus",
-        "description": "Arkworks is a modular Rust library suite for zkSNARK-based cryptography. Several teams are porting arkworks primitives to run inside Stylus contracts, enabling efficient on-chain proof verification.",
-        "url": "https://github.com/arkworks-rs",
-        "githubUrl": "https://github.com/arkworks-rs",
-        "categories": [
-            "Cryptography"
-        ],
-        "language": [
-            "Rust"
-        ],
-        "fundingSource": "Community",
-        "status": "live",
-        "tags": [
-            "cryptography",
-            "zk-snarks",
-            "rust"
-        ],
-        "stylusUsage": "Arkworks crates can be imported directly into Stylus Rust contracts for on-chain elliptic curve and pairing operations."
-    },
-    {
-        "id": "bellman",
-        "name": "Bellman",
-        "tagline": "zkSNARK library for Rust, compatible with Stylus",
-        "description": "Bellman is a Rust crate for building and verifying zkSNARK circuits. As a pure-Rust library it compiles to WASM and can run Groth16 verifications inside Stylus contracts.",
-        "url": "https://github.com/zkcrypto/bellman",
-        "githubUrl": "https://github.com/zkcrypto/bellman",
-        "categories": [
-            "Cryptography"
-        ],
-        "language": [
-            "Rust"
-        ],
-        "fundingSource": "None",
-        "status": "live",
-        "tags": [
-            "cryptography",
-            "zk-snarks",
-            "library"
-        ],
-        "stylusUsage": "Bellman Groth16 verifiers compile to WASM and are deployable as Stylus contracts for trustless proof verification on-chain."
-    },
-    {
         "id": "ed25519-dalek",
         "name": "ed25519-dalek on Stylus",
         "tagline": "Ed25519 signature primitives running inside Stylus contracts",
-        "description": "A port of the ed25519-dalek Rust library to Stylus, enabling on-chain ED25519 signature verification — crucial for interop with non-EVM chains like Solana and cross-chain bridges.",
+        "description": "A ed25519 precompile library for verifying ed25519 signatures.",
         "url": "https://github.com/fluidity-money/superposition-precompiles",
         "githubUrl": "https://github.com/fluidity-money/superposition-precompiles",
         "categories": [
@@ -277,30 +233,7 @@
             "ed25519",
             "signatures"
         ],
-        "stylusUsage": "Exposes precompile-level ED25519 verification in Rust, deployed as a Stylus contract since EVM has no native ED25519 precompile."
-    },
-    {
-        "id": "secp256k1-stylus",
-        "name": "secp256k1 on Stylus",
-        "tagline": "Rust secp256k1 for Bitcoin-compatible signature verification",
-        "description": "Brings the rust-secp256k1 library to Arbitrum as a Stylus contract, enabling on-chain verification of Bitcoin-style signatures and enabling new Bitcoin-Layer2 cross-chain use cases.",
-        "url": "https://github.com/rust-bitcoin/rust-secp256k1",
-        "githubUrl": "https://github.com/rust-bitcoin/rust-secp256k1",
-        "categories": [
-            "Cryptography",
-            "Bridges & Oracles"
-        ],
-        "language": [
-            "Rust"
-        ],
-        "fundingSource": "Community",
-        "status": "live",
-        "tags": [
-            "cryptography",
-            "secp256k1",
-            "bitcoin"
-        ],
-        "stylusUsage": "Pure-Rust secp256k1 operations compiled to WASM and deployed as Stylus contracts — vastly cheaper than Solidity ecrecover for batch verification."
+        "stylusUsage": "Exposes precompile-level ED25519 verification in Rust, deployed as a Stylus contract since the EVM has no native ED25519 precompile."
     },
     {
         "id": "redstone-oracles",
@@ -322,33 +255,12 @@
             "cross-chain",
             "data-feeds"
         ],
-        "stylusUsage": "Provides Rust SDK bindings so Stylus contracts can verify RedStone data on-chain without EVM-level gas penalties.",
+        "stylusUsage": "The Redstone oracle team used Stylus to keep compute costs down low by implementing parts of their oracle system in Rust.",
         "highlights": [
             "Pull-based oracle with sub-second data freshness",
             "Rust SDK for seamless Stylus integration",
             "Supports 1,000+ price feeds"
         ]
-    },
-    {
-        "id": "wormhole",
-        "name": "Wormhole",
-        "tagline": "Cross-chain messaging and token bridging for Stylus",
-        "description": "Wormhole is a generic cross-chain messaging protocol that connects Arbitrum to 30+ blockchains. Teams are building Stylus-native Wormhole message parsers and token bridge implementations as Rust contracts for improved throughput.",
-        "url": "https://wormhole.com",
-        "categories": [
-            "Bridges & Oracles"
-        ],
-        "language": [
-            "Rust"
-        ],
-        "fundingSource": "None",
-        "status": "live",
-        "tags": [
-            "bridge",
-            "cross-chain",
-            "messaging"
-        ],
-        "stylusUsage": "Wormhole VAA verification logic is ported to Stylus Rust, enabling cheaper message parsing compared to equivalent Solidity."
     },
     {
         "id": "stylus-sdk-rs",
