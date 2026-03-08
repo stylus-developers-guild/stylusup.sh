@@ -81,7 +81,7 @@ export const resourceCategories = {
           description: 'Audited ERC-20, ERC-721, access control & more'
         },
         {
-          name: 'Bobcat SDK',
+          name: 'bobcat-sdk',
           url: 'https://github.com/stylus-developers-guild/bobcat-sdk',
           description: '~3x smaller alternative SDK'
         }

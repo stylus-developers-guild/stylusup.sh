@@ -69,9 +69,9 @@ export const searchData: SearchItem[] = [
     },
     {
         id: 'bobcat-sdk',
-        name: 'Bobcat SDK',
+        name: 'bobcat-sdk',
         tagline: '~3x smaller alternative to the official Stylus SDK',
-        description: 'Bobcat SDK is a low-level Stylus SDK with a focus on gas efficiency and advanced programming features. It produces ~3x smaller contract binaries compared to the official SDK.',
+        description: 'bobcat-sdk is a low-level Stylus SDK with a focus on gas efficiency and advanced programming features. It produces ~3x smaller contract binaries compared to the official SDK.',
         url: 'https://github.com/stylus-developers-guild/bobcat-sdk',
         githubUrl: 'https://github.com/stylus-developers-guild/bobcat-sdk',
         category: 'Dev Tools',
