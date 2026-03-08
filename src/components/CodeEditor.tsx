@@ -70,68 +70,6 @@ impl Token {
     }
 }`,
   },
-  C: {
-    'Hello, World!': `// C Hello World with Stylus
-#include <stdint.h>
-
-void main() {
-    // Your contract logic here
-}`,
-    'Counter': `// C to WASM with Stylus
-#include <stdint.h>
-
-uint256_t counter = 0;
-
-void increment() {
-    counter++;
-}
-
-uint256_t get_count() {
-    return counter;
-}`,
-    'Simple Storage': `// C Simple Storage Contract
-#include <stdint.h>
-
-uint256_t stored_value = 0;
-
-void set(uint256_t value) {
-    stored_value = value;
-}
-
-uint256_t get() {
-    return stored_value;
-}`,
-  },
-  Zig: {
-    'Hello, World!': `// Zig Hello World Contract
-const std = @import("std");
-
-pub fn main() void {
-    // Your contract logic here
-}`,
-    'Counter': `// Zig Counter Contract
-const std = @import("std");
-
-var counter: u256 = 0;
-
-pub fn increment() void {
-    counter += 1;
-}
-
-pub fn getCount() u256 {
-    return counter;
-}`,
-    'Math Library': `// Zig Math Operations
-const std = @import("std");
-
-pub fn add(a: u256, b: u256) u256 {
-    return a + b;
-}
-
-pub fn multiply(a: u256, b: u256) u256 {
-    return a * b;
-}`,
-  },
 };
 
 export function CodeEditor() {
