@@ -219,10 +219,10 @@
         ]
     },
     {
-        "id": "ed25519-dalek",
-        "name": "ed25519-dalek on Stylus",
-        "tagline": "Ed25519 signature primitives running inside Stylus contracts",
-        "description": "A ed25519 precompile library for verifying ed25519 signatures.",
+        "id": "superposition-precompiles",
+        "name": "Superposition Precompiles",
+        "tagline": "Various precompiles for Arbitrum by the Superposition team",
+        "description": "A ed25519ph verifier, muldiv, and a sha512 hasher precompile library.",
         "url": "https://github.com/fluidity-money/superposition-precompiles",
         "githubUrl": "https://github.com/fluidity-money/superposition-precompiles",
         "categories": [
@@ -237,9 +237,11 @@
         "tags": [
             "cryptography",
             "ed25519",
+            "muldiv",
+            "sha512",
             "signatures"
         ],
-        "stylusUsage": "Exposes precompile-level ED25519 verification in Rust, deployed as a Stylus contract since the EVM has no native ED25519 precompile."
+        "stylusUsage": "Ed25519 verification, muldiv functions, and a sha512 compressor in Rust, deployed as a Stylus contract since the EVM has no native ed25519 precompile."
     },
     {
         "id": "redstone-oracles",
@@ -869,5 +871,21 @@
             "MCP server for AI-assisted porting",
             "Built by Oak Security & Range"
         ]
+    },
+    {
+        id: 'markovgeist-precompiles',
+        name: 'Markov Geist precompiles',
+        tagline: 'Tickmath precompiles for Arbitrum by Markov Geist Research',
+        description: 'Markov Geist precompiles convert prices to ticks and vice versa for on-chain price ranges.',
+        url: 'https://code.markovgeist.org/precompiles',
+        githubUrl: 'https://code.markovgeist.org/precompiles',
+        category: 'DeFi',
+        categories: ['DeFi'],
+        language: ['Rust'],
+        fundingSource: 'Stylus Sprint',
+        status: 'live',
+        tags: ['defi', 'tick-math'],
+        stylusUsage: 'Uniswap V3 sqrt tick math converting code using Rust Stylus with bobcat-sdk.',
+        icon: Lock
     }
 ]
