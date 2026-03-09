@@ -546,7 +546,7 @@ export const searchData: SearchItem[] = [
     },
     {
         id: 'scribe-stylusfuzz',
-        name: 'Scribe / StylusFuzz',
+        name: 'Skribe / StylusFuzz',
         tagline: 'Property-based testing and fuzzing for Stylus WASM bytecode',
         description: 'Property-based testing and fuzzing built on the K Framework. Fuzzes actual WASM bytecode on-chain. Tests writable in Rust or Solidity. Built by Runtime Verification.',
         url: 'https://kframework.org',

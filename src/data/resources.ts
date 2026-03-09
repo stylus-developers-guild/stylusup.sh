@@ -143,7 +143,7 @@ export const resourceCategories = {
           description: 'Source-level debugger & call tracer'
         },
         {
-          name: 'Scribe / StylusFuzz',
+          name: 'Skribe / StylusFuzz',
           url: 'https://kframework.org',
           description: 'Property-based fuzzing for WASM bytecode'
         }
@@ -245,7 +245,7 @@ export const resourceCategories = {
           description: 'Solidity → WASM compiler by Trail of Bits'
         },
         {
-          name: 'Scribe / StylusFuzz',
+          name: 'Skribe / StylusFuzz',
           url: 'https://kframework.org',
           description: 'WASM bytecode fuzzer by Runtime Verification'
         }
