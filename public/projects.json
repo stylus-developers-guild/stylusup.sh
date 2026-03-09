@@ -873,19 +873,33 @@
         ]
     },
     {
-        id: 'markovgeist-precompiles',
-        name: 'Markov Geist precompiles',
-        tagline: 'Tickmath precompiles for Arbitrum by Markov Geist Research',
-        description: 'Markov Geist precompiles convert prices to ticks and vice versa for on-chain price ranges.',
-        url: 'https://code.markovgeist.org/precompiles',
-        githubUrl: 'https://code.markovgeist.org/precompiles',
-        category: 'DeFi',
-        categories: ['DeFi'],
-        language: ['Rust'],
-        fundingSource: 'Stylus Sprint',
-        status: 'live',
-        tags: ['defi', 'tick-math'],
-        stylusUsage: 'Uniswap V3 sqrt tick math converting code using Rust Stylus with bobcat-sdk.',
-        icon: Lock
+        "id": "markovgeist-precompiles",
+        "name": "Markov Geist precompiles",
+        "tagline": "Tickmath precompiles for Arbitrum by Markov Geist Research",
+        "description": "Markov Geist precompiles convert prices to ticks and vice versa for on-chain price ranges.",
+        "url": "https://code.markovgeist.org/precompiles",
+        "githubUrl": "https://code.markovgeist.org/precompiles",
+        "docsUrl": "https://code.markovgeist.org/precompiles/wiki",
+        "categories": ["DeFi"],
+        "language": ["Rust"],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": ["defi", "tick-math"],
+        "stylusUsage": "Uniswap V3 sqrt tick math converting code using Rust Stylus with bobcat-sdk."
+    },
+    {
+        "id": "superposition-passport",
+        "name": "Superposition Passport",
+        "tagline": "UTXO-based CLOB order aggregating engine",
+        "description": "Superposition Passport is a UTXO-based rollup that aggregates ordres for instant settlement and infinite rebasing.",
+        "url": "https://github.com/fluidity-money/passport.superposition.so",
+        "githubUrl": "https://github.com/fluidity-money/passport.superposition.so",
+        "docsUrl": "https://github.com/fluidity-money/passport.superposition.so",
+        "categories": ["DeFi"],
+        "language": ["Rust"],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": ["defi", "protocol"],
+        "stylusUsage": "Uses bobcat-sdk Rust for the entire engine "
     }
 ]
