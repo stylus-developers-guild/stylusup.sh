@@ -207,7 +207,7 @@ export const searchData: SearchItem[] = [
         fundingSource: 'None',
         status: 'live',
         tags: ['oracle', 'cross-chain', 'data-feeds'],
-        stylusUsage: 'The Redstone oracle team used Stylus to keep compute costs down low by implementing parts of their oracle system in Rust.',
+        stylusUsage: 'The RedStone oracle team used Stylus to keep compute costs down low by implementing parts of their oracle system in Rust.',
         highlights: [
             'Pull-based oracle with sub-second data freshness',
             'Rust SDK for seamless Stylus integration',
