@@ -215,7 +215,7 @@ export const resourceCategories = {
           description: 'On-chain dark pool with ZK privacy'
         },
         {
-          name: 'OrderBook Kit',
+          name: 'Orderbookkit',
           url: 'https://code.markovgeist.org/orderbookkit.xyz/dir',
           description: 'One-click on-chain orderbook'
         },

@@ -296,7 +296,7 @@ export const searchData: SearchItem[] = [
     },
     {
         id: 'orderbookkit-xyz',
-        name: 'OrderBook Kit',
+        name: 'Orderbookkit',
         tagline: 'One-click on-chain orderbook with Stylus',
         description: 'A permissionless trading platform for Arbitrum Orbit chains with a novel permissionless plugin and agent execution engine. One-click on-chain orderbook deployment powered by Stylus.',
         url: 'https://code.markovgeist.org/orderbookkit.xyz/dir',
