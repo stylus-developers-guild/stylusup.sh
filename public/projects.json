@@ -784,12 +784,13 @@
         ]
     },
     {
-        "id": "moving-stylus",
-        "name": "Moving Stylus: Move Compiler",
+        "id": "move-stylus",
+        "name": "Move Stylus: Move Compiler",
         "tagline": "Deploy Move smart contracts on Arbitrum via WASM compilation",
         "description": "Move bytecode → WASM compiler. Deploy Move smart contracts on Arbitrum. Includes compiler, runtime, SDK, and tooling. Bridges the Move ecosystem to Arbitrum Stylus. Built by Rather Labs.",
-        "url": "https://github.com/rather-labs",
-        "githubUrl": "https://github.com/rather-labs",
+        "url": "https://move-stylus.ratherlabs.com",
+        "githubUrl": "https://github.com/rather-labs/move-stylus",
+        "docsUrl": "https://move-stylus.ratherlabs.com/docs",
         "categories": [
             "Infrastructure",
             "Dev Tools"
@@ -798,7 +799,7 @@
             "Move"
         ],
         "fundingSource": "Stylus Sprint",
-        "status": "building",
+        "status": "live",
         "tags": [
             "move",
             "compiler",
@@ -811,7 +812,11 @@
             "Full compiler, runtime, SDK, and tooling",
             "Bridges Move ecosystem to Arbitrum",
             "Built by Rather Labs"
-        ]
+        ],
+        "socials": {
+            "twitter": "https://x.com/rather_labs",
+            "linkedin": "https://www.linkedin.com/company/ratherlabs"
+        }
     },
     {
         "id": "fairblock-debid",
