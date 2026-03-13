@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink, Github, Twitter, MessageCircle, Send } from 'l
 import { useProjects } from '../hooks/useProjects';
 import { SubmitProjectCTA } from './SubmitProjectCTA';
 import { Footer } from './Footer';
+import { getProjectStatusMeta } from '../data/projectStatus';
 
 interface ProjectDetailPageProps {
     projectId: string;
@@ -49,6 +50,8 @@ export function ProjectDetailPage({ projectId }: ProjectDetailPageProps) {
             </div>
         );
     }
+
+    const statusMeta = getProjectStatusMeta(project.status);
 
     return (
         <div className="min-h-screen bg-[#F8F7FF]">
@@ -121,17 +124,10 @@ export function ProjectDetailPage({ projectId }: ProjectDetailPageProps) {
                                 <div className="flex items-start justify-between">
                                     <dt className="text-gray-400 font-medium">Status</dt>
                                     <dd>
-                                        {project.status === 'live' ? (
-                                            <span className="flex items-center gap-1.5 text-emerald-600 font-semibold">
-                                                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                                                LIVE
-                                            </span>
-                                        ) : (
-                                            <span className="flex items-center gap-1.5 text-amber-500 font-semibold">
-                                                <span className="w-2 h-2 rounded-full bg-amber-400" />
-                                                BUILDING
-                                            </span>
-                                        )}
+                                        <span className={`flex items-center gap-1.5 font-semibold ${statusMeta.textClassName}`}>
+                                            <span className={`w-2 h-2 rounded-full ${statusMeta.dotClassName}`} />
+                                            {statusMeta.label}
+                                        </span>
                                     </dd>
                                 </div>
 

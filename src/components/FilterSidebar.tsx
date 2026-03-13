@@ -1,12 +1,13 @@
 import { CATEGORIES, FUNDING_SOURCES, LANGUAGES, EcosystemProject } from '../data/ecosystemData';
 import { Search, X } from 'lucide-react';
+import { getProjectStatusMeta } from '../data/projectStatus';
 
 export interface FilterState {
     keyword: string;
     categories: string[];
     languages: string[];
     fundingSources: string[];
-    status: 'all' | 'live' | 'building';
+    status: 'all' | EcosystemProject['status'];
 }
 
 interface FilterSidebarProps {
@@ -176,20 +177,24 @@ export function FilterSidebar({ filters, onFilterChange, projects }: FilterSideb
                     Status
                 </h3>
                 <div className="flex gap-2">
-                    {(['all', 'live', 'building'] as const).map((s) => (
+                    {(['all', 'live', 'building', 'shutdown'] as const).map((s) => (
                         <button
                             key={s}
                             onClick={() => onFilterChange({ ...filters, status: s })}
                             className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all border ${filters.status === s
-                                    ? s === 'live'
-                                        ? 'bg-emerald-500 text-white border-emerald-500'
-                                        : s === 'building'
-                                            ? 'bg-amber-400 text-white border-amber-400'
-                                            : 'bg-[#5F4DED] text-white border-[#5F4DED]'
+                                    ? s === 'all'
+                                        ? 'bg-[#5F4DED] text-white border-[#5F4DED]'
+                                        : s === 'live'
+                                            ? 'bg-emerald-500 text-white border-emerald-500'
+                                            : s === 'building'
+                                                ? 'bg-amber-400 text-white border-amber-400'
+                                                : 'bg-slate-500 text-white border-slate-500'
                                     : 'bg-white text-gray-600 border-gray-200 hover:border-gray-300'
                                 }`}
                         >
-                            {s === 'all' ? 'All' : s === 'live' ? '● Live' : '◐ Building'}
+                            {s === 'all'
+                                ? 'All'
+                                : `${s === 'live' ? '●' : s === 'building' ? '◐' : '■'} ${getProjectStatusMeta(s).filterLabel}`}
                         </button>
                     ))}
                 </div>

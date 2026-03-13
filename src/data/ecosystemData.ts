@@ -16,7 +16,7 @@ export interface EcosystemProject {
     categories: string[];     // at least one required
     language: string[];       // Rust | Move | C/C++
     fundingSource?: 'Stylus Sprint' | 'D.A.O Program' | 'Community' | 'None';
-    status: 'live' | 'building';
+    status: 'live' | 'building' | 'shutdown';
     tags: string[];
     highlights?: string[];    // up to 5 bullet points for detail page
     stylusUsage?: string;     // "How does this project use Stylus?"

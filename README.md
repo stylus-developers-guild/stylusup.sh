@@ -24,7 +24,7 @@ It brings together:
 - ⚡ **Spotlight Search** — `⌘K` spotlight-style search across the entire catalog
 - 🔗 **Community Hub** — Links to grants, DAOs, GitHub, Discord, and socials
 
-The project data is **entirely community-maintained** via Pull Requests — no backend, no database.
+The project data is **entirely community-maintained** via Pull Requests — no backend, no database, and one runtime source of truth in `public/projects.json`.
 
 ---
 
@@ -82,7 +82,7 @@ The site will be running at `http://localhost:3000`.
 │   ├── components/            ← All page and UI components
 │   ├── data/
 │   │   ├── ecosystemData.ts   ← TypeScript types for projects
-│   │   └── searchData.ts      ← Spotlight search index
+│   │   └── projectSearch.ts   ← Spotlight search helpers derived from project data
 │   └── hooks/
 │       └── useProjects.ts     ← Hook that fetches & caches projects.json
 ├── HACKING.md                 ← Contributor guide

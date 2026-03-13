@@ -43,7 +43,7 @@ const FIELD_DOCS = [
     { field: 'categories', required: true, type: 'string[]', desc: 'At least one of: DeFi, Infrastructure, Dev Tools, Gaming & NFTs, Cryptography, Bridges & Oracles.' },
     { field: 'language', required: true, type: 'string[]', desc: 'One or more of: Rust, Move, C/C++.' },
     { field: 'fundingSource', required: false, type: 'string', desc: 'One of: Stylus Sprint, D.A.O Program, Community, None.' },
-    { field: 'status', required: true, type: '"live" | "building"', desc: '"live" if deployed and usable, "building" if in progress.' },
+    { field: 'status', required: true, type: '"live" | "building" | "shutdown"', desc: '"live" if deployed and usable, "building" if in progress, "shutdown" if the project is no longer active.' },
     { field: 'tags', required: true, type: 'string[]', desc: 'Lowercase keyword tags for search, e.g. ["defi", "amm", "rust"].' },
     { field: 'highlights', required: false, type: 'string[] (max 5)', desc: 'Bullet points shown on the detail page. Key features, metrics, or differentiators.' },
     { field: 'stylusUsage', required: false, type: 'string', desc: 'How this project uses Stylus — which contracts, language, and why.' },

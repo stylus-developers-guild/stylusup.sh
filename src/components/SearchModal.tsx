@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { Search, X, ExternalLink, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { searchData, SearchItem } from '../data/searchData';
 import { useProjects } from '../hooks/useProjects';
+import { buildProjectSearchItems } from '../data/projectSearch';
 
 interface SearchModalProps {
     isOpen: boolean;
@@ -12,13 +12,38 @@ interface SearchModalProps {
 export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     const [query, setQuery] = useState('');
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const [filteredResults, setFilteredResults] = useState<SearchItem[]>(searchData);
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
     const inputRef = useRef<HTMLInputElement>(null);
     const navigate = useNavigate();
     const { projects: ecosystemProjects } = useProjects();
+    const searchItems = useMemo(
+        () => buildProjectSearchItems(ecosystemProjects),
+        [ecosystemProjects]
+    );
 
-    const categories = ['All', ...Array.from(new Set(searchData.map(item => item.category)))];
+    const categories = useMemo(
+        () => ['All', ...Array.from(new Set(searchItems.flatMap((item) => item.categories)))],
+        [searchItems]
+    );
+
+    const filteredResults = useMemo(() => {
+        const categoryFiltered = selectedCategory === 'All'
+            ? searchItems
+            : searchItems.filter((item) => item.categories.includes(selectedCategory));
+
+        if (!query.trim()) {
+            return categoryFiltered;
+        }
+
+        const lowerQuery = query.toLowerCase();
+        return categoryFiltered.filter((item) =>
+            item.name.toLowerCase().includes(lowerQuery) ||
+            item.tagline.toLowerCase().includes(lowerQuery) ||
+            item.description.toLowerCase().includes(lowerQuery) ||
+            item.tags.some((tag) => tag.toLowerCase().includes(lowerQuery)) ||
+            item.categories.some((category) => category.toLowerCase().includes(lowerQuery))
+        );
+    }, [query, searchItems, selectedCategory]);
 
     // Focus input when modal opens
     useEffect(() => {
@@ -27,32 +52,9 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
         }
     }, [isOpen]);
 
-    // Fuzzy search implementation
     useEffect(() => {
-        if (!query.trim()) {
-            const results = selectedCategory === 'All'
-                ? searchData
-                : searchData.filter(item => item.category === selectedCategory);
-            setFilteredResults(results);
-            setSelectedIndex(0);
-            return;
-        }
-
-        const lowerQuery = query.toLowerCase();
-        const results = searchData.filter(item => {
-            const matchesCategory = selectedCategory === 'All' || item.category === selectedCategory;
-            const matchesSearch =
-                item.name.toLowerCase().includes(lowerQuery) ||
-                item.description.toLowerCase().includes(lowerQuery) ||
-                item.tags.some(tag => tag.toLowerCase().includes(lowerQuery)) ||
-                item.category.toLowerCase().includes(lowerQuery);
-
-            return matchesCategory && matchesSearch;
-        });
-
-        setFilteredResults(results);
         setSelectedIndex(0);
-    }, [query, selectedCategory]);
+    }, [query, selectedCategory, searchItems]);
 
     // Keyboard navigation
     useEffect(() => {
@@ -74,12 +76,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     e.preventDefault();
                     const item = filteredResults[selectedIndex];
                     if (item) {
-                        const ecoProj = ecosystemProjects.find(p => p.id === item.id);
-                        if (ecoProj) {
-                            navigate(`/ecosystem/${item.id}`);
-                        } else {
-                            window.open(item.url, '_blank');
-                        }
+                        navigate(`/ecosystem/${item.id}`);
                         onClose();
                     }
                     break;
@@ -92,7 +89,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
         document.addEventListener('keydown', handleKeyDown);
         return () => document.removeEventListener('keydown', handleKeyDown);
-    }, [isOpen, filteredResults, selectedIndex, onClose]);
+    }, [isOpen, filteredResults, navigate, onClose, selectedIndex]);
 
     if (!isOpen) return null;
 
@@ -153,7 +150,6 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     ) : (
                         filteredResults.map((item, index) => {
                             const Icon = item.icon;
-                            const ecoProj = ecosystemProjects.find(p => p.id === item.id);
 
                             return (
                                 <div
@@ -164,11 +160,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                     <div
                                         className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#5F4DED]/10 to-[#7B68EE]/10 border border-[#5F4DED]/20 flex items-center justify-center flex-shrink-0 mt-1 cursor-pointer"
                                         onClick={() => {
-                                            if (ecoProj) {
-                                                navigate(`/ecosystem/${item.id}`);
-                                            } else {
-                                                window.open(item.url, '_blank');
-                                            }
+                                            navigate(`/ecosystem/${item.id}`);
                                             onClose();
                                         }}
                                     >
@@ -179,11 +171,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                     <div
                                         className="flex-1 min-w-0 cursor-pointer"
                                         onClick={() => {
-                                            if (ecoProj) {
-                                                navigate(`/ecosystem/${item.id}`);
-                                            } else {
-                                                window.open(item.url, '_blank');
-                                            }
+                                            navigate(`/ecosystem/${item.id}`);
                                             onClose();
                                         }}
                                     >
@@ -201,19 +189,17 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                             {item.category}
                                         </span>
                                         <div className="flex items-center gap-1.5 mt-0.5">
-                                            {ecoProj && (
-                                                <button
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate(`/ecosystem/${item.id}`);
-                                                        onClose();
-                                                    }}
-                                                    className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-purple-50 text-[#5F4DED] text-xs font-semibold hover:bg-purple-100 transition-colors"
-                                                    title="View Ecosystem Page"
-                                                >
-                                                    Project Page <ArrowRight className="w-3.5 h-3.5" />
-                                                </button>
-                                            )}
+                                            <button
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    navigate(`/ecosystem/${item.id}`);
+                                                    onClose();
+                                                }}
+                                                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-purple-50 text-[#5F4DED] text-xs font-semibold hover:bg-purple-100 transition-colors"
+                                                title="View Ecosystem Page"
+                                            >
+                                                Project Page <ArrowRight className="w-3.5 h-3.5" />
+                                            </button>
                                             <button
                                                 onClick={(e) => {
                                                     e.stopPropagation();

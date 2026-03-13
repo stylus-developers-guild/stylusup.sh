@@ -71,7 +71,7 @@ Each project entry in `public/projects.json` must follow this shape:
 | `categories`   | ✅       | `string[]`              | At least one: `DeFi`, `Infrastructure`, `Dev Tools`, `Gaming & NFTs`, `Cryptography`, `Bridges & Oracles` |
 | `language`     | ✅       | `string[]`              | One or more: `Rust`, `Move`, `C/C++` |
 | `fundingSource`|          | `string`                | One of: `Stylus Sprint`, `D.A.O Program`, `Community`, `None` |
-| `status`       | ✅       | `"live"` \| `"building"`| `live` = deployed and usable; `building` = in progress |
+| `status`       | ✅       | `"live"` \| `"building"` \| `"shutdown"`| `live` = deployed and usable; `building` = in progress; `shutdown` = no longer active |
 | `tags`         | ✅       | `string[]`              | Lowercase search tags e.g. `["defi", "amm", "rust"]` |
 | `highlights`   |          | `string[]` (max 5)      | Bullet points on the detail page. Key features or metrics. |
 | `stylusUsage`  |          | `string`                | How and why the project uses Stylus |
@@ -96,7 +96,7 @@ npm run dev
 
 The dev server will start on `http://localhost:5173` (or similar).
 
-> **Note:** `public/projects.json` is fetched at runtime. Edits to it are immediately visible during dev without a rebuild.
+> **Note:** `public/projects.json` is fetched at runtime and also powers spotlight search. Edits to it are immediately visible during dev without a rebuild.
 
 ---
 
@@ -111,7 +111,7 @@ src/
   components/          ← All React components
   data/
     ecosystemData.ts   ← TypeScript types only (data is in public/projects.json)
-    searchData.ts      ← Search index for the spotlight modal
+    projectSearch.ts   ← Search helpers derived from public/projects.json
   hooks/
     useProjects.ts     ← Hook that fetches and caches projects.json
 ```

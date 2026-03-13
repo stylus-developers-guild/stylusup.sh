@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { EcosystemProject } from '../data/ecosystemData';
+import { getProjectStatusMeta } from '../data/projectStatus';
 
 interface ProjectCardProps {
     project: EcosystemProject;
@@ -29,6 +30,8 @@ function LogoPlaceholder({ name }: { name: string }) {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+    const statusMeta = getProjectStatusMeta(project.status);
+
     return (
         <Link
             to={`/ecosystem/${project.id}`}
@@ -36,17 +39,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
         >
             {/* Status badge */}
             <div className="absolute top-4 right-4">
-                {project.status === 'live' ? (
-                    <span className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                        LIVE
-                    </span>
-                ) : (
-                    <span className="flex items-center gap-1.5 text-xs font-semibold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-100">
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                        BUILDING
-                    </span>
-                )}
+                <span className={`flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full border ${statusMeta.badgeClassName}`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${statusMeta.dotClassName}`} />
+                    {statusMeta.label}
+                </span>
             </div>
 
             {/* Card body */}
