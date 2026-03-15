@@ -27,7 +27,7 @@ export function CommunityBanner() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                         <a
-                            href="https://github.com/OffchainLabs/awesome-stylus"
+                            href="https://github.com/stylus-developers-guild/stylusup.sh"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-3 bg-white text-[#5F4DED] font-semibold rounded-[8px] hover:bg-gray-100 transition-colors w-full sm:w-auto text-[15px]"

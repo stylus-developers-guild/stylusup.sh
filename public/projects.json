@@ -921,5 +921,20 @@
         "status": "building",
         "tags": ["defi", "protocol"],
         "stylusUsage": "Uses Stylus for cheap gas execution and checking of the poker games."
+    },
+    {
+        "id": "stylusforge",
+        "name": "Stylus Forge",
+        "tagline": "Web-based editor for Stylus code with building and deployment features.",
+        "description": "Stylus Studio is a comprehensive, browser-based development environment for Arbitrum Stylus smart contracts. Write Rust contracts with VS Code-quality tooling, complete interactive tutorials, deploy to Arbitrum, and earn NFT achievement badges - all without leaving your browser.",
+        "url": "https://stylusforge.vercel.app/",
+        "githubUrl": "https://github.com/RockieRaheem/stylusforge",
+        "docsUrl": "https://github.com/RockieRaheem/stylusforge",
+        "categories": ["Dev Tools"],
+        "language": ["Typescript", "Rust"],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": ["defi", "protocol"],
+        "stylusUsage": "Supports Stylus via the webapp for editing."
     }
 ]
