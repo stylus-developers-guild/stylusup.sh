@@ -906,5 +906,20 @@
         "status": "live",
         "tags": ["defi", "protocol"],
         "stylusUsage": "Uses bobcat-sdk Rust for the entire engine "
+    },
+    {
+        "id": "crumble-protocol",
+        "name": "Crumble Protocol",
+        "tagline": "Off-chain fair games of poker without a trusted thirdparty.",
+        "description": "Crumble can be used to play fully decentralised games of poker with proven fairness and an on-chain action.",
+        "url": "https://github.com/fluidity-money/passport.superposition.so",
+        "githubUrl": "https://github.com/Imperfect-Protocol/crumble",
+        "docsUrl": "https://github.com/Imperfect-Protocol/crumble",
+        "categories": ["DeFi"],
+        "language": ["Rust"],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": ["defi", "protocol"],
+        "stylusUsage": "Uses Stylus for cheap gas execution and checking of the poker games."
     }
 ]
