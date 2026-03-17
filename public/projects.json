@@ -912,7 +912,7 @@
         "name": "Crumble Protocol",
         "tagline": "Off-chain fair games of poker without a trusted thirdparty.",
         "description": "Crumble can be used to play fully decentralised games of poker with proven fairness and an on-chain action.",
-        "url": "https://github.com/fluidity-money/passport.superposition.so",
+        "url": "https://github.com/Imperfect-Protocol/crumble",
         "githubUrl": "https://github.com/Imperfect-Protocol/crumble",
         "docsUrl": "https://github.com/Imperfect-Protocol/crumble",
         "categories": ["DeFi"],
