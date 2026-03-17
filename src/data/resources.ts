@@ -116,11 +116,6 @@ export const resourceCategories = {
           name: 'Remix IDE Stylus Plugin',
           url: 'https://github.com/dsrvlabs/arbitrum-stylus',
           description: 'Compile & deploy in Remix — zero setup'
-        },
-        {
-          name: 'CodeTracer (Metacraft Labs)',
-          url: 'https://www.github.com/metacraft-labs/codetracer',
-          description: 'Time-travelling debugger with VS Code extension'
         }
       ]
     },
@@ -152,11 +147,6 @@ export const resourceCategories = {
     {
       title: 'AI-Assisted Development',
       resources: [
-        {
-          name: 'Sifter (FairAI + EmberAI)',
-          url: 'https://siftstylus.xyz/',
-          description: 'AI assistant with RAG on Stylus docs'
-        },
         {
           name: 'OpenZeppelin MCP',
           url: 'https://mcp.openzeppelin.com/',
