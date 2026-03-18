@@ -934,7 +934,22 @@
         "language": ["Typescript", "Rust"],
         "fundingSource": "None",
         "status": "building",
-        "tags": ["defi", "protocol"],
+        "tags": ["ide", "tools"],
         "stylusUsage": "Supports Stylus via the webapp for editing."
+    },
+    {
+        "id": "soldb",
+        "name": "SolDB",
+        "tagline": "Local Solidity and Stylus debugger",
+        "description": "SolDB is an open-source, LLDB-style debugger for Solidity and the EVM.",
+        "url": "https://github.com/walnuthq/soldb",
+        "githubUrl": "https://github.com/walnuthq/soldb",
+        "docsUrl": "https://github.com/walnuthq/soldb",
+        "categories": ["Dev Tools"],
+        "language": ["Solidity", "Rust"],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": ["debugger", "tracing", "tools", "development"],
+        "stylusUsage": "Supports Stylus alongside Solidity development."
     }
 ]
