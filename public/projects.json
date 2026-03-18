@@ -939,7 +939,7 @@
     },
     {
         "id": "soldb",
-        "name": "SolDB",
+        "name": "Walnut: SolDB",
         "tagline": "Local Solidity and Stylus debugger",
         "description": "SolDB is an open-source, LLDB-style debugger for Solidity and the EVM.",
         "url": "https://github.com/walnuthq/soldb",
