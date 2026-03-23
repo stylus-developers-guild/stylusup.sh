@@ -951,5 +951,20 @@
         "status": "building",
         "tags": ["debugger", "tracing", "tools", "development"],
         "stylusUsage": "Supports Stylus alongside Solidity development."
+    },
+    {
+        "id": "noir-stylus-verifier",
+        "name": "Noir Stylus Verifier",
+        "tagline": "ZK UltraHonk verifier for Noir",
+        "description": "A Stylus-compatible UltraHonk verifier that bridges Noir's zero-knowledge capabilities with Arbitrum Stylus, enabling efficient verification of Barretenberg proofs in a WASM environment.",
+        "url": "https://github.com/wakeuplabs-io/noir-stylus-verifier",
+        "githubUrl": "https://github.com/wakeuplabs-io/noir-stylus-verifier",
+        "docsUrl": "https://nsv.wakeuplabs.link/",
+        "categories": ["Dev Tools"],
+        "language": ["Solidity", "Rust"],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": ["zk-tools", "tools", "development"],
+        "stylusUsage": "Supports Stylus alongside Solidity development."
     }
 ]
