@@ -9,6 +9,7 @@ const PROMINENT_PROJECTS = [
     { name: 'Robinhood', logo: '/images/projects/robinhood.svg' },
     { name: 'Renegade', logo: '/images/projects/renegade.svg' },
     { name: 'RedStone', logo: '/images/projects/redstone.svg' },
+    { name: 'Lit Protocol', logo: '/images/projects/lit-protocol.svg' },
 ];
 
 export function EcosystemStats() {
