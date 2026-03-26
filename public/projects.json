@@ -993,7 +993,7 @@
         "categories": ["Dev Tools"],
         "language": ["Rust"],
         "fundingSource": "Stylus Sprint",
-        "status": "live",
+        "status": "building",
         "tags": ["Developer Tools", "Infrastructure"],
         "stylusUsage": "Uses Stylus to implement its database translation layer."
     }
