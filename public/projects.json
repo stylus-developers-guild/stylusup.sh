@@ -977,9 +977,24 @@
         "docsUrl": "https://developer.litprotocol.com",
         "categories": ["Dev Tools"],
         "language": ["Solidity", "Rust"],
-        "fundingSource": "None",
+        "fundingSource": "Stylus Sprint",
         "status": "live",
         "tags": ["Cryptography", "Infrastructure"],
         "stylusUsage": "Uses Stylus to implement its cryptographic primitives."
+    },
+    {
+        "id": "synddb",
+        "name": "SyndDB",
+        "tagline": "High performance blockchain application layer using SQLite",
+        "description": "SyndDB enables developers to build high-performance blockchain applications using any programming language with SQLite bindings. Applications import a lightweight client library that automatically captures SQL operations and sends them to a sequencer service for publishing to data availability layers.",
+        "url": "https://syndicate.io",
+        "githubUrl": "https://github.com/SyndicateProtocol/synddb",
+        "docsUrl": "https://docs.syndicate.io",
+        "categories": ["Dev Tools"],
+        "language": ["Rust"],
+        "fundingSource": "Stylus Sprint",
+        "status": "live",
+        "tags": ["Developer Tools", "Infrastructure"],
+        "stylusUsage": "Uses Stylus to implement its database translation layer."
     }
 ]
