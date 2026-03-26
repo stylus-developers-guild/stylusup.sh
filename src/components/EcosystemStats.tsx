@@ -7,6 +7,7 @@ const PROMINENT_PROJECTS = [
     { name: 'Arbitrum', logo: '/images/projects/arbitrum.svg' },
     { name: 'Superposition', logo: '/images/projects/superposition.svg' },
     { name: 'Robinhood', logo: '/images/projects/robinhood.svg' },
+    { name: 'Fairblock', logo: '/images/projects/fairblock.svg' },
     { name: 'Renegade', logo: '/images/projects/renegade.svg' },
     { name: 'RedStone', logo: '/images/projects/redstone.svg' },
     { name: 'Lit Protocol', logo: '/images/projects/lit-protocol.svg' },
