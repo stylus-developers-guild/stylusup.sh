@@ -205,11 +205,6 @@ export const resourceCategories = {
           description: 'On-chain dark pool with ZK privacy'
         },
         {
-          name: 'Orderbookkit',
-          url: 'https://code.markovgeist.org/orderbookkit.xyz/dir',
-          description: 'One-click on-chain orderbook'
-        },
-        {
           name: 'Fairblock / DeBid',
           url: 'https://github.com/Fairblock/DeBid',
           description: 'Sealed-bid auctions for DeFi & RWA'

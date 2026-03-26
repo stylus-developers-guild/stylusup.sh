@@ -820,10 +820,10 @@
     },
     {
         "id": "fairblock-debid",
-        "name": "Fairblock / DeBid",
+        "name": "Fairrates",
         "tagline": "Sealed-bid auction infrastructure for DeFi and RWA using Stylus",
         "description": "Sealed-bid auction infrastructure for DeFi, RWA, and tokenization using Stylus. Provides privacy-preserving auction mechanisms on Arbitrum with cryptographic bid sealing.",
-        "url": "https://github.com/Fairblock/DeBid",
+        "url": "https://fairrates.fairblock.network/",
         "githubUrl": "https://github.com/Fairblock/DeBid",
         "docsUrl": "https://docs.fairblock.network/docs/build/Arbitrum/sealedbid_auction",
         "categories": [
