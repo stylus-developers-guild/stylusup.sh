@@ -885,11 +885,11 @@
         "url": "https://code.markovgeist.org/precompiles",
         "githubUrl": "https://code.markovgeist.org/precompiles",
         "docsUrl": "https://code.markovgeist.org/precompiles/wiki",
-        "categories": ["DeFi"],
+        "categories": ["Dev Tools"],
         "language": ["Rust"],
         "fundingSource": "Stylus Sprint",
         "status": "live",
-        "tags": ["defi", "tick-math"],
+        "tags": ["tick-math"],
         "stylusUsage": "Uniswap V3 sqrt tick math converting code using Rust Stylus with bobcat-sdk."
     },
     {
@@ -966,21 +966,6 @@
         "status": "building",
         "tags": ["zk-tools", "tools", "development"],
         "stylusUsage": "Supports Stylus alongside Solidity development."
-    },
-    {
-        "id": "lit-protocol",
-        "name": "Lit Protocol",
-        "tagline": "Decentralised key management with private compute",
-        "description": "Lit Protocol is a decentralized key management and private compute network. Lit provides developers building in Web3 with three core primitives: Decentralized Signing and Wallet Management (support for ECDSA and EdDSA signatures) via MPC TSS + TEEs. Decentralized Encryption / Decryption (identity-based BLS encryption scheme) via MPC TSS + TEEs. Private Compute executed via Lit’s MPC TSS network and protected by sealed TEEs.",
-        "url": "https://www.litprotocol.com",
-        "githubUrl": "https://github.com/LIT-Protocol/lit-precompiles",
-        "docsUrl": "https://developer.litprotocol.com",
-        "categories": ["Dev Tools"],
-        "language": ["Solidity", "Rust"],
-        "fundingSource": "Stylus Sprint",
-        "status": "live",
-        "tags": ["Cryptography", "Infrastructure"],
-        "stylusUsage": "Uses Stylus to implement its cryptographic primitives."
     },
     {
         "id": "syndicate",
