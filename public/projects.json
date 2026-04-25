@@ -1185,5 +1185,87 @@
             "examples"
         ],
         "stylusUsage": "Implements Conway's Game of Life as a Stylus smart contract in Rust, deployed alongside a Solidity equivalent on a local Arbitrum Nitro devnode, demonstrating the full Stylus SDK workflow from contract authoring to on-chain verification."
+    },
+    {
+        "id": "arcana",
+        "name": "Arcana",
+        "tagline": "Real-time and historical analytics dashboard for Stylus dApps on Arbitrum",
+        "description": "Arcana is an analytics dashboard for Stylus contracts on Arbitrum One. It indexes chain activity, detects Stylus contracts, computes per-dApp and global performance metrics, stores historical trends, and exposes data through a Fastify REST/WebSocket API and a Next.js dashboard — with alerting, backfill for new contracts, and a block/address/transaction explorer.",
+        "url": "https://github.com/zynorr/arcana",
+        "githubUrl": "https://github.com/zynorr/arcana",
+        "categories": [
+            "Dev Tools",
+            "Infrastructure"
+        ],
+        "language": [
+            "TypeScript"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "analytics",
+            "dashboard",
+            "indexer",
+            "monitoring",
+            "tools"
+        ],
+        "stylusUsage": "Indexes Arbitrum blocks, classifies transactions with Stylus bytecode detection, and computes per-dApp metrics specifically for Stylus contracts — providing the ecosystem's first dedicated analytics layer.",
+        "highlights": [
+            "Live block, transaction, and event ingestion with Stylus contract detection",
+            "Per-dApp and global metrics with historical backfill",
+            "Alert rules and alert history",
+            "Block/address/transaction explorer",
+            "Monorepo: collector, Fastify API, Next.js dashboard, Postgres, Redis"
+        ]
+    },
+    {
+        "id": "stylus-workshop-gol",
+        "name": "Stylus Workshop: Game of Life",
+        "tagline": "Hands-on workshop comparing Rust Stylus and Solidity smart contracts via Game of Life",
+        "description": "A practical workshop by the Arbitrum Foundation that teaches developers how to build, deploy, and interact with smart contracts on Arbitrum using both Rust (via Stylus) and Solidity. Participants implement Conway's Game of Life as a smart contract in both languages, deploy to a local Nitro devnode, and connect them to a React frontend — learning Stylus development through direct comparison with Solidity.",
+        "url": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
+        "githubUrl": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
+        "categories": [
+            "Education"
+        ],
+        "language": [
+            "Rust",
+            "Solidity"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "workshop",
+            "tutorials",
+            "learning",
+            "game-of-life",
+            "examples"
+        ],
+        "stylusUsage": "Implements Conway's Game of Life as a Stylus smart contract in Rust, deployed alongside a Solidity equivalent on a local Arbitrum Nitro devnode, demonstrating the full Stylus SDK workflow from contract authoring to on-chain verification."
+    },
+    {
+        "id": "collateralx",
+        "name": "CollateralX",
+        "tagline": "RWA lending protocol turning real-world SME assets into NFT-collateralized USDC loans",
+        "description": "CollateralX is an RWA lending protocol for SME liquidity that lets small and medium enterprises tokenize movable assets (machinery, trucks, inventory, solar farms) as NFTs and receive instant USDC loans. A Rust/WASM valuation engine computes real-time asset depreciation and risk scoring on-chain across 15 asset classes, with a Bloomberg Terminal-inspired institutional dashboard for portfolio management and governance.",
+        "url": "https://collateral-x.vercel.app",
+        "githubUrl": "https://github.com/zzzbedream/CollateralX",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust",
+            "Solidity"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "building",
+        "tags": [
+            "lending",
+            "rwa",
+            "nft",
+            "defi",
+            "valuation"
+        ],
+        "stylusUsage": "Uses a Rust-based StylusValuator contract to run complex non-linear depreciation models and risk-adjusted asset valuations in WASM, achieving ~99.9% lower gas costs than equivalent Solidity math for on-chain real-world asset pricing."
     }
 ]
