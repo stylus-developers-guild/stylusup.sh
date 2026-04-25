@@ -1219,6 +1219,36 @@
         ]
     },
     {
+        "id": "ghosttx",
+        "name": "GhostTx",
+        "tagline": "High-performance diagnostic dashboard for Arbitrum Stylus",
+        "description": "GhostTx is a diagnostic analytics dashboard for Arbitrum Stylus providing real-time transaction auditing with Nitro runtime telemetry, pre-flight gas and state-change simulation, automated intent execution when target gas conditions are met, and WASM efficiency visualisation comparing Stylus vs EVM performance.",
+        "url": "https://ghosttx.vercel.app",
+        "githubUrl": "https://github.com/Kellypek/ghosttx",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "analytics",
+            "dashboard",
+            "simulation",
+            "gas",
+            "tools"
+        ],
+        "stylusUsage": "Rust smart contracts targeting the Stylus WASM runtime for backend logic, paired with a React dashboard that visualises Stylus-specific telemetry including WASM heap usage and Stylus vs EVM gas comparisons.",
+        "highlights": [
+            "Post-tx audit with Nitro runtime telemetry",
+            "Pre-flight simulator for gas and state-change prediction",
+            "Ghost-Intent automation — sign once, execute on target gas conditions",
+            "WASM efficiency matrix: heap usage and Stylus vs EVM gains"
+        ]
+    },
+    {
         "id": "stylus-workshop-gol",
         "name": "Stylus Workshop: Game of Life",
         "tagline": "Hands-on workshop comparing Rust Stylus and Solidity smart contracts via Game of Life",
