@@ -1197,7 +1197,7 @@
         "id": "ghosttx",
         "name": "GhostTx",
         "tagline": "High-performance diagnostic dashboard for Arbitrum Stylus",
-        "description": "GhostTx is a diagnostic analytics dashboard for Arbitrum Stylus providing real-time transaction auditing with Nitro runtime telemetry, pre-flight gas and state-change simulation, automated intent execution when target gas conditions are met, and WASM efficiency visualisation comparing Stylus vs EVM performance.",
+        "description": "GhostTx is a diagnostic analytics dashboard for Arbitrum Stylus on Sepolia providing real-time transaction auditing with Nitro runtime telemetry, pre-flight gas and state-change simulation, automated intent execution when target gas conditions are met, and WASM efficiency visualisation comparing Stylus vs EVM performance.",
         "url": "https://ghosttx.vercel.app",
         "githubUrl": "https://github.com/Kellypek/ghosttx",
         "categories": [
