@@ -981,5 +981,151 @@
         "status": "building",
         "tags": ["Developer Tools", "Infrastructure"],
         "stylusUsage": "Uses Stylus to implement its database translation layer."
+    },
+    {
+        "id": "zerostyl",
+        "name": "ZeroStyl",
+        "tagline": "Privacy-preserving smart contracts on Stylus with halo2 zk-SNARKs",
+        "description": "ZeroStyl is a Rust toolkit for building and debugging privacy-preserving smart contracts on Arbitrum Stylus using halo2 zk-SNARKs. It provides CLI tools for circuit inspection, off-chain proof generation and verification, and on-chain proof verification — plus pre-built circuits for range proofs, private transfers, and private voting.",
+        "url": "https://github.com/kazai777/zerostyl",
+        "githubUrl": "https://github.com/kazai777/zerostyl",
+        "categories": [
+            "Cryptography",
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "zk-proofs",
+            "privacy",
+            "halo2",
+            "tools"
+        ],
+        "stylusUsage": "Implements on-chain halo2 zk-SNARK verifiers as Stylus Rust contracts, with CLI tooling for circuit debugging and off-chain proof generation targeting the Stylus VM.",
+        "highlights": [
+            "halo2 zk-SNARK proof generation and verification",
+            "CLI debugger with circuit inspection and constraint diagnostics",
+            "Pre-built circuits: range proofs, private transfers, private voting",
+            "On-chain Stylus verifier (no-std compatible)"
+        ]
+    },
+    {
+        "id": "stylus-profiler",
+        "name": "stylus-profiler",
+        "tagline": "WASM binary analyzer for Arbitrum Stylus contracts",
+        "description": "stylus-profiler is a WASM binary analyzer for Arbitrum Stylus contracts. It provides function-level size breakdowns, per-function gas cost estimates, optimization suggestions, and build-to-build comparison — helping developers stay within Stylus's 128KB uncompressed / 24KB compressed size limits.",
+        "url": "https://github.com/kcolbchain/stylus-profiler",
+        "githubUrl": "https://github.com/kcolbchain/stylus-profiler",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "tools",
+            "profiling",
+            "wasm",
+            "optimization"
+        ],
+        "stylusUsage": "Analyzes compiled Stylus WASM binaries to identify size bottlenecks, estimate per-function gas costs, and suggest optimizations for meeting Stylus deployment limits.",
+        "highlights": [
+            "Function-level size breakdown and gas estimation",
+            "Checks against 128KB uncompressed / 24KB compressed Stylus limits",
+            "Optimization suggestions: strip debug sections, inlining, unused imports",
+            "Build comparison to catch size regressions between versions"
+        ]
+    },
+    {
+        "id": "diu-contracts",
+        "name": "DIU OS",
+        "tagline": "Decentralized Scientific Operating System for quantum physics education on Stylus",
+        "description": "DIU OS is a decentralized Scientific Operating System for interactive quantum physics education, AI-assisted research, and Web3 integration. Its core smart contracts are written in Rust with the Stylus SDK, covering user identity (ORCID linking), reputation/XP tracking, soulbound NFT achievements, an ERC-20 platform token, and simulation progress tracking.",
+        "url": "https://github.com/diu-os/diu-contracts",
+        "githubUrl": "https://github.com/diu-os/diu-contracts",
+        "categories": [
+            "Gaming & NFTs",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "education",
+            "science",
+            "nft",
+            "erc20",
+            "identity"
+        ],
+        "stylusUsage": "Five independent Stylus Rust contracts compiled to WASM via Cargo feature flags: user registry, reputation system, soulbound ERC-721 achievements, ERC-20 token, and simulation progress tracker — deployed on Arbitrum Sepolia.",
+        "highlights": [
+            "Five modular Stylus contracts with cross-contract interactions",
+            "Soulbound ERC-721 NFT badges and certificates",
+            "XP tracking, levels, daily streaks, and leaderboard",
+            "Researcher identity with ORCID iD linking",
+            "Deployed on Arbitrum Sepolia testnet"
+        ]
+    },
+    {
+        "id": "arbix",
+        "name": "ARBix",
+        "tagline": "Impermanent Loss protection DeFi protocol built on Arbitrum Stylus",
+        "description": "ARBix is a production-ready Arbitrum Stylus smart contract that provides insurance coverage for impermanent loss (IL) experienced by liquidity providers in AMM pools. It features real-time IL calculation based on net reserves and oracle prices, automated claim processing with configurable policy parameters (threshold, upper cap, payout ratio), safe 256-bit arithmetic, and a WASM-optimised binary of only 8.9 KB compressed.",
+        "url": "https://github.com/deepesh-sr/ARBix",
+        "githubUrl": "https://github.com/deepesh-sr/ARBix",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "insurance",
+            "impermanent-loss",
+            "amm",
+            "liquidity"
+        ],
+        "stylusUsage": "The entire insurance contract is written in Rust with the Stylus SDK, compiled to WASM and deployed on Arbitrum. Uses alloy-primitives for U256 arithmetic and alloy-sol-types for Solidity ABI compatibility.",
+        "highlights": [
+            "Real-time IL calculation from on-chain reserves and oracle prices",
+            "Configurable policy: threshold, upper cap, and payout ratio",
+            "Safe U256 arithmetic with no overflow",
+            "WASM-optimised at only 8.9 KB compressed",
+            "Comprehensive test suite (11/11 tests passing)"
+        ]
+    },
+    {
+        "id": "stylus-debug-suite",
+        "name": "Stylus Debug Suite",
+        "tagline": "Local-first modular developer toolkit for debugging Arbitrum Stylus contracts",
+        "description": "Stylus Debug Suite is a comprehensive toolkit for Arbitrum Stylus smart contract development, debugging, and migration. It provides high-fidelity VM debugging with real wasmtime execution and DWARF source mapping, AST-based Solidity-to-Rust migration guidance, automated security trace analysis for reentrancy and CEI violations, and deep gas hotspot profiling with contextual optimization tips.",
+        "url": "https://github.com/ILE-Labs/stylus-debug-suite",
+        "githubUrl": "https://github.com/ILE-Labs/stylus-debug-suite",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "debugging",
+            "security",
+            "gas-profiling",
+            "migration",
+            "tools"
+        ],
+        "stylusUsage": "Executes Stylus WASM binaries in a local wasmtime VM for step-through debugging with DWARF source mapping, gas profiling by opcode and function, and automated security analysis of contract traces."
     }
 ]
