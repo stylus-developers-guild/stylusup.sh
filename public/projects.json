@@ -1110,7 +1110,7 @@
         "id": "arbix",
         "name": "ARBix",
         "tagline": "Impermanent Loss protection DeFi protocol built on Arbitrum Stylus",
-        "description": "ARBix is a production-ready Arbitrum Stylus smart contract that provides insurance coverage for impermanent loss (IL) experienced by liquidity providers in AMM pools. It features real-time IL calculation based on net reserves and oracle prices, automated claim processing with configurable policy parameters (threshold, upper cap, payout ratio), safe 256-bit arithmetic, and a WASM-optimised binary of only 8.9 KB compressed.",
+        "description": "ARBix is a Arbitrum Stylus smart contract that provides insurance coverage for impermanent loss (IL) experienced by liquidity providers in AMM pools. It features real-time IL calculation based on net reserves and oracle prices, automated claim processing with configurable policy parameters (threshold, upper cap, payout ratio), safe 256-bit arithmetic, and a WASM-optimised binary of only 8.9 KB compressed.",
         "url": "https://github.com/deepesh-sr/ARBix",
         "githubUrl": "https://github.com/deepesh-sr/ARBix",
         "categories": [
