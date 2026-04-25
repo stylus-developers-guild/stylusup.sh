@@ -1325,5 +1325,37 @@
             "safety"
         ],
         "stylusUsage": "Parses Stylus-compiled WASM binaries to extract structural signals (memory bounds, instruction patterns, import/export surfaces) and evaluates them against a rule catalog tuned for Stylus execution-boundary risks, producing deterministic JSON safety reports."
+    },
+    {
+        "id": "speedrun-stylus",
+        "name": "Speedrun Stylus",
+        "tagline": "Learn how to build on Arbitrum using Stylus through fun, interactive challenges",
+        "description": "Speedrun Stylus is an interactive learning platform that guides developers through building smart contracts on Arbitrum using Stylus. Inspired by SpeedRunEthereum, it provides 10+ structured challenges of increasing difficulty from a simple counter to ZK and AI Agents with integrated Stylus Nitro Devnode tooling, wallet-based progress tracking, and a community leaderboard.",
+        "url": "https://speedrunstylus.com",
+        "githubUrl": "https://github.com/abhi152003/speedrun-stylus",
+        "categories": [
+            "Education"
+        ],
+        "language": [
+            "Rust",
+            "TypeScript",
+            "Solidity"
+        ],
+        "fundingSource": "D.A.O Program",
+        "status": "live",
+        "tags": [
+            "education",
+            "challenges",
+            "leaderboard",
+            "community",
+            "scaffold-eth"
+        ],
+        "stylusUsage": "Each challenge requires participants to write, compile, and deploy a Stylus contract to a local Nitro devnode or Arbitrum public network teaching the full Stylus SDK workflow hands-on.",
+        "highlights": [
+            "10+ progressive challenges from beginner to advanced",
+            "Integrated Stylus Nitro Devnode for local contract deployment",
+            "Wallet-connected progress tracking and builder profiles",
+            "Community leaderboard"
+        ]
     }
 ]
