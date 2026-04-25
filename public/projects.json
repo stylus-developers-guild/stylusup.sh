@@ -1300,5 +1300,30 @@
             "9lives"
         ],
         "stylusUsage": "Core quadratic voting and token reward contracts are written in Rust and deployed via Stylus to Arbitrum, using deploy-stylus.sh for WASM compilation and on-chain deployment of the voting logic, token distribution, and lens contracts."
+    },
+    {
+        "id": "sebi",
+        "name": "SEBI",
+        "tagline": "Deterministic static analysis and preflight safety checks for Stylus WASM contracts",
+        "description": "SEBI (Stylus Execution Boundary Inspector) is a deterministic static analysis engine for Stylus-compiled WASM smart contracts. It inspects WebAssembly binaries before deployment to detect execution-boundary risks — unbounded memory growth, dynamic dispatch via call_indirect, loop constructs, and oversized artifacts — without executing the contract or relying on chain state. Reports are stable, reproducible JSON with CI-gating exit codes.",
+        "url": "https://github.com/Qeyphen/sebi",
+        "githubUrl": "https://github.com/Qeyphen/sebi",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "static-analysis",
+            "security",
+            "wasm",
+            "auditor",
+            "ci",
+            "safety"
+        ],
+        "stylusUsage": "Parses Stylus-compiled WASM binaries to extract structural signals (memory bounds, instruction patterns, import/export surfaces) and evaluates them against a rule catalog tuned for Stylus execution-boundary risks, producing deterministic JSON safety reports."
     }
 ]
