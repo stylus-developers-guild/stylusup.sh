@@ -50,6 +50,7 @@
         "tagline": "Full-featured Stylus IDE in your browser",
         "description": "Wizard IDE is a full-featured Stylus IDE in your browser. Edit, compile, and deploy Stylus contracts with one click — no local setup required.",
         "url": "https://thewizard.app/",
+        "githubUrl": "https://github.com/tolgayayci/wizard",
         "categories": [
             "Dev Tools"
         ],
@@ -1074,6 +1075,38 @@
         ]
     },
     {
+        "id": "stylus-hardware-anchor",
+        "name": "Stylus Hardware Anchor",
+        "tagline": "Bridge physical ESP32-S3 silicon identity into Arbitrum Stylus for Sybil-resistant DePIN",
+        "description": "Stylus Hardware Anchor (SHA) is a reusable hardware identity verification primitive for Arbitrum Stylus. It cryptographically binds immutable eFuse identifiers from ESP32-S3 microcontrollers to on-chain execution logic — enabling Sybil-resistant DePIN and verifiable hardware-bound execution without TEEs or expensive secure elements.",
+        "url": "https://github.com/orthonode/Stylus-Hardware-Anchor",
+        "githubUrl": "https://github.com/orthonode/Stylus-Hardware-Anchor",
+        "categories": [
+            "Infrastructure",
+            "Cryptography"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Stylus Sprint",
+        "status": "building",
+        "tags": [
+            "depin",
+            "hardware",
+            "identity",
+            "iot",
+            "sybil-resistance"
+        ],
+        "stylusUsage": "On-chain Stylus Rust/WASM contract verifies hardware identity digests, firmware authorization, and replay-protected receipts using Keccak-256 — achieving ~12.5k gas per receipt in batches of 50.",
+        "highlights": [
+            "1 physical chip = 1 on-chain identity from manufacturer-burned eFuse registers",
+            "Replay protection via monotonic counter enforcement",
+            "Firmware governance — only owner-approved firmware hashes accepted",
+            "Three-layer architecture: ESP32 firmware, Python middleware, Stylus contract",
+            "~12.5k gas per receipt verification in batch mode"
+        ]
+    },
+    {
         "id": "arbix",
         "name": "ARBix",
         "tagline": "Impermanent Loss protection DeFi protocol built on Arbitrum Stylus",
@@ -1127,5 +1160,30 @@
             "tools"
         ],
         "stylusUsage": "Executes Stylus WASM binaries in a local wasmtime VM for step-through debugging with DWARF source mapping, gas profiling by opcode and function, and automated security analysis of contract traces."
+    },
+    {
+        "id": "stylus-workshop-gol",
+        "name": "Stylus Workshop: Game of Life",
+        "tagline": "Hands-on workshop comparing Rust Stylus and Solidity smart contracts via Game of Life",
+        "description": "A practical workshop by the Arbitrum Foundation that teaches developers how to build, deploy, and interact with smart contracts on Arbitrum using both Rust (via Stylus) and Solidity. Participants implement Conway's Game of Life as a smart contract in both languages, deploy to a local Nitro devnode, and connect them to a React frontend — learning Stylus development through direct comparison with Solidity.",
+        "url": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
+        "githubUrl": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
+        "categories": [
+            "Education"
+        ],
+        "language": [
+            "Rust",
+            "Solidity"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "workshop",
+            "tutorials",
+            "learning",
+            "game-of-life",
+            "examples"
+        ],
+        "stylusUsage": "Implements Conway's Game of Life as a Stylus smart contract in Rust, deployed alongside a Solidity equivalent on a local Arbitrum Nitro devnode, demonstrating the full Stylus SDK workflow from contract authoring to on-chain verification."
     }
 ]
