@@ -1162,31 +1162,6 @@
         "stylusUsage": "Executes Stylus WASM binaries in a local wasmtime VM for step-through debugging with DWARF source mapping, gas profiling by opcode and function, and automated security analysis of contract traces."
     },
     {
-        "id": "stylus-workshop-gol",
-        "name": "Stylus Workshop: Game of Life",
-        "tagline": "Hands-on workshop comparing Rust Stylus and Solidity smart contracts via Game of Life",
-        "description": "A practical workshop by the Arbitrum Foundation that teaches developers how to build, deploy, and interact with smart contracts on Arbitrum using both Rust (via Stylus) and Solidity. Participants implement Conway's Game of Life as a smart contract in both languages, deploy to a local Nitro devnode, and connect them to a React frontend — learning Stylus development through direct comparison with Solidity.",
-        "url": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
-        "githubUrl": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
-        "categories": [
-            "Education"
-        ],
-        "language": [
-            "Rust",
-            "Solidity"
-        ],
-        "fundingSource": "None",
-        "status": "live",
-        "tags": [
-            "workshop",
-            "tutorials",
-            "learning",
-            "game-of-life",
-            "examples"
-        ],
-        "stylusUsage": "Implements Conway's Game of Life as a Stylus smart contract in Rust, deployed alongside a Solidity equivalent on a local Arbitrum Nitro devnode, demonstrating the full Stylus SDK workflow from contract authoring to on-chain verification."
-    },
-    {
         "id": "arcana",
         "name": "Arcana",
         "tagline": "Real-time and historical analytics dashboard for Stylus dApps on Arbitrum",
@@ -1297,5 +1272,33 @@
             "valuation"
         ],
         "stylusUsage": "Uses a Rust-based StylusValuator contract to run complex non-linear depreciation models and risk-adjusted asset valuations in WASM, achieving ~99.9% lower gas costs than equivalent Solidity math for on-chain real-world asset pricing."
+    },
+    {
+        "id": "shahmeers-game",
+        "name": "Shahmeer's Game",
+        "tagline": "Stylus-powered quadratic voting dApp for product prediction markets",
+        "description": "Shahmeer's Game is a quadratic voting game for the Fluidity Money and Superposition community. Members suggest and vote on product changes to 9lives on a weekly basis, with a lifecycle spanning ideation, voting, winner selection, goal accomplishment, and draw-down phases. Correct voters and ideators earn STG/SGT token rewards.",
+        "url": "https://github.com/fluidity-money/shahmeersgame.com",
+        "githubUrl": "https://github.com/fluidity-money/shahmeersgame.com",
+        "categories": [
+            "Gaming & NFTs",
+            "DeFi"
+        ],
+        "language": [
+            "Rust",
+            "TypeScript",
+            "Solidity",
+            "Go"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "quadratic-voting",
+            "prediction-market",
+            "governance",
+            "community",
+            "9lives"
+        ],
+        "stylusUsage": "Core quadratic voting and token reward contracts are written in Rust and deployed via Stylus to Arbitrum, using deploy-stylus.sh for WASM compilation and on-chain deployment of the voting logic, token distribution, and lens contracts."
     }
 ]
