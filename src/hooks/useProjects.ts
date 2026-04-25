@@ -7,6 +7,15 @@ interface UseProjectsResult {
     error: string | null;
 }
 
+/** Fisher–Yates shuffle (in-place, returns the same array). */
+function shuffle<T>(arr: T[]): T[] {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
 let cachedProjects: EcosystemProject[] | null = null;
 
 export function useProjects(): UseProjectsResult {
@@ -31,8 +40,10 @@ export function useProjects(): UseProjectsResult {
             })
             .then((data) => {
                 if (!cancelled) {
-                    cachedProjects = data;
-                    setProjects(data);
+                    // Randomise project order on each fresh page load
+                    const shuffled = shuffle([...data]);
+                    cachedProjects = shuffled;
+                    setProjects(shuffled);
                     setLoading(false);
                 }
             })
