@@ -1357,5 +1357,29 @@
             "Wallet-connected progress tracking and builder profiles",
             "Community leaderboard"
         ]
+    },
+    {
+        "id": "stylus-chainlink-price-feeds",
+        "name": "Stylus Chainlink Price Feeds",
+        "tagline": "Helper library to read Chainlink price feeds from Stylus contracts",
+        "description": "Stylus Chainlink Price Feeds is a Rust library of helper functions for reading the price of various assets in Chainlink's price feeds portfolio. Written for the Stylus VM, it uses the Stylus SDK by default and supports opting into the lower-level bobcat-sdk. It lets Rust smart contracts call Chainlink aggregators directly to get up-to-date on-chain prices.",
+        "url": "https://github.com/fluidity-money/stylus-chainlink-price-feeds",
+        "githubUrl": "https://github.com/fluidity-money/stylus-chainlink-price-feeds",
+        "categories": [
+            "Bridges & Oracles",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "oracle",
+            "chainlink",
+            "price-feeds",
+            "defi"
+        ],
+        "stylusUsage": "Provides helper functions that call Chainlink price feed aggregators directly from Stylus Rust contracts, with the Stylus SDK set as the default and bobcat-sdk available as an opt-in for smaller, gas-efficient binaries."
     }
 ]
