@@ -1381,5 +1381,36 @@
             "defi"
         ],
         "stylusUsage": "Provides helper functions that call Chainlink price feed aggregators directly from Stylus Rust contracts, with the Stylus SDK set as the default and bobcat-sdk available as an opt-in for smaller, gas-efficient binaries."
+    },
+    {
+        "id": "stylus-robinhood-stock-tokens",
+        "name": "Stylus Robinhood Stock Tokens",
+        "tagline": "Rust helpers for Robinhood Stock Token metadata, prices, and status",
+        "description": "Stylus Robinhood Stock Tokens is a Rust library for looking up Robinhood Stock Token metadata and reading token state from Stylus contracts. It provides hardcoded metadata for supported stock tokens plus helpers to query oracle prices and pause status, using the Stylus SDK by default with optional bobcat-sdk support.",
+        "url": "https://github.com/fluidity-money/stylus-robinhood-stock-tokens",
+        "githubUrl": "https://github.com/fluidity-money/stylus-robinhood-stock-tokens",
+        "categories": [
+            "DeFi",
+            "Bridges & Oracles",
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "live",
+        "tags": [
+            "robinhood",
+            "stock-tokens",
+            "oracle",
+            "price-feeds",
+            "token-metadata"
+        ],
+        "highlights": [
+            "Hardcoded metadata for supported Robinhood Stock Tokens",
+            "Helpers for reading oracle prices and token pause status",
+            "Stylus SDK and bobcat-sdk support"
+        ],
+        "stylusUsage": "Provides Rust helpers for Stylus contracts to access Robinhood Stock Token metadata, oracle prices, and pause status, with Stylus SDK support by default and bobcat-sdk available as an opt-in."
     }
 ]
