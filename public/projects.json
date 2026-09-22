@@ -205,7 +205,7 @@
             "Rust"
         ],
         "fundingSource": "D.A.O Program",
-        "status": "live",
+        "status": "shutdown",
         "tags": [
             "defi",
             "privacy",
@@ -1291,7 +1291,7 @@
             "Go"
         ],
         "fundingSource": "None",
-        "status": "building",
+        "status": "shutdown",
         "tags": [
             "quadratic-voting",
             "prediction-market",
@@ -1412,5 +1412,209 @@
             "Stylus SDK and bobcat-sdk support"
         ],
         "stylusUsage": "Provides Rust helpers for Stylus contracts to access Robinhood Stock Token metadata, oracle prices, and pause status, with Stylus SDK support by default and bobcat-sdk available as an opt-in."
+    },
+    {
+        "id": "rentalride",
+        "name": "RentalRide",
+        "tagline": "Verifiable car-rental search ranked on-chain in Stylus Rust",
+        "description": "RentalRide is a decentralized car-rental aggregator where a Stylus smart contract written in Rust computes the best car for a user's weighted criteria on-chain, so the ranking formula is public, reproducible, and tamper-proof. It pairs the ranking contracts with a Spring Boot API and a lightweight frontend.",
+        "url": "https://github.com/MAFSC/RentalRide",
+        "githubUrl": "https://github.com/MAFSC/RentalRide",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "car-rental",
+            "aggregator",
+            "verifiable",
+            "marketplace",
+            "ranking"
+        ],
+        "highlights": [
+            "On-chain ranking of rental cars from weighted user criteria",
+            "Verifiable and tamper-proof selection formula",
+            "Rust Stylus contracts paired with a Spring Boot API"
+        ],
+        "stylusUsage": "Stylus Rust contracts (car_ranker) compute the best car for a set of weighted criteria on-chain so the ranking is public and auditable."
+    },
+    {
+        "id": "sigma",
+        "name": "Sigma",
+        "tagline": "Portfolio VaR collateral engine for tokenized equity",
+        "description": "Sigma is an on-chain risk engine for tokenized equity collateral on Robinhood Chain. It computes parametric portfolio VaR in Stylus (Rust/WASM) and applies it inside a Solidity vault to govern dynamic collateral limits. Hackathon entry for the Arbitrum Open House London Online Buildathon.",
+        "url": "https://github.com/dmetagame/sigma",
+        "githubUrl": "https://github.com/dmetagame/sigma",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "risk",
+            "var",
+            "collateral",
+            "robinhood",
+            "tokenized-equity"
+        ],
+        "highlights": [
+            "Parametric portfolio VaR computed in Stylus (Rust/WASM)",
+            "Dynamic LTV inside a Solidity vault",
+            "AI risk agent with policy-bound on-chain actions"
+        ],
+        "stylusUsage": "Sigma Core exposes compute_portfolio_var() with fixed-point math, gas-optimized via WASM."
+    },
+    {
+        "id": "veto",
+        "name": "Veto",
+        "tagline": "AI-agent trade guardrail: a Stylus RiskEngine blocks bad trades on-chain",
+        "description": "Veto sits between an AI trading agent and its funds. A Stylus RiskEngine computes transaction risk (such as variance) and reverts dangerous trades on-chain before they execute, keeping a human in control. Built for the Arbitrum London buildathon.",
+        "url": "https://github.com/edycutjong/veto",
+        "githubUrl": "https://github.com/edycutjong/veto",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "risk",
+            "guardrail",
+            "agents",
+            "defi"
+        ],
+        "highlights": [
+            "Stylus RiskEngine computes trade risk and reverts dangerous trades",
+            "AI agent can submit but Veto decides on-chain",
+            "Live demo and pitch deck available"
+        ],
+        "stylusUsage": "The Stylus RiskEngine contract validates trades in WASM and reverts those that breach risk limits before execution."
+    },
+    {
+        "id": "afterhours",
+        "name": "AfterHours",
+        "tagline": "Weekend gap protection for tokenized stocks, priced on-chain",
+        "description": "AfterHours provides fully collateralized downside protection for tokenized stocks across the weekend gap, when 24/5 equity feeds go quiet. A Rust/Stylus pricing engine computes premiums directly from on-chain feed history, and positions settle on the first print after the market reopens. Built on Robinhood Chain (Arbitrum) for the Singapore buildathon.",
+        "url": "https://github.com/bchuazw/afterhours",
+        "githubUrl": "https://github.com/bchuazw/afterhours",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "options",
+            "gap-risk",
+            "tokenized-equity",
+            "robinhood",
+            "pricing"
+        ],
+        "highlights": [
+            "Fully collateralized cash-settled downside protection",
+            "Premium priced on-chain from live feed history in Rust/Stylus",
+            "Settles on the first feed print after market reopen"
+        ],
+        "stylusUsage": "The afterhours-pricer Stylus contract derives annualized realized volatility from Chainlink round history and prices the gap protection premium on-chain."
+    },
+    {
+        "id": "aura-protocol",
+        "name": "Aura Protocol",
+        "tagline": "AI wealth layer with a Stylus-native order book and dual-agent safety",
+        "description": "Aura is an AI-driven trading layer for Robinhood Chain featuring an on-chain audit trail, a Stylus guardrail, a Stylus escrow, and a Stylus-native order book, plus a gasless account-abstraction flow guarded by a multi-agent committee. Built for the Arbitrum Open House London Buildathon.",
+        "url": "https://github.com/maxence81/Aura-Protocol",
+        "githubUrl": "https://github.com/maxence81/Aura-Protocol",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "orderbook",
+            "ai",
+            "account-abstraction",
+            "robinhood",
+            "wealth"
+        ],
+        "highlights": [
+            "Stylus-native order book and escrow",
+            "Dual-agent committee runs risk audits before signing",
+            "On-chain audit trail via AuraAuditTrail"
+        ],
+        "stylusUsage": "Three first-class Stylus contracts power the protocol: stylus-orderbook, stylus-guardrail, and stylus-escrow."
+    },
+    {
+        "id": "vigiles",
+        "name": "Vigiles",
+        "tagline": "A Stylus vault that cages AI trading agents with hard on-chain limits",
+        "description": "Vigiles is a Stylus (Rust-to-WASM) vault on Robinhood Chain that gives AI trading agents revocable session keys. The contract itself, not a prompt or policy file, enforces per-trade caps, token and venue whitelists, trading windows, velocity limits, and position caps. Built for the Arbitrum Open House Singapore Buildathon.",
+        "url": "https://github.com/aryarakshit/Vigiles",
+        "githubUrl": "https://github.com/aryarakshit/Vigiles",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "vault",
+            "session-keys",
+            "risk",
+            "agents",
+            "robinhood"
+        ],
+        "highlights": [
+            "Revocable session keys for AI trading agents",
+            "Six layered guardrails enforced inside the contract",
+            "Named for the ancient Roman night watch"
+        ],
+        "stylusUsage": "The Stylus vault's executeTrade enforces layered on-chain guardrails (caps, whitelists, windows, velocity, position limits) directly in WASM."
+    },
+    {
+        "id": "undertow",
+        "name": "Undertow",
+        "tagline": "SPAN portfolio risk engine computed natively in Rust Stylus",
+        "description": "Undertow is an on-chain portfolio risk engine using CME's SPAN methodology, computed natively in Rust on Arbitrum Stylus. It stress-tests a wallet's holdings across the standard 16-scenario grid and powers a credit vault that lends against a limit the engine computes live, rather than a fixed loan-to-value ratio. Deployed on Robinhood Chain testnet.",
+        "url": "https://github.com/GokhanCey/undertow",
+        "githubUrl": "https://github.com/GokhanCey/undertow",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "risk",
+            "span",
+            "portfolio",
+            "lending",
+            "robinhood"
+        ],
+        "highlights": [
+            "CME SPAN margin methodology computed on-chain",
+            "16-scenario stress grid over real holdings and prices",
+            "Credit vault lends against a live-computed engine limit"
+        ],
+        "stylusUsage": "The SPAN margin engine is compiled to WASM via Stylus and computes a wallet's risk across the clearinghouse scenario grid on-chain."
     }
 ]
