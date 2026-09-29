@@ -127,12 +127,9 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-600">
-            © 2025 Stylusup. Community-owned and maintained.
+            © 2025 Stylus Developers Guild. Community-owned and maintained.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-gray-600 hover:text-[#5F4DED] transition-colors">Privacy</a>
-            <a href="#" className="text-gray-600 hover:text-[#5F4DED] transition-colors">Terms</a>
-            <a href="#" className="text-gray-600 hover:text-[#5F4DED] transition-colors">License</a>
           </div>
         </div>
       </div>
