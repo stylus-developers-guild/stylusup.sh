@@ -60,7 +60,7 @@ export function HeroSection({ onSearchClick }: HeroSectionProps) {
             </h1>
 
             <p className="text-xl text-white/80 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Build with Rust, AssemblyScript, Move, and Zig, on any Arbitrum chain.
+              Build with Rust and C, on any Arbitrum chain.
             </p>
 
             {/* Fake Search Bar - Triggers Search Modal */}
