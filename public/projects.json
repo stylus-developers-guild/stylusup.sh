@@ -1616,5 +1616,37 @@
             "Credit vault lends against a live-computed engine limit"
         ],
         "stylusUsage": "The SPAN margin engine is compiled to WASM via Stylus and computes a wallet's risk across the clearinghouse scenario grid on-chain."
+    },
+    {
+        "id": "kani-stylus",
+        "name": "kani-stylus",
+        "tagline": "Bounded model checking for Arbitrum Stylus contracts with Kani",
+        "description": "kani-stylus brings formal verification to Rust smart contracts on Arbitrum Stylus. Its symbolic ArbOS host lets Kani prove contract properties across all inputs within a bound and produce concrete counterexamples when a property fails, while keeping normal test, build, and cargo stylus workflows unchanged.",
+        "url": "https://github.com/vacuumlabs/kani-stylus",
+        "docsUrl": "https://github.com/vacuumlabs/kani-stylus/blob/main/docs/first-proof.md",
+        "githubUrl": "https://github.com/vacuumlabs/kani-stylus",
+        "logo": "/images/projects/kani-stylus.svg",
+        "categories": [
+            "Dev Tools"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "formal-verification",
+            "model-checking",
+            "kani",
+            "security",
+            "testing"
+        ],
+        "highlights": [
+            "Symbolic ArbOS host for Kani proof harnesses",
+            "Produces concrete counterexamples for failed properties",
+            "Includes working counter, vault, and vesting examples",
+            "Leaves normal cargo test, build, and Stylus workflows unchanged"
+        ],
+        "stylusUsage": "Integrates with stylus-sdk's host abstraction so Kani can symbolically execute and verify Rust Stylus contract logic, storage behavior, access control, and arithmetic properties."
     }
 ]

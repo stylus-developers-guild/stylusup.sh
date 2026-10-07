@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 47 429 429" role="img" aria-label="kani-stylus">
+  <!-- A crab (kani) whose body is a pen nib (Stylus), marked verified. -->
+  <defs>
+    <mask id="ks-cut">
+      <rect width="512" height="512" fill="#fff"/>
+      <path d="M256,472 L256,404" stroke="#000" stroke-width="11"/>
+      <circle cx="256" cy="398" r="14"/>
+      <path d="M204,282 L242,320 L314,240" fill="none" stroke="#000" stroke-width="30"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </mask>
+    <g id="ks-limbs">
+      <g fill="none" stroke="#C9432A" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M178,254 L108,242 L86,278 M178,304 L104,308 L90,348 M200,354 L130,372 L122,410"
+              stroke-width="22"/>
+        <path d="M186,206 L118,136" stroke-width="30"/>
+        <path d="M234,168 L224,120" stroke-width="12"/>
+      </g>
+      <path d="M0,6 L-19,-40 A44,44 0 1,0 19,-40 Z" transform="translate(108,112) rotate(22)"
+            fill="#C9432A" stroke="#C9432A" stroke-width="10" stroke-linejoin="round"/>
+      <circle cx="224" cy="112" r="16" fill="#fff" stroke="#C9432A" stroke-width="7"/>
+      <circle cx="225" cy="110" r="7" fill="#1B2536"/>
+    </g>
+  </defs>
+  <use href="#ks-limbs"/>
+  <use href="#ks-limbs" transform="matrix(-1 0 0 1 512 0)"/>
+  <path d="M256,470 C238,428 152,352 144,266 C138,198 190,152 256,152 C322,152 374,198 368,266 C360,352 274,428 256,470 Z" fill="#F0603A" mask="url(#ks-cut)"/>
+</svg>
