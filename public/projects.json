@@ -49,7 +49,7 @@
         "name": "The Wizard",
         "tagline": "Full-featured Stylus IDE in your browser",
         "description": "Wizard IDE is a full-featured Stylus IDE in your browser. Edit, compile, and deploy Stylus contracts with one click — no local setup required.",
-        "url": "https://thewizard.app/",
+        "url": "https://github.com/tolgayayci/wizard",
         "githubUrl": "https://github.com/tolgayayci/wizard",
         "categories": [
             "Dev Tools"
@@ -59,7 +59,7 @@
             "C/C++"
         ],
         "fundingSource": "Stylus Sprint",
-        "status": "live",
+        "status": "shutdown",
         "tags": [
             "wizard",
             "ide",

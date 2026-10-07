@@ -108,11 +108,6 @@ export const resourceCategories = {
       title: 'Editors & IDEs',
       resources: [
         {
-          name: 'Wizard IDE',
-          url: 'https://thewizard.app',
-          description: 'Full-featured browser IDE for Stylus'
-        },
-        {
           name: 'Remix IDE Stylus Plugin',
           url: 'https://github.com/dsrvlabs/arbitrum-stylus',
           description: 'Compile & deploy in Remix — zero setup'
