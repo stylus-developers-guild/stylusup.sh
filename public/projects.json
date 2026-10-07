@@ -1648,5 +1648,1405 @@
             "Leaves normal cargo test, build, and Stylus workflows unchanged"
         ],
         "stylusUsage": "Integrates with stylus-sdk's host abstraction so Kani can symbolically execute and verify Rust Stylus contract logic, storage behavior, access control, and arithmetic properties."
+    },
+    {
+        "id": "adjudex",
+        "name": "Adjudex",
+        "tagline": "AI-judged parimutuel prediction markets with a Stylus AI verdict verifier",
+        "description": "Adjudex — AI-judged prediction markets on Arbitrum. Adjudex is a non-custodial, peer-pool prediction market: you bet YES/NO with USDC against other users (parimutuel — no house), and an AI judge resolves the outcome.",
+        "url": "https://github.com/kravadk/Adjudex",
+        "githubUrl": "https://github.com/kravadk/Adjudex",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "AIJudgeVerifier written in Rust on Stylus checks AI judge verdicts on-chain."
+        ],
+        "stylusUsage": "AIJudgeVerifier written in Rust on Stylus checks AI judge verdicts on-chain."
+    },
+    {
+        "id": "agentrelay",
+        "name": "AgentRelay",
+        "tagline": "Task-delegation marketplace where AI agents hire other agents",
+        "description": "AgentRelay is a task delegation marketplace for AI agents built on Arbitrum. As AI agents become more autonomous, they increasingly need capabilities they don't have themselves, like calling a rate-limited or restricted API. AgentRelay lets one agent post a bounty for that work, held in USDC escrow, while another agent with the right access claims and completes it.",
+        "url": "https://github.com/solocreativeone/agentrelay",
+        "githubUrl": "https://github.com/solocreativeone/agentrelay",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus lets agent reputation and escrow verify a signed ECDSA signature for the compute-heavy verification step."
+        ],
+        "stylusUsage": "Stylus lets agent reputation and escrow verify a signed ECDSA signature for the compute-heavy verification step."
+    },
+    {
+        "id": "arbiguard",
+        "name": "Arbiguard",
+        "tagline": "RWA security shield scoring transaction risk on-chain in Stylus",
+        "description": "The problem Real-world assets are moving on-chain. Robinhood is tokenizing equities, institutions are deploying capital onto Arbitrum, and regulated issuers are putting names and balance sheets behind tokenized products.",
+        "url": "https://github.com/aliveevie/arbiguard",
+        "githubUrl": "https://github.com/aliveevie/arbiguard",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Transaction risk is scored on-chain in a Stylus (Rust) risk engine, verifiable rather than an off-chain heuristic."
+        ],
+        "stylusUsage": "Transaction risk is scored on-chain in a Stylus (Rust) risk engine, verifiable rather than an off-chain heuristic."
+    },
+    {
+        "id": "blockops",
+        "name": "BlockOPs",
+        "tagline": "No-code platform to build and deploy blockchain agents on Arbitrum Sepolia",
+        "description": "BlockOps Build blockchain agents without writing a single line of code. BlockOps is a no-code, AI-powered platform for building, deploying, and interacting with blockchain agents on Arbitrum Sepolia. It combines a visual drag-and-drop workflow builder with Gemini 2.0 Flash AI — so anyone can automate blockchain tasks through natural language or a visual canvas.",
+        "url": "https://github.com/Lviffy/blockops",
+        "githubUrl": "https://github.com/Lviffy/blockops",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Smart contracts written in Arbitrum Stylus (Rust → WASM) plus Solidity."
+        ],
+        "stylusUsage": "Smart contracts written in Arbitrum Stylus (Rust → WASM) plus Solidity."
+    },
+    {
+        "id": "bondline",
+        "name": "Bondline",
+        "tagline": "AI-trader bonding protocol: when the market jumps past a limit, the bond pays",
+        "description": "Bondline: when the market jumps past your AI trader's limit, the bond pays. It already paid. In our demo market, a covered account's stock price jumped down over a weekend. The account fell from 92 to 75 USDG, a 25% loss, while the user's limit was 10%. A few seconds later the agent was stopped and the underwriter's bond paid the user 15 USDG. No claim form.",
+        "url": "https://github.com/Naitik-Kumarr/bondline",
+        "githubUrl": "https://github.com/Naitik-Kumarr/bondline",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Pricing model written in Rust for Arbitrum Stylus, matching the main model on 16,071 test cases."
+        ],
+        "stylusUsage": "Pricing model written in Rust for Arbitrum Stylus, matching the main model on 16,071 test cases."
+    },
+    {
+        "id": "cargoflow",
+        "name": "CargoFlow",
+        "tagline": "Logistics/freight finance with a Rust Stylus risk engine",
+        "description": "Evidence-gated working capital for physical trade finance A financier's Paxos USDG reaches the exporter milestone by milestone, only when the cargo's own signed sensor evidence clears an on-chain policy .",
+        "url": "https://github.com/LSUDOKO/CargoFlow",
+        "githubUrl": "https://github.com/LSUDOKO/CargoFlow",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Rust Stylus engine powers the risk-scoring contracts",
+            "live on Robinhood Chain testnet."
+        ],
+        "stylusUsage": "Rust Stylus engine powers the risk-scoring contracts; live on Robinhood Chain testnet."
+    },
+    {
+        "id": "causarix",
+        "name": "Causarix",
+        "tagline": "Fiduciary risk infrastructure for DAO treasuries and delegates",
+        "description": "The Problem Arbitrum DAO delegates and DeFi treasuries govern billions of dollars in ecosystem assets. Today, multi-million dollar Arbitrum Improvement Proposals (AIPs)—such as AIP-1 or the 225M ARB Gaming Catalyst Program—are evaluated based on forum debates and sentiment, with zero quantitative stress-testing.",
+        "url": "https://github.com/novaecosystems-cloud/Synaps",
+        "githubUrl": "https://github.com/novaecosystems-cloud/Synaps",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "dao",
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Arbitrum Stylus (Rust/WASM) verifier checks multi-leaf Merkle inclusion proofs and variance stats on-chain."
+        ],
+        "stylusUsage": "Arbitrum Stylus (Rust/WASM) verifier checks multi-leaf Merkle inclusion proofs and variance stats on-chain."
+    },
+    {
+        "id": "chiron",
+        "name": "Chiron",
+        "tagline": "Receipt-verification rails for AI agents on Robinhood Chain",
+        "description": "Why Chiron Exists ?? Robinhood announced Robinhood Agents at HOOD Summit on September 29, 2026. The product gives users dedicated agentic accounts with configurable limits and trade approvals enabled by default. There is still an important trust question when users run multiple agents. Robinhood says it does not control, supervise, monitor, recommend, or audit agents .",
+        "url": "https://github.com/pranjalcodesinw3/chiron",
+        "githubUrl": "https://github.com/pranjalcodesinw3/chiron",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Receipt and assay verifier contracts written in Stylus."
+        ],
+        "stylusUsage": "Receipt and assay verifier contracts written in Stylus."
+    },
+    {
+        "id": "cortexrails-protocol",
+        "name": "CortexRails Protocol",
+        "tagline": "On-chain policy layer for tokenized-asset finance",
+        "description": "CortexRails Protocol is an onchain policy layer for tokenized-asset finance. Financial protocols and autonomous agents increasingly need to make decisions before executing actions such as borrowing, withdrawing, transferring, or increasing leverage.",
+        "url": "https://github.com/anjolagithub/cortexrails",
+        "githubUrl": "https://github.com/anjolagithub/cortexrails",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "ai",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Runs on Robinhood Chain testnet using Arbitrum Stylus/Rust plus Solidity contracts for policy-controlled interactions."
+        ],
+        "stylusUsage": "Runs on Robinhood Chain testnet using Arbitrum Stylus/Rust plus Solidity contracts for policy-controlled interactions."
+    },
+    {
+        "id": "covenant",
+        "name": "Covenant",
+        "tagline": "Non-custodial performance attestation layer for trading agents",
+        "description": "Covenant is a non-custodial performance attestation layer for autonomous trading agents, built in Rust on Arbitrum Stylus. The problem: AI trading agents market themselves with screenshots and self-reported PnL that cost nothing to fabricate. Copy-traders, prop firms, and allocators have no way to verify claims before committing capital.",
+        "url": "https://github.com/rennf93/covenant",
+        "githubUrl": "https://github.com/rennf93/covenant",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Built in Rust on Arbitrum Stylus to attest trading-strategy performance on-chain."
+        ],
+        "stylusUsage": "Built in Rust on Arbitrum Stylus to attest trading-strategy performance on-chain."
+    },
+    {
+        "id": "crashline",
+        "name": "CrashLine",
+        "tagline": "On-chain fair-value quotes for path-dependent stock-token payoffs",
+        "description": "The problem In 2008, AIG had sold crash insurance that it couldn't pay out, and the US government spent $182B to cover it. That insurance was priced in private, sold without the money behind it, and valued by the banks on the other side of the trade. What CrashLine does CrashLine is crash insurance that pays.",
+        "url": "https://github.com/johba37/crashline",
+        "githubUrl": "https://github.com/johba37/crashline",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Integer MLP distilled from a Monte Carlo teacher runs as a Stylus model inside the trade."
+        ],
+        "stylusUsage": "Integer MLP distilled from a Monte Carlo teacher runs as a Stylus model inside the trade."
+    },
+    {
+        "id": "create-stylus-latest",
+        "name": "create-stylus-latest",
+        "tagline": "Scaffold a Stylus Rust contract project in one command",
+        "description": "create-stylus-latest: one command to start an Arbitrum Stylus (Rust) smart contract project that deploys on the first try. THE PROBLEM Stylus makes real computation up to 31x cheaper than Solidity, but starting is hard: the official starter is a single counter, stylus-sdk and alloy versions drift every week, and the deploy path is full of traps you only find on a live network.",
+        "url": "https://github.com/ramadan904/npx-create-stylus-latest",
+        "githubUrl": "https://github.com/ramadan904/npx-create-stylus-latest",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Scaffolding CLI that generates Stylus Rust contract projects (counter, ERC-20, vault, etc.) from templates."
+        ],
+        "stylusUsage": "Scaffolding CLI that generates Stylus Rust contract projects (counter, ERC-20, vault, etc.) from templates."
+    },
+    {
+        "id": "crosssign",
+        "name": "Crosssign",
+        "tagline": "Cross-chain identity verification: prove any wallet via one signature",
+        "description": "CrossSign — ownership proof that doesn't need a bridge. CrossSign is a cross-wallet verification layer. It lets an application prove that a user controls a wallet by checking a live cryptographic signature on-chain, so the result can be read by anyone instead of being asserted by a private server. How it works.",
+        "url": "https://github.com/timmyspurs12/crosssign",
+        "githubUrl": "https://github.com/timmyspurs12/crosssign",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus contracts implement cross-chain signature verification and identity registry."
+        ],
+        "stylusUsage": "Stylus contracts implement cross-chain signature verification and identity registry."
+    },
+    {
+        "id": "giggy",
+        "name": "Giggy",
+        "tagline": "Trustless marketplace where humans hire AI agents for real work",
+        "description": "A trustless global marketplace where humans hire AI agents to do real work. Fiverr of the agentic + human future! Giggy connects marketplace logic with machine payable work and turns AI agents into economically rational workers while disrupting a $1.3T industry.",
+        "url": "https://github.com/nadiia-balaian/giggy-arbitrum/",
+        "githubUrl": "https://github.com/nadiia-balaian/giggy-arbitrum",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Bounty escrow and auto-verification Stylus contract verifies delivered work."
+        ],
+        "stylusUsage": "Bounty escrow and auto-verification Stylus contract verifies delivered work."
+    },
+    {
+        "id": "helix-treasury",
+        "name": "helix-treasury",
+        "tagline": "Programmable Treasury OS: policy-driven treasury management for DAOs",
+        "description": "Helix is a programmable treasury operating system for DAOs and onchain businesses. Treasury owners define financial policies as code (e.g. \"keep 18 months runway in stablecoins, allocate excess 50% to tokenized SPY, 30% to Aave USDC supply\"). An off-chain Execution Agent monitors markets and proposes actions — but never executes.",
+        "url": "https://github.com/0xCaptain888/helix-treasury",
+        "githubUrl": "https://github.com/0xCaptain888/helix-treasury",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus/Rust policy-engine validates every proposal on-chain before a multisig can act."
+        ],
+        "stylusUsage": "Stylus/Rust policy-engine validates every proposal on-chain before a multisig can act."
+    },
+    {
+        "id": "hswarm",
+        "name": "HSwarm",
+        "tagline": "Autonomous on-chain hedge fund run by AI agent swarms",
+        "description": "HSwarm — The Autonomous On-Chain Hedge Fund Powered by AI Agent Swarms HSwarm is a decentralized protocol on Arbitrum that transforms a crowd of unknown AI agents into a single, trustworthy investment engine.",
+        "url": "https://github.com/dnimdeeps/HSwarm",
+        "githubUrl": "https://github.com/dnimdeeps/HSwarm",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Adds a second la-la land layer via Stylus contracts for agent-governed fund logic."
+        ],
+        "stylusUsage": "Adds a second la-la land layer via Stylus contracts for agent-governed fund logic."
+    },
+    {
+        "id": "koma",
+        "name": "Koma",
+        "tagline": "AI comic studio and series launchpad with Stylus curve math",
+        "description": "KOMA is an AI comic studio and series launchpad on Arbitrum. You describe a story, and KOMA writes, draws and letters it in about a minute. It costs 10¢ a page, paid with one x402 USDC signature (no gas), and the issue is minted to you as an ERC-721. Launching a series costs $1.",
+        "url": "https://github.com/nickthelegend/koma",
+        "githubUrl": "https://github.com/nickthelegend/koma",
+        "categories": [
+            "Infrastructure",
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "nft",
+            "socialfi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Curve math and royalty router are Rust contracts written with Stylus."
+        ],
+        "stylusUsage": "Curve math and royalty router are Rust contracts written with Stylus."
+    },
+    {
+        "id": "lemma",
+        "name": "Lemma",
+        "tagline": "MCP server letting agents save verified AI-agent integration work",
+        "description": "Lemma Save AI agent usage with the Lemma MCP server that turns proven integration work into something agents can safely reuse. Coding agents repeatedly spend tokens researching, rebuilding, and debugging integrations that have already been solved.",
+        "url": "https://github.com/4waan/Lemma",
+        "githubUrl": "https://github.com/4waan/Lemma",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Deployed a Stylus compatibility engine to record compatible (reused) agent work on-chain."
+        ],
+        "stylusUsage": "Deployed a Stylus compatibility engine to record compatible (reused) agent work on-chain."
+    },
+    {
+        "id": "lion-yield-agent",
+        "name": "Lion Yield Agent",
+        "tagline": "AI-driven decentralized yield optimization platform",
+        "description": "Live Demo: yield-agent-web.vercel.app Chain: Arbitrum Sepolia LionHeart is a Chat-First DeFi Intelligence Platform built on Arbitrum . It pairs every user with OpenClaw — an AI agent that doesn't just answer questions, but proves its competence on-chain.",
+        "url": "https://github.com/phamdat721101/yield-agent",
+        "githubUrl": "https://github.com/phamdat721101/yield-agent",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Autonomous AI agent framework with Stylus contracts for yield strategies."
+        ],
+        "stylusUsage": "Autonomous AI agent framework with Stylus contracts for yield strategies."
+    },
+    {
+        "id": "lp-guardian",
+        "name": "LP Guardian",
+        "tagline": "Verifiable, AI-assisted risk system for concentrated LP positions",
+        "description": "LP Guardian: Verifiable Portfolio-Aware Autonomous LP Agent LP Guardian is the first autonomous multi-agent AI system designed to manage fragmented liquidity provider (LP) positions as a unified portfolio . Built on Arbitrum Orbit (Robinhood Chain) and powered by Arbitrum Stylus (Rust) , LP Guardian brings verifiable intelligence (TEE) to DeFi liquidity management.",
+        "url": "https://github.com/raditazar/lp-guardian",
+        "githubUrl": "https://github.com/raditazar/lp-guardian",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "infra",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Powered by Arbitrum Stylus (Rust) contracts: risk engine, portfolio-report registry, and a swap-replay verifier."
+        ],
+        "stylusUsage": "Powered by Arbitrum Stylus (Rust) contracts: risk engine, portfolio-report registry, and a swap-replay verifier."
+    },
+    {
+        "id": "minimax",
+        "name": "Minimax",
+        "tagline": "Multi-DEX LP battle arena with Stylus scoring",
+        "description": "Minimax: Multi-DEX LP Battle Arena where liquidity providers compete head-to-head — with Stylus scoring, on-chain ELO rankings, and an autonomous settlement agent.",
+        "url": "https://github.com/capinhoooo/minimax",
+        "githubUrl": "https://github.com/capinhoooo/minimax",
+        "categories": [
+            "DeFi",
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "gaming",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Cross-DEX PvP battles between Uniswap V4 and Camelot V3 LP positions, scored by Stylus Rust/WASM contracts."
+        ],
+        "stylusUsage": "Cross-DEX PvP battles between Uniswap V4 and Camelot V3 LP positions, scored by Stylus Rust/WASM contracts."
+    },
+    {
+        "id": "novation",
+        "name": "Novation",
+        "tagline": "Portfolio-margined options on Robinhood Chain stock tokens",
+        "description": "Link test [Friday trade](https://example.com) done",
+        "url": "https://github.com/RaYYeR220/novation",
+        "githubUrl": "https://github.com/RaYYeR220/novation",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Every margin check reprices the whole book across scenarios in a Stylus risk kernel."
+        ],
+        "stylusUsage": "Every margin check reprices the whole book across scenarios in a Stylus risk kernel."
+    },
+    {
+        "id": "nskills",
+        "name": "Nskills",
+        "tagline": "Stylus-first visual development and education platform",
+        "description": "Nskills is a Stylus-first visual development and workflow composition platform built for the Arbitrum ecosystem. It helps developers move from prototype to production by replacing chaotic “vibe coding” and copy-pasted boilerplate with a structured, repeatable build process.",
+        "url": "https://github.com/Cradle-app/NSkills",
+        "githubUrl": "https://github.com/Cradle-app/NSkills",
+        "categories": [
+            "Gaming & NFTs",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "socialfi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Ships reusable ERC-20/721/1155 Stylus contract components built from training stylus developers."
+        ],
+        "stylusUsage": "Ships reusable ERC-20/721/1155 Stylus contract components built from training stylus developers."
+    },
+    {
+        "id": "omnivault",
+        "name": "OmniVault",
+        "tagline": "AI-agent-driven decentralized VC fund",
+        "description": "OmniVault is an AI-agent-driven decentralized VC fund platform built on Arbitrum.",
+        "url": "https://github.com/dinghdong/OmniVault",
+        "githubUrl": "https://github.com/dinghdong/OmniVault",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus scoring engine scores deals and manages LP capital on-chain."
+        ],
+        "stylusUsage": "Stylus scoring engine scores deals and manages LP capital on-chain."
+    },
+    {
+        "id": "osmium",
+        "name": "Osmium",
+        "tagline": "Policy clearance layer proving agent payments were allowed",
+        "description": "Osmium Policy-bound payments for AI finance agents. AI finance agents need paid APIs, market data, MCP tools, and tokenized-asset services, without holding unrestricted wallets. Osmium is an on-chain SpendOps layer for AI finance agents on Robinhood Chain .",
+        "url": "https://github.com/RedGnad/Osmium",
+        "githubUrl": "https://github.com/RedGnad/Osmium",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "SettlementRouter → Stylus policy-engine → allow/deny → settlement",
+            "proves an agent payment was permitted."
+        ],
+        "stylusUsage": "SettlementRouter → Stylus policy-engine → allow/deny → settlement; proves an agent payment was permitted."
+    },
+    {
+        "id": "otterpot",
+        "name": "OtterPot",
+        "tagline": "Trustless group challenges with a shared yield-bearing prize pool",
+        "description": "OtterPot turns friendly bets into on-chain challenges. A group creates a challenge in a Telegram bot, each friend stakes into a shared pot, and the group confirms the result by consensus. The smart contract pays the winner automatically. There are no wallets to install and no apps to download, because everything happens in the Telegram bot and Mini App.",
+        "url": "https://github.com/Zer0-Knowledge-Hack/otter-pot",
+        "githubUrl": "https://github.com/Zer0-Knowledge-Hack/otter-pot",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Built on Arbitrum Stylus: challenge pool, treasury vault, and Aave strategy contracts."
+        ],
+        "stylusUsage": "Built on Arbitrum Stylus: challenge pool, treasury vault, and Aave strategy contracts."
+    },
+    {
+        "id": "pinaivu-ai",
+        "name": "Pinaivu AI",
+        "tagline": "Private, verifiable, censorship-resistant AI inference",
+        "description": "Pinaivu is a decentralised network for private, verifiable AI inference, built for healthcare and medical R&D on Arbitrum.",
+        "url": "https://github.com/KaushikKC/Pinaivu-arbitrum",
+        "githubUrl": "https://github.com/KaushikKC/Pinaivu-arbitrum",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "An Arbitrum Stylus ED25519 verifier proves GPU inference on EnclaveRegistry/SettlementVault."
+        ],
+        "stylusUsage": "An Arbitrum Stylus ED25519 verifier proves GPU inference on EnclaveRegistry/SettlementVault."
+    },
+    {
+        "id": "polypay",
+        "name": "Polypay",
+        "tagline": "Privacy-preserving on-chain payroll and multisig platform",
+        "description": "PolyPay is a privacy-preserving on-chain payroll & multisig platform powered by zero-knowledge proofs . It lets teams pay contributors and manage shared treasuries without exposing the signers behind every transaction — information that's fully public on a standard multisig, where anyone can map who approved what.",
+        "url": "https://github.com/Poly-pay/polypay_app",
+        "githubUrl": "https://github.com/Poly-pay/polypay_app",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "dao",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Core multisig wallet ported to Rust/WASM and deployed on Arbitrum One via Stylus."
+        ],
+        "stylusUsage": "Core multisig wallet ported to Rust/WASM and deployed on Arbitrum One via Stylus."
+    },
+    {
+        "id": "primeagent",
+        "name": "PrimeAgent",
+        "tagline": "Prime brokerage for AI agents on Arbitrum",
+        "description": "PrimeAgent: Prime Brokerage for AI Agents on Arbitrum Arbitrum Open House London Buildathon 2026 BUILT ON Arbitrum Sepolia + Robinhood Chain Testnet (Arbitrum Orbit) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ EXECUTIVE SUMMARY PrimeAgent is the prime brokerage layer for AI agents trading equities: one agent, one margin account, two domains.",
+        "url": "https://github.com/louissarvin/primeagent",
+        "githubUrl": "https://github.com/louissarvin/primeagent",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus margin and risk engines run in Rust, delivering prime-brokerage risk to agents."
+        ],
+        "stylusUsage": "Stylus margin and risk engines run in Rust, delivering prime-brokerage risk to agents."
+    },
+    {
+        "id": "proof-of-model",
+        "name": "Proof-of-Model",
+        "tagline": "Verifiable-inference marketplace for the agent economy",
+        "description": "Proof-of-Model A verifiable-inference marketplace for the agent economy, on Arbitrum. The problem When an agent pays a provider for model inference, it gets back an output and a bill — and no way to check either.",
+        "url": "https://github.com/emark-cloud/proof-of-model",
+        "githubUrl": "https://github.com/emark-cloud/proof-of-model",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "On-chain Stylus verifier checks neural-net inference proofs and recomputes activations."
+        ],
+        "stylusUsage": "On-chain Stylus verifier checks neural-net inference proofs and recomputes activations."
+    },
+    {
+        "id": "raxclaw",
+        "name": "RAXCLAW-ARBITRUM",
+        "tagline": "Autonomous exploit-intelligence core scanning smart contracts",
+        "description": "RAXC — Autonomous Exploit Intelligence Core A deterministic multi-agent orchestrator that scans smart contracts for vulnerabilities, simulates attacks, cryptographically proves every result, and writes immutable audit reports on-chain via Stylus (Rust → WASM) on Arbitrum Sepolia. No LLM override. No hallucinations. Verifiable forever. THE PROBLEM DeFi protocols are bleeding.",
+        "url": "https://github.com/JFKongphop/raxclaw-arbitrum",
+        "githubUrl": "https://github.com/JFKongphop/raxclaw-arbitrum",
+        "categories": [
+            "Infrastructure",
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "infra",
+            "nft",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Writes immutable audit reports on-chain via Stylus (Rust → WASM) instead of an LLM override."
+        ],
+        "stylusUsage": "Writes immutable audit reports on-chain via Stylus (Rust → WASM) instead of an LLM override."
+    },
+    {
+        "id": "raystylus",
+        "name": "RayStylus",
+        "tagline": "On-chain ray-tracing and graphics engine experiment",
+        "description": "Live Demo: https://raystylus.vercel.app/ Contract: https://sepolia.arbiscan.io/address/0x1bd8e7e9b1d0824eb97535af61bbaed0a9dd5757 🧩 Project Description RayStylus is a high-performance on-chain graphics and computation experiment built for the Arbitrum Stylus ecosystem , designed to demonstrate what becomes possible when smart contracts are no longer constrained by traditional E…",
+        "url": "https://github.com/pramadanif/raystylus",
+        "githubUrl": "https://github.com/pramadanif/raystylus",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "other",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "High-performance on-chain graphics/computation built for Arbitrum Stylus."
+        ],
+        "stylusUsage": "High-performance on-chain graphics/computation built for Arbitrum Stylus."
+    },
+    {
+        "id": "rbd-shield",
+        "name": "RBD Shield",
+        "tagline": "Trust and accountability protocol for autonomous AI agents",
+        "description": "RBD Shield is a trust and accountability protocol for autonomous AI agents on Arbitrum — built for a world where agents execute trades, manage liquidity, and control on-chain capital with no human in the loop. The problem is real: AI agents in DeFi can fail, mis-execute, or cause financial harm with zero recourse for users.",
+        "url": "https://github.com/rbd3/RBD-SHIELD",
+        "githubUrl": "https://github.com/rbd3/RBD-SHIELD",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Risk-scoring engine runs in a Stylus (Rust) contract, delivering on-chain actuarial math at low gas."
+        ],
+        "stylusUsage": "Risk-scoring engine runs in a Stylus (Rust) contract, delivering on-chain actuarial math at low gas."
+    },
+    {
+        "id": "strike",
+        "name": "Strike",
+        "tagline": "Weekly options vaults for stock tokens, paid in USDG",
+        "description": "Strike is weekly options income for Robinhood Chain stock tokens, paid in Paxos USDG. The problem: a tokenized TSLA earns nothing while it sits in a wallet. Selling weekly covered calls is the usual way to earn on stock you hold, but someone has to pick the strike every week, and handing that job to a manager or an AI bot means trusting it with your money.",
+        "url": "https://github.com/Prashant-thakur77/Strike",
+        "githubUrl": "https://github.com/Prashant-thakur77/Strike",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Pricer and risk engine (Greeks/implied vol/stress) run in Rust on Stylus, ~6.5× cheaper than Solidity."
+        ],
+        "stylusUsage": "Pricer and risk engine (Greeks/implied vol/stress) run in Rust on Stylus, ~6.5× cheaper than Solidity."
+    },
+    {
+        "id": "stylusarena",
+        "name": "StylusArena",
+        "tagline": "Gamified policy learning with one-click agent deployment",
+        "description": "StylusArena is a gamified DeFi education platform that transforms how users interact with decentralized finance. The Problem: DeFi remains inaccessible to mainstream users due to its complexity—concepts like liquidity provision, yield farming, and portfolio management require extensive technical knowledge.",
+        "url": "https://github.com/IrrhammCode/StylusArena",
+        "githubUrl": "https://github.com/IrrhammCode/StylusArena",
+        "categories": [
+            "DeFi",
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "gaming",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Deploys trained AI agents to Arbitrum Stylus in one click",
+            "gamified DeFi education."
+        ],
+        "stylusUsage": "Deploys trained AI agents to Arbitrum Stylus in one click; gamified DeFi education."
+    },
+    {
+        "id": "styluslink",
+        "name": "StylusLink",
+        "tagline": "Trustless, AI-gated payment protocol for agent payments",
+        "description": "StylusLink is a trustless, AI-gated payment protocol built on Arbitrum Stylus that transforms static URL links into programmable Smart Drops. It bridges the Hardware-Chain Gap by enabling users to claim digital assets using nothing but FaceID or TouchID , eliminating the need for seed phrases, private key management, or complex wallet interactions for recipients. 1.",
+        "url": "https://github.com/timix648/StylusLink",
+        "githubUrl": "https://github.com/timix648/StylusLink",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Writes its vault smart contract in Rust with Stylus to cut gas on complex payments."
+        ],
+        "stylusUsage": "Writes its vault smart contract in Rust with Stylus to cut gas on complex payments."
+    },
+    {
+        "id": "swoosh",
+        "name": "Swoosh",
+        "tagline": "AI cross-chain intent solver in plain English",
+        "description": "Swoosh is an AI-powered cross-chain intent solver that simplifies crypto transfers between blockchains using natural language. Instead of navigating complex bridges, users simply describe what they want in plain English, and Swoosh handles everything automatically.",
+        "url": "https://github.com/Akanimoh12/Swoosh",
+        "githubUrl": "https://github.com/Akanimoh12/Swoosh",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Rust-based smart contracts on Arbitrum Stylus reduce gas 50–90% for cross-chain intents."
+        ],
+        "stylusUsage": "Rust-based smart contracts on Arbitrum Stylus reduce gas 50–90% for cross-chain intents."
+    },
+    {
+        "id": "sylvangate",
+        "name": "SylvanGate",
+        "tagline": "Enterprise B2B AI security SDK and pre-sign airlock",
+        "description": "### 🛡️ What is SylvanGate? SylvanGate is an enterprise-grade B2B AI Security SDK and Pre-Sign Airlock Gateway built for autonomous Web3 agents and Account Abstraction wallets on Robinhood Chain (4663) and Arbitrum. It delivers deterministic, 0-Gas intent protection and risk isolation prior to hot-key or session key execution.",
+        "url": "https://github.com/slivervinexyz/sylvangate",
+        "githubUrl": "https://github.com/slivervinexyz/sylvangate",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Kernel-esort for Robinhood Chain",
+            "Stylus contracts gate AI agent actions pre-signature."
+        ],
+        "stylusUsage": "Kernel-esort for Robinhood Chain; Stylus contracts gate AI agent actions pre-signature."
+    },
+    {
+        "id": "thinkedge",
+        "name": "ThinkEdge",
+        "tagline": "Decentralized AI-powered virtual classroom on Arbitrum",
+        "description": "Decentralized AI-powered virtual classroom on Arbitrum",
+        "url": "https://github.com/vipinraj32/thinkedge-stylus-arbitrum",
+        "githubUrl": "https://github.com/vipinraj32/thinkedge-stylus-arbitrum",
+        "categories": [
+            "Infrastructure",
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "dao",
+            "ai",
+            "nft",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus contracts power the on-chain lesson/credential side of the classroom."
+        ],
+        "stylusUsage": "Stylus contracts power the on-chain lesson/credential side of the classroom."
+    },
+    {
+        "id": "valen",
+        "name": "VALEN",
+        "tagline": "Governance layer for agentic finance — every action verifiable",
+        "description": "Governance layer for agentic finance — every action verifiable",
+        "url": "https://github.com/goat-dev8/valen",
+        "githubUrl": "https://github.com/goat-dev8/valen",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "ai",
+            "defi",
+            "infra",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus budget, eligibility, policy, compliance, and risk engines gate every autonomous-agent action."
+        ],
+        "stylusUsage": "Stylus budget, eligibility, policy, compliance, and risk engines gate every autonomous-agent action."
+    },
+    {
+        "id": "warden",
+        "name": "Warden",
+        "tagline": "Rent a bonded trading agent — never hand it the keys",
+        "description": "AI agents are starting to manage real financial assets, but most agentic finance products still enforce user limits in the application layer. That means the agent’s own software decides whether it is allowed to trade WARDEN moves that rulebook on-chain WARDEN is a trustless vault and bonded agent marketplace for tokenized stocks.",
+        "url": "https://github.com/ronkenx9/warden",
+        "githubUrl": "https://github.com/ronkenx9/warden",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Rust/Stylus slash pool gives agents bounded authority and economic accountability on Robinhood Chain."
+        ],
+        "stylusUsage": "Rust/Stylus slash pool gives agents bounded authority and economic accountability on Robinhood Chain."
+    },
+    {
+        "id": "yieldgeko",
+        "name": "YieldGeko",
+        "tagline": "Verifiable autonomous yield and equity-credit protocol",
+        "description": "Verifiable autonomous yield and equity-credit protocol",
+        "url": "https://yieldgeko.xyz",
+        "githubUrl": "https://github.com/SeunOnTech/yieldgeko-v3",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Arbitrum Stylus verifier re-checks each consensus-signed agent allocation on-chain."
+        ],
+        "stylusUsage": "Arbitrum Stylus verifier re-checks each consensus-signed agent allocation on-chain."
+    },
+    {
+        "id": "yieldmind",
+        "name": "YieldMind",
+        "tagline": "AI-native yield automation on Arbitrum",
+        "description": "markdown YieldMind is an AI-powered yield automation platform that lets users deposit USDC into a vault, define their yield strategy in plain English (or via presets and sliders), and let an autonomous AI agent rebalance their position on Arbitrum every 5 minutes. ### The Problem DeFi yield farming is fragmented, time-consuming, and favors bots.",
+        "url": "https://github.com/PhiBao/yield-mind",
+        "githubUrl": "https://github.com/PhiBao/yield-mind",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Gas-efficient strategy computation runs as a Stylus (Rust → WASM) contract."
+        ],
+        "stylusUsage": "Gas-efficient strategy computation runs as a Stylus (Rust → WASM) contract."
+    },
+    {
+        "id": "chanyodha",
+        "name": "ChainYodha.Ai",
+        "tagline": "On-chain AI-powered trust and risk scoring infrastructure",
+        "description": "On-chain AI-powered trust and risk scoring infrastructure",
+        "url": "https://github.com/Aaditya1273/ChainYodha.Ai",
+        "githubUrl": "https://github.com/Aaditya1273/ChainYodha.Ai",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus contracts compute wallet/project trust scores on Arbitrum."
+        ],
+        "stylusUsage": "Stylus contracts compute wallet/project trust scores on Arbitrum."
+    },
+    {
+        "id": "slivervine",
+        "name": "SliverVine Protocol",
+        "tagline": "Pre-consensus intent firewall for AI agents on Arbitrum",
+        "description": "Pre-consensus intent firewall for AI agents on Arbitrum",
+        "url": "https://github.com/slivervinexyz/bedelta-living-water",
+        "githubUrl": "https://github.com/slivervinexyz/bedelta-living-water",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "ai",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus probe and sanctuary-invariants contracts enforce intent gates and system invariants on-chain."
+        ],
+        "stylusUsage": "Stylus probe and sanctuary-invariants contracts enforce intent gates and system invariants on-chain."
+    },
+    {
+        "id": "studyjoy",
+        "name": "StudyJoy",
+        "tagline": "Gamified language learning app with AI and web3",
+        "description": "Gamified language learning app with AI and web3",
+        "url": "https://github.com/eipiem1/StudyJoy",
+        "githubUrl": "https://github.com/eipiem1/StudyJoy",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "other",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus NFT contract mints on-chain certificates for completed lessons."
+        ],
+        "stylusUsage": "Stylus NFT contract mints on-chain certificates for completed lessons."
+    },
+    {
+        "id": "zeus-guard",
+        "name": "ZEUS GUARD",
+        "tagline": "Pre-transaction firewall for everyday traders and agentic payments",
+        "description": "Pre-transaction firewall for everyday traders and agentic payments",
+        "url": "https://github.com/clebson-scott/zeus-guard",
+        "githubUrl": "https://github.com/clebson-scott/zeus-guard",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "On-chain antivirus: Stylus contract enforces transfer rules before any transaction executes."
+        ],
+        "stylusUsage": "On-chain antivirus: Stylus contract enforces transfer rules before any transaction executes."
+    },
+    {
+        "id": "hero-network",
+        "name": "Herō Network",
+        "tagline": "Audit and verification portal for agents and physical AI",
+        "description": "Audit and verification portal for agents and physical AI",
+        "url": "https://github.com/joyosive/hero-anchor",
+        "githubUrl": "https://github.com/joyosive/hero-anchor",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "dao",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Every agent/robot action becomes a cryptographic proof, checked by Stylus verifier contracts."
+        ],
+        "stylusUsage": "Every agent/robot action becomes a cryptographic proof, checked by Stylus verifier contracts."
+    },
+    {
+        "id": "hero-mandate",
+        "name": "Herō Mandate",
+        "tagline": "Chain-of-mandate delegated authority for trading agents",
+        "description": "Chain-of-mandate delegated authority for trading agents",
+        "url": "https://github.com/joyosive/hero-mandate",
+        "githubUrl": "https://github.com/joyosive/hero-mandate",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "dao",
+            "ai",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Stylus contracts enforce that delegated authority narrowly at every delegation level."
+        ],
+        "stylusUsage": "Stylus contracts enforce that delegated authority narrowly at every delegation level."
+    },
+    {
+        "id": "florin",
+        "name": "Florin",
+        "tagline": "Borrow dollars against tokenised stocks without selling — lending on Robinhoo…",
+        "description": "Borrow dollars against tokenised stocks without selling — lending on Robinhoo…",
+        "url": "https://florin.so",
+        "githubUrl": "https://github.com/fluidity-money/florin",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Full CDP protocol ported to Rust on Arbitrum Stylus with bobcat-sdk",
+            "published stylus-robinhood-stock-tokens and stylus-chainlink-price-feeds crates."
+        ],
+        "stylusUsage": "Full CDP protocol ported to Rust on Arbitrum Stylus with bobcat-sdk; published stylus-robinhood-stock-tokens and stylus-chainlink-price-feeds crates."
     }
 ]

@@ -50,6 +50,14 @@ export function CommunityBanner() {
                         >
                             Contribute on GitHub
                         </a>
+                        <a
+                            href="https://t.me/arbitrum_stylus"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-3 bg-[#5F4DED] border border-white text-white font-semibold rounded-[8px] hover:bg-[#4C3DCD] transition-colors w-full sm:w-auto backdrop-blur-sm text-[15px]"
+                        >
+                            Join Telegram
+                        </a>
                         <Link
                             to="/ecosystem/submit"
                             onClick={() => window.scrollTo(0, 0)}
