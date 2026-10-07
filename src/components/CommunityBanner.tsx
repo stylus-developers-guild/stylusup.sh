@@ -1,7 +1,23 @@
 import { Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { resourceCategories } from '../data/resources';
+import { useProjects } from '../hooks/useProjects';
 
 export function CommunityBanner() {
+    const { projects, loading } = useProjects();
+    const projectCount = loading ? '—' : projects.length;
+    const activeProjectCount = loading
+        ? '—'
+        : projects.filter((project) => project.status !== 'shutdown').length;
+    const resourceCount = [...resourceCategories.learn, ...resourceCategories.build]
+        .reduce((total, category) => total + category.resources.length, 0);
+    const languageCount = loading
+        ? '—'
+        : new Set(
+            projects.flatMap((project) => project.language)
+                .map((language) => language.toLowerCase()),
+        ).size;
+
     return (
         <section
             id="community"
@@ -50,19 +66,19 @@ export function CommunityBanner() {
                 {/* Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white">
                     <div className="space-y-1">
-                        <div className="text-4xl font-light font-['Outfit']">500+</div>
-                        <div className="text-sm text-white/80 font-normal">Developers</div>
-                    </div>
-                    <div className="space-y-1">
-                        <div className="text-4xl font-light font-['Outfit']">30+</div>
+                        <div className="text-4xl font-light font-['Outfit']">{projectCount}</div>
                         <div className="text-sm text-white/80 font-normal">Projects</div>
                     </div>
                     <div className="space-y-1">
-                        <div className="text-4xl font-light font-['Outfit']">50+</div>
+                        <div className="text-4xl font-light font-['Outfit']">{activeProjectCount}</div>
+                        <div className="text-sm text-white/80 font-normal">Active Projects</div>
+                    </div>
+                    <div className="space-y-1">
+                        <div className="text-4xl font-light font-['Outfit']">{resourceCount}</div>
                         <div className="text-sm text-white/80 font-normal">Resources</div>
                     </div>
                     <div className="space-y-1">
-                        <div className="text-4xl font-light font-['Outfit']">5+</div>
+                        <div className="text-4xl font-light font-['Outfit']">{languageCount}</div>
                         <div className="text-sm text-white/80 font-normal">Languages</div>
                     </div>
                 </div>
