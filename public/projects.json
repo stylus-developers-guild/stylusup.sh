@@ -388,7 +388,7 @@
         "id": "orderbookkit-xyz",
         "name": "Orderbookkit",
         "tagline": "One-click on-chain orderbook with Stylus",
-        "description": "A permissionless trading platform for Arbitrum Orbit chains with a novel permissionless plugin and agent execution engine. One-click on-chain orderbook deployment powered by Stylus.",
+        "description": "A permissionless trading CLOB and RFQ engine for Arbitrum Orbit chains with a novel permissionless plugin engine powered by a RISC-V virtual machine. One-click on-chain orderbook deployment powered by Stylus.",
         "url": "https://code.markovgeist.org/orderbookkit.xyz/dir",
         "githubUrl": "https://code.markovgeist.org/orderbookkit.xyz",
         "categories": [
@@ -3048,5 +3048,1413 @@
             "published stylus-robinhood-stock-tokens and stylus-chainlink-price-feeds crates."
         ],
         "stylusUsage": "Full CDP protocol ported to Rust on Arbitrum Stylus with bobcat-sdk; published stylus-robinhood-stock-tokens and stylus-chainlink-price-feeds crates."
+    },
+    {
+        "id": "arbcfo",
+        "name": "ARBcfo",
+        "tagline": "The permissionless treasury control plane for tokenized assets. Policyenforce…",
+        "description": "ArbCFO is a permissionless treasury control plane for stablecoin and tokenized-asset operations. Today, most onchain treasury tools stop at signature collection. They can move funds, but they do not decide whether a payment should execute, be escalated for review, or be blocked.",
+        "url": "https://github.com/CosmasMandikonza/arbcfo",
+        "githubUrl": "https://github.com/CosmasMandikonza/arbcfo",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "afterhours-1",
+        "name": "AfterHours Oracle",
+        "tagline": "A 24/7 price for tokenized stocks on Robinhood Chain. Chainlink while the mar…",
+        "description": "AfterHours is a price oracle for Robinhood Chain stock tokens that keeps answering while the US market is closed: a Stylus (Rust) contract with Chainlink's and Morpho's oracle interfaces. Live on Robinhood Chain mainnet. AfterHours AAPL/USD runs at 0x88b628472e595725178cc3e5e2ec70ada67f80f0 (chain 4663), deployed on 2026-09-26.",
+        "url": "https://github.com/bongbongcrypto/afterhours",
+        "githubUrl": "https://github.com/bongbongcrypto/afterhours",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "afterglow",
+        "name": "Afterglow",
+        "tagline": "Fixedrate USDG lending against tokenized stocks on Robinhood Chain. A lending…",
+        "description": "Afterglow: fixed-rate USDG lending against tokenized stocks on Robinhood Chain. - Tokenized stocks trade 24/7, but their prices freeze from Friday's close to Sunday night. Lenders either lend on stale prices, so Monday gaps become bad debt, or they freeze completely.",
+        "url": "https://github.com/Iamsohungrynow/afterglow",
+        "githubUrl": "https://github.com/Iamsohungrynow/afterglow",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "arbilink",
+        "name": "ArbiLink: Universal Cross-Chain Messaging Hub",
+        "tagline": "ArbiLink — CrossChain Messaging on Arbitrum Stylus Send a message from Arbitr…",
+        "description": "Summary ArbiLink is a universal cross-chain messaging protocol that positions Arbitrum as the central hub for multi-chain communication.",
+        "url": "https://github.com/Martins-O/ArbiLink",
+        "githubUrl": "https://github.com/Martins-O/ArbiLink",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "arbipic",
+        "name": "ArbiPic",
+        "tagline": "OnChain Verifiable Photo Capture System using Stylus and Arbitrum Orbit L3 A…",
+        "description": "ArbiPic 📸 On-Chain Verifiable Photo Capture System using Stylus and Arbitrum Orbit L3 A decentralized application that combats AI-generated fake images by enabling users to capture photos via webcam and cryptographically verify them on-chain.",
+        "url": "https://github.com/adilhusain01/arbipic",
+        "githubUrl": "https://github.com/adilhusain01/arbipic",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "other",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "arbiscore",
+        "name": "ArbiScore",
+        "tagline": "A credit layer where your repayment history lowers your collateral. The risk…",
+        "description": "Every DeFi lender asks the same collateral of everyone.",
+        "url": "https://github.com/olasmi02/arbiscore",
+        "githubUrl": "https://github.com/olasmi02/arbiscore",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "arbisecure",
+        "name": "ArbiSecure",
+        "tagline": "Escrow platform powered by Arbitrum Stylus Project Structure Stylus CLI: carg…",
+        "description": "ArbiSecure Protocol Documentation ArbiSecure is the first self-enforcing escrow protocol built on Arbitrum Stylus. It utilizes programmable milestone releases to prevent disputes before they happen, backed by a decentralized network of staked arbiters for edge cases.",
+        "url": "https://github.com/alhadad-xyz/ArbiSecure",
+        "githubUrl": "https://github.com/alhadad-xyz/ArbiSecure",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "other",
+            "dao",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "arboretum",
+        "name": "Arboretum",
+        "tagline": "English · 简体中文README.zhCN.md Deterministic derivatives pricing that runs onch…",
+        "description": "Arboretum implements option pricing as a computation rather than a value delivered to a contract. Black-Scholes with continuous carry, five Greeks, Cox-Ross-Rubinstein lattices (European and American, to 4096 steps), implied-volatility inversion, and a no-arbitrage band are written in Rust and compiled to an Arbitrum Stylus contract.",
+        "url": "https://github.com/mupengzi/arboretum",
+        "githubUrl": "https://github.com/mupengzi/arboretum",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "island-mystery",
+        "name": "Arland",
+        "tagline": "🏝️ Arland Island Strategy Game Play Arland Nowhttps://img.shields.io/badge/Pl…",
+        "description": "rland is a blockchain-based strategy game where players manage their own islands, grow resources, and engage with others through trading and combat. What makes Arland unique is that every game mechanic happens fully on-chain —from building farms and mines to launching PvP battles.",
+        "url": "https://github.com/rishi-tal-12/Island-Mystery",
+        "githubUrl": "https://github.com/rishi-tal-12/Island-Mystery",
+        "categories": [
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "gaming",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "baraza-protocal",
+        "name": "Baraza Protocal ",
+        "tagline": "Decentralized arbitration for informal trust economies — chamas, ROSCAs, and…",
+        "description": "Baraza Protocol brings reputation-weighted, on-chain arbitration to chamas, ROSCAs, and informal trade partnerships — trust economies that run on a handshake, not a contract.",
+        "url": "https://github.com/James-wasonga/baraza-protocal",
+        "githubUrl": "https://github.com/James-wasonga/baraza-protocal",
+        "categories": [
+            "Gaming & NFTs",
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "socialfi",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "bodegueando",
+        "name": "Bodegueando",
+        "tagline": "Bodegueando digitizes the Peruvian neighborhood corner store the bodega witho…",
+        "description": "Bodegueando digitizes the Peruvian corner store ( bodega ) without asking it to change how it gets paid.",
+        "url": "https://github.com/Gabrululu/Bodegueando",
+        "githubUrl": "https://github.com/Gabrululu/Bodegueando",
+        "categories": [
+            "Gaming & NFTs",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "socialfi",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "cadence",
+        "name": "Cadence",
+        "tagline": "Cadence Protocol PrivacyPreserving MultiSignal Crypto Inheritance & ProofofLi…",
+        "description": "Cadence Protocol is a self-custodial, zero-leak digital inheritance and estate planning protocol built for Arbitrum Sepolia and Robinhood Chain Testnet.",
+        "url": "https://github.com/Bobo2005/cadence.git",
+        "githubUrl": "https://github.com/Bobo2005/cadence.git",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "call-it",
+        "name": "Call It",
+        "tagline": "Everyone in crypto knows a guy who swears he called Solana at eight bucks. No…",
+        "description": "Everyone in crypto knows a guy who swears he called Solana at eight bucks. None of them can prove it. Call It is where you prove it. Make a call, like ETH reclaims $2,200 by Friday, or ARB outperforms OP this week. Stake real USDC behind it. The call is written on-chain with your name on it, and it stays there forever.",
+        "url": "https://github.com/Woshvad/call-it",
+        "githubUrl": "https://github.com/Woshvad/call-it",
+        "categories": [
+            "Gaming & NFTs",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "socialfi",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "chargefrog-arbitrum",
+        "name": "ChargeFrog⚡",
+        "tagline": "A communityled EV charging network on Arbitrum 🐸 Our Deliverables 1. Our Demo…",
+        "description": "🐸 Our Deliverables 1. Our Demo Video (Youtube) 🌐Watch It! 2. Our Pitch Deck (PDF) 🌐Read It! 3. Our ChargeFrog Super App (Deployed on Arbitrum Sepolia Testnet) 🌐Try It! Watch our demo video for a technical deep dive into our system architecture, engineering design, and implementation.",
+        "url": "https://github.com/Zhixuan0318/ChargeFrog-Arbitrum",
+        "githubUrl": "https://github.com/Zhixuan0318/ChargeFrog-Arbitrum",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "cloudy",
+        "name": "Cloudy",
+        "tagline": "Cloudy: storage that proves itself on Arbitrum Cloudy is a decentralized stor…",
+        "description": "Cloudy: storage that proves itself on Arbitrum 1. Introduction Cloudy is a decentralized storage platform that settles on Arbitrum with zk proofs verified on-chain Cloudy is a storage platform that connects people who need data kept safe with people who have spare disk space to rent out.",
+        "url": "https://github.com/shibeedev/cloudy",
+        "githubUrl": "https://github.com/shibeedev/cloudy",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "infra",
+            "defi",
+            "other",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "credence-finance",
+        "name": "Credence Finance",
+        "tagline": "Credence Finance A lending protocol for tokenized stocks and tokenized Treasu…",
+        "description": "Credence Finance is a lending protocol for assets whose market closes: tokenized stocks and tokenized Treasury funds. The problem Stock tokens trade all week, but their price feeds don't. Chainlink's equity feeds stop from Friday 8 p.m. to Sunday 8 p.m. ET and hold the last price.",
+        "url": "https://github.com/anindhabiswas25/credence-finance",
+        "githubUrl": "https://github.com/anindhabiswas25/credence-finance",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "denaria-perp-arbitrum",
+        "name": "Denaria Founder House London",
+        "tagline": "Denaria Protocol Contracts Denaria is an onchain perpetual trading protocol b…",
+        "description": "Denaria is a mobile-first perpetual trading platform built for the next generation of on-chain traders. As trading increasingly shifts from desktop terminals to smartphones, user expectations are changing. Modern traders expect instant onboarding, seamless execution, and intuitive interfaces that work anywhere, at any time.",
+        "url": "https://github.com/denaria-finance/denaria-perp-arbitrum",
+        "githubUrl": "https://github.com/denaria-finance/denaria-perp-arbitrum",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "earnx",
+        "name": "EarnX",
+        "tagline": "Get paid when you ship, not when your buyer pays. EarnX turns a verified expo…",
+        "description": "EarnX: get paid when you ship, not when your buyer pays. Why I'm building it: my mother, Mama Dora, grows cassava and other crops in Delta State, Nigeria. Just after a harvest my father had a stroke, and the hospital needed money that week. Her harvest was worth more than the bill, but buyers pay 30 to 90 days after delivery.",
+        "url": "https://github.com/big14way/earnx",
+        "githubUrl": "https://github.com/big14way/earnx",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "egress",
+        "name": "Egress",
+        "tagline": "Egress protects people who lend money against tokenized stocks. It measures…",
+        "description": "Egress: liquidation-capacity guard for tokenized stock lending on Robinhood Chain Robinhood Stock Tokens are now accepted in lending markets, but a loan only remains safe if the collateral can actually be sold when it has to be liquidated.",
+        "url": "https://github.com/UEddy/egress",
+        "githubUrl": "https://github.com/UEddy/egress",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "exit-market",
+        "name": "Exit Market",
+        "tagline": "CIhttps://github.com/MohamedAaftaab/ExitMarket/actions/workflows/ci.yml/badge…",
+        "description": "Exit Market: sell a pending Arbitrum withdrawal instantly, proven on-chain. The problem Leaving Arbitrum through the canonical bridge, the only exit that needs no trust beyond the rollup, takes 6.4 days, and once a withdrawal has started nothing can speed it up. In 30 days, $51M of tokens left Arbitrum One this way.",
+        "url": "https://github.com/Mohamed-Aaftaab/Exit-Market",
+        "githubUrl": "https://github.com/Mohamed-Aaftaab/Exit-Market",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "fortilayer",
+        "name": "FortiLayer",
+        "tagline": "The Programmable Execution Firewall for Institutional Arbitrum Treasuries A p…",
+        "description": "FortiLayer — The Programmable Execution Firewall for Arbitrum Treasuries FortiLayer is an atomic, composable execution firewall for on-chain treasuries on Arbitrum. Every outbound transfer must pass through a pipeline of independent policy modules — or it reverts. No exceptions.",
+        "url": "https://github.com/karagozemin/FortiLayer",
+        "githubUrl": "https://github.com/karagozemin/FortiLayer",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "defi",
+            "dao",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "gapwatch",
+        "name": "Gapwatch",
+        "tagline": "CIhttps://github.com/pplmaverick/gapwatch/actions/workflows/ci.yml/badge.svg…",
+        "description": "Overview Gapwatch is an independent verification layer for corporate actions on Robinhood Chain's tokenized stocks. These tokens use ERC-8056 uiMultiplier for splits and dividends, so a holder's effective balance is the raw balance times the multiplier.",
+        "url": "https://github.com/pplmaverick/gapwatch",
+        "githubUrl": "https://github.com/pplmaverick/gapwatch",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "gifted",
+        "name": "Gifted",
+        "tagline": "Invest in US stocks with digital dollars. GiFTED is a consumer investing app…",
+        "description": "GiFTED! turns US stock investing into a self-custodied, automated, dollar-native app on Robinhood Chain. The problem. Retail investors in markets like Nigeria reach US stocks through custodial apps.",
+        "url": "https://github.com/frankolien/gifted",
+        "githubUrl": "https://github.com/frankolien/gifted",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "harvestbot",
+        "name": "HarvestBot",
+        "tagline": "An agent that harvests tax losses on Robinhood tokenized equities — bounded b…",
+        "description": "HarvestBot is an agent that harvests tax losses on Robinhood tokenized equities, bounded by an onchain mandate it cannot exceed, and slashed when it lies.",
+        "url": "https://github.com/edycutjong/harvestbot",
+        "githubUrl": "https://github.com/edycutjong/harvestbot",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "heracles",
+        "name": "Heracles",
+        "tagline": "Named for the hero whose labours go beyond ordinary strength: this layer carr…",
+        "description": "Heracles : The Risk Nobody Is Covering Weekend gaps are a hidden liability for perpetual trading venues. When SPY, NVDA, gold or EUR/USD opens sharply away from Friday's close, the liquidity vault backing the venue takes the first loss. On gTrade , that risk sits with the gUSDC vault .",
+        "url": "https://github.com/aarav1656/heracles",
+        "githubUrl": "https://github.com/aarav1656/heracles",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "inflexion",
+        "name": "Inflexion",
+        "tagline": "Inflexion is the first trustless, fullycollateralized onchain market for Unis…",
+        "description": "Providing liquidity on Uniswap v3 looks like earning fees. Economically it's selling volatility: a concentrated LP position is short gamma, and the cost of that exposure — impermanent loss — is large, recurring, and estimated at &gt;$1B/year across DeFi, with no trustless, non-inflationary way to hedge it.",
+        "url": "https://github.com/frytegg/inflexion",
+        "githubUrl": "https://github.com/frytegg/inflexion",
+        "categories": [
+            "DeFi",
+            "Gaming & NFTs",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "nft",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "janus",
+        "name": "Janus",
+        "tagline": "Named for the Roman twofaced god of doorways: one face on Friday's close, one…",
+        "description": "THE PROBLEM Robinhood Stock Tokens are tokenized stocks that trade around the clock, but the Chainlink price feed behind them follows the stock market's schedule.",
+        "url": "https://github.com/kamalbuilds/janus",
+        "githubUrl": "https://github.com/kamalbuilds/janus",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "juno-arbitrum",
+        "name": "Juno",
+        "tagline": "Juno — every post is a market, on Arbitrum Post a photo or a reel and it laun…",
+        "description": "Juno is a social app where every post is a market. Post a photo or a reel and it launches its own token and bonding curve on Arbitrum in one transaction. Early fans buy in on the curve, and the creator earns a share of every trade's fee. When a curve fills, it graduates into a Uniswap v3 pool, and its liquidity is locked forever.",
+        "url": "https://github.com/nickthelegend/juno-arbitrum",
+        "githubUrl": "https://github.com/nickthelegend/juno-arbitrum",
+        "categories": [
+            "Gaming & NFTs",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "socialfi",
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "vaultchain-sovereign-agent",
+        "name": "Kipio",
+        "tagline": "Kipio: Sovereign Digital Property Kipio is a decentralized protocol and consu…",
+        "description": "Kipio is a decentralized protocol and consumer application for permanent, private ownership of digital content. It is designed to give users long-term control over their memories and personal data without depending on centralized platforms or recurring subscriptions.",
+        "url": "https://github.com/AndresChanchi/vaultchain-sovereign-agent",
+        "githubUrl": "https://github.com/AndresChanchi/vaultchain-sovereign-agent",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "other",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "locate",
+        "name": "Locate",
+        "tagline": "Locate is an onchain stock lending and borrowing market for tokenized stocks…",
+        "description": "Locate Stock lending for Robinhood Chain. Earn USDG on the stock tokens you hold, or borrow them to go short, any hour of the week. Live app: https://locate-pi.vercel.app Code: https://github.com/adilhusain01/locate The problem Robinhood Chain put real US stocks on-chain as tokens.",
+        "url": "https://github.com/adilhusain01/locate",
+        "githubUrl": "https://github.com/adilhusain01/locate",
+        "categories": [
+            "DeFi",
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "socialfi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "nokturn",
+        "name": "Nokturn",
+        "tagline": "Intent based batch settlement for tokenized equities on Robinhood Chain. Most…",
+        "description": "Nokturn is intent based batch settlement for tokenized equities on Robinhood Chain. The problem In August 2026, 74.1% of the 8.58 million stock token trades on Robinhood Chain happened while NYSE was closed, and 33.2% on weekends.",
+        "url": "https://github.com/wngstnr-code/nokturn",
+        "githubUrl": "https://github.com/wngstnr-code/nokturn",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "occulta",
+        "name": "Occulta",
+        "tagline": "Occulta is a ZK state channel layer 3 on Arbitrum, providing instant nearzero…",
+        "description": "Occulta: private ZK state channels on Arbitrum 1. Introduction Occulta is a ZK state channel layer 3 on Arbitrum, providing instant near-zero-cost transactions that are fully private, powered by ZK SNARKs.",
+        "url": "https://github.com/nguyenphuminh/occulta",
+        "githubUrl": "https://github.com/nguyenphuminh/occulta",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "rwa",
+            "defi",
+            "other",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "omnicurve",
+        "name": "OmniCurve",
+        "tagline": "A Unified Continuous Distribution Prediction Market Protocol Built on Arbitru…",
+        "description": "OmniCurve : A prediction market protocol based on the distribution market paper by Paradigm, where a prediction pool on an asset with a numerical outcome does not divide prediction pools into a thousand different binary pools with fragmented liquidity.",
+        "url": "https://github.com/PhAnToMxSD/OmniCurve",
+        "githubUrl": "https://github.com/PhAnToMxSD/OmniCurve",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "other",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "omniverse",
+        "name": "OmniVerse",
+        "tagline": "NextGeneration Prediction Markets with ZeroLiquidation Lending on Arbitrum St…",
+        "description": "OMNIVERSE Next-Generation Prediction Markets with Zero-Liquidation Lending on Arbitrum Stylus Description Omniverse is a prediction market protocol that solves three catastrophic problems plaguing existing platforms: LP capital wipeout at resolution, liquidation cascades in prediction-backed lending, and prohibitive gas costs for sophisti…",
+        "url": "https://github.com/vihaan1016/omniverse",
+        "githubUrl": "https://github.com/vihaan1016/omniverse",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "orbitrepo",
+        "name": "OrbitRepo",
+        "tagline": "FixedTerm Repo Protocol for Tokenized Equities with an Arbitrum Stylus Dynami…",
+        "description": "What is OrbitRepo? OrbitRepo is an institutional-grade, fixed-term repurchase agreement (repo) and private credit protocol built natively on Robinhood Chain (Arbitrum Orbit L2, Chain ID: 46630) and supercharged by Arbitrum Stylus (Rust WASM).",
+        "url": "https://github.com/Prestige14/OrbitRepo",
+        "githubUrl": "https://github.com/Prestige14/OrbitRepo",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "paraape",
+        "name": "ParaApe",
+        "tagline": "Arbitrum Open House Singapore 2026https://img.shields.io/badge/ArbitrumOpen%2…",
+        "description": "Paraape is on-chain cover for a memecoin you keep. You name how far the price has to fall, for how long, and how much USDG you want back. You pay a premium and the coins stay in your wallet. About 30 minutes later the cover turns on.",
+        "url": "https://github.com/demigohu/paraape",
+        "githubUrl": "https://github.com/demigohu/paraape",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "protorwa",
+        "name": "ProtoRWA",
+        "tagline": "ProtoRWA Tokenized Physical Hardware with Milestone Escrow Live on Robinhood…",
+        "description": "ProtoRWA is a real-world-asset protocol for physical hardware projects, built on Robinhood Chain. The problem is simple: raising money to build physical things is broken. Founders wait months for slow, dilutive capital, and backers hand over cash against a promise with no way to see where it goes. I put that process on-chain.",
+        "url": "https://github.com/Fredincorporation/ProtoRWA",
+        "githubUrl": "https://github.com/Fredincorporation/ProtoRWA",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "qanary",
+        "name": "Qanary",
+        "tagline": "Qanary gives Arbitrum treasuries a postquantum root key. The account’s root a…",
+        "description": "The problem Every Ethereum-style account reveals its public key the first time it signs, and more than 65% of ETH already sits in accounts whose keys are public; a quantum computer that can solve the elliptic-curve discrete log turns those keys into private keys (\"harvest now, forge later\").",
+        "url": "https://github.com/RaYYeR220/qanary",
+        "githubUrl": "https://github.com/RaYYeR220/qanary",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "rosa",
+        "name": "ROSA",
+        "tagline": "ROSA (Rotating On-chain Savings Association) Inspiration Collaborative financ…",
+        "description": "ROSA (Rotating On-chain Savings Association) Inspiration Collaborative finance is a ancient, battle-tested concept.",
+        "url": "https://github.com/Mrgtee/ROSA",
+        "githubUrl": "https://github.com/Mrgtee/ROSA",
+        "categories": [
+            "DeFi",
+            "Gaming & NFTs",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "socialfi",
+            "defi",
+            "dao",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "starkverifier",
+        "name": "RealBot",
+        "tagline": "RealBot — Trustless Trading Agent Verification on Arbitrum Stylus License: MI…",
+        "description": "Problem DeFi trading agents and bots report their own performance, but there is no way to verify these claims. Self-reported returns are easy to fake — anyone can claim a 200% APY. Centralized leaderboards require trust in the platform operator.",
+        "url": "https://github.com/2026Arbitriumhackthon/starkverifier.git",
+        "githubUrl": "https://github.com/2026Arbitriumhackthon/starkverifier.git",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "rikuy",
+        "name": "RikuyApp",
+        "tagline": "The Anonymous, ZeroKnowledge Whistleblowing Network Built on Arbitrumhttps://…",
+        "description": "Rikuy &nbsp;(Quechua for \"To See\") is a fully deployed anonymous civic reporting platform that enables Bolivian citizens to report corruption and infrastructure failures with&nbsp; 100% anonymity &nbsp;and&nbsp; zero blockchain knowledge required .",
+        "url": "https://github.com/RIKUY-ORG/Rikuy",
+        "githubUrl": "https://github.com/RIKUY-ORG/Rikuy",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "other",
+            "dao",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "safedepositzero",
+        "name": "SafeDeposit Zero",
+        "tagline": "SafeDeposit Zero Move in without a big deposit. Tenants pay a small monthly f…",
+        "description": "What is SafeDeposit ? SafeDeposit Zero is an on-chain rental guarantee protocol that reimagines how security deposits work in the real estate market.",
+        "url": "https://github.com/LBRT87/SafeDepositZero",
+        "githubUrl": "https://github.com/LBRT87/SafeDepositZero",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "sentinel-dao",
+        "name": "Sentinel DAO",
+        "tagline": "🛡️ Sentinel DAO: Treasury Firewall Sentinel DAO is an intelligent security la…",
+        "description": "🛡️ The Problem: Static Security is Failing DAO treasuries lose millions annually because standard multisig wallets (like Gnosis Safe) are static. They verify signatures, not intent. If a signer is phished or their private key is compromised, the multisig approves the transaction because the signature is mathematically valid.",
+        "url": "https://github.com/xihua01/sentinel-dao",
+        "githubUrl": "https://github.com/xihua01/sentinel-dao",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "dao",
+            "defi",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "settlx",
+        "name": "SettlX",
+        "tagline": "SettlX — Derisked Merchant Settlements Instant FX + Insurance for Web3 Paymen…",
+        "description": "SettlX — De-risked Merchant Settlements Instant FX + Insurance for Web3 Payments | Built on Arbitrum Stylus (Rust) SettlX is a Web3 payment settlement platform that lets global merchants accept stablecoin (USDC) payments and receive guaranteed local-currency (NGN) settlements at a locked exchange rate — eliminating FX volatility risk enti…",
+        "url": "https://github.com/Chigozie0706/SettlX",
+        "githubUrl": "https://github.com/Chigozie0706/SettlX",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "shadowbook",
+        "name": "ShadowBook",
+        "tagline": "Dark Pool DEX on Arbitrum Stylus — Zero MEV, Zero Slippage, InstitutionalGrad…",
+        "description": "Shadow-Book🛡️ Dark Pool DEX on Arbitrum Stylus Zero MEV • Zero Slippage • Institutional-Grade Privacy The Problem Every time you trade on a DEX, MEV bots are watching. They see your order in the public mempool, sandwich it, and extract 2-5% of your value. This costs traders $500M+ annually — and retail users suffer the most.",
+        "url": "https://github.com/AqilaRifti/shadowbook",
+        "githubUrl": "https://github.com/AqilaRifti/shadowbook",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "slate",
+        "name": "Slate",
+        "tagline": "cihttps://github.com/SlateProtocol/slate/actions/workflows/ci.yml/badge.svg?b…",
+        "description": "On Robinhood Chain mainnet, 45 of the 194 stock tokens carry a multiplier other than 1, and 32 of those have no Chainlink feed. Price one by its share price and you are wrong: 75% low on CRWD (a 4:1 split), up to 2.1% low on the rest, and 36 of those multipliers changed in the last 30 days (all read on-chain at block 79,510,181).",
+        "url": "https://github.com/Slate-Protocol/slate",
+        "githubUrl": "https://github.com/Slate-Protocol/slate",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "infra",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "batpilot",
+        "name": "batpilot",
+        "tagline": "Batpilot — your US stocks, managed while you sleep Noncustodial autopilot for…",
+        "description": "Batpilot — your US stocks, managed while you sleep Non-custodial autopilot for tokenized US stocks on Robinhood Chain : scheduled recurring buys + always-on stop-loss / take-profit protection, enforced by a session-aware onchain guard, settled in USDG , with a verifiable onchain trail.",
+        "url": "https://github.com/PhiBao/batpilot",
+        "githubUrl": "https://github.com/PhiBao/batpilot",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "rwa",
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "erc20_interactor",
+        "name": "erc20-interactor",
+        "tagline": "ERC20 Interactor License: MIThttps://img.shields.io/badge/LicenseMITgreen.svg…",
+        "description": "ERC20 Interactor is a clean web UI that connects to a Stylus/Rust ERC-20 contract and lets users and developers perform all common token operations — view name, symbol, decimals, total supply, check balances, send tokens, set allowances, and call transferFrom. Ideal for testing, demos, hackathons, and teaching token mechanics.",
+        "url": "https://github.com/DEVANSH-GAJJAR/erc20_interactor",
+        "githubUrl": "https://github.com/DEVANSH-GAJJAR/erc20_interactor",
+        "categories": [
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "nft",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "frames402",
+        "name": "frames402",
+        "tagline": "License: MIThttps://img.shields.io/badge/LicenseMITyellow.svghttps://opensour…",
+        "description": "Frame Wars 🎨⚔️ Social Photo Battles with AI Judging on Arbitrum Bet on photos. Claude AI co-judges. Winner takes all. Built with Arbitrum Stylus + x402 micropayments. 🎯 About Frame Wars brings social prediction markets to Arbitrum, combining photo competitions with AI judging and instant micropayments.",
+        "url": "https://github.com/sparsh0006/Frames402",
+        "githubUrl": "https://github.com/sparsh0006/Frames402",
+        "categories": [
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "socialfi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "franchisa",
+        "name": "franchisa",
+        "tagline": "Corporate Governance OnChain — A Web2toWeb3 bridge that connects SEC proxy vo…",
+        "description": "Franchisa is a Web2-to-Web3 corporate governance bridge that gives tokenized stockholders a voice in real corporate decisions.",
+        "url": "https://github.com/Savage27z/Franchisa",
+        "githubUrl": "https://github.com/Savage27z/Franchisa",
+        "categories": [
+            "Infrastructure",
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "defi",
+            "rwa",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "inkwell",
+        "name": "inkwell",
+        "tagline": "Forensic ink profiling for Arbitrum Stylus contracts. Map WASM ink consumptio…",
+        "description": "Inkwell solves the visibility gap in Arbitrum Stylus development by providing a CLI profiler that maps \"ink\" consumption. While Solidity developers have mature gas-snapshot tools, Stylus developers currently fly blind, often deploying WASM binaries that \"bleed\" ink due to unoptimized Rust patterns or high-overhead host calls.",
+        "url": "https://github.com/cenwadike/inkwell",
+        "githubUrl": "https://github.com/cenwadike/inkwell",
+        "categories": [
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "life-vault",
+        "name": "life-vault",
+        "tagline": "LifeVault is a noncustodial inheritance and savings protocol built on Arbitru…",
+        "description": "LifeVault LifeVault is a non-custodial inheritance and savings protocol built on Arbitrum Sepolia using Arbitrum Stylus (Rust). It addresses two core issues in asset management: preventing premature liquidation of savings (Diamond Hands) and ensuring asset continuity in the event of loss of access or death (Legacy Protocol). Features 1.",
+        "url": "https://github.com/da-b0s/life-vault",
+        "githubUrl": "https://github.com/da-b0s/life-vault",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "partitio",
+        "name": "partitio",
+        "tagline": "A $100,000 stocktoken order on Robinhood Chain sent to the best single pool l…",
+        "description": "A $100,000 stock-token order on Robinhood Chain sent to the best single pool left a median $199 on the table in 6,329 of 7,493 executable quotes. partitio splits it and floors the fill against Chainlink. Those are quotes, not executions, from runs 1 to 245 between September 24 and 27, 2026, and they recompute offline from the repo.",
+        "url": "https://github.com/seekdaseek/partitio",
+        "githubUrl": "https://github.com/seekdaseek/partitio",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "rwa",
+            "infra",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [],
+        "stylusUsage": "Verified Stylus code in the repository (stylus-sdk in Cargo.toml)."
+    },
+    {
+        "id": "goblin-clob",
+        "name": "Goblin",
+        "tagline": "A fully on-chain limit order book for Arbitrum Stylus",
+        "description": "Fully on-chain limit order book for Arbitrum Stylus — ordering and settlement both happen on-chain, with no operator and no off-chain matcher. Instead of a balanced tree, orders map straight onto the EVM's 256-bit key-value storage slots, keeping the whole book at a few KB and letting you place up to 99 limit orders in a single transaction. Internal balances and net deltas trim redundant gas so the on-chain book is cheap to run.",
+        "url": "https://github.com/goblin-trade/goblin-core-v1",
+        "docsUrl": "https://www.hackquest.io/projects/Goblin-Fully-on-chain-CLOB",
+        "githubUrl": "https://github.com/goblin-trade/goblin-core-v1",
+        "categories": [
+            "DeFi"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "None",
+        "status": "building",
+        "tags": [
+            "defi",
+            "orderbook",
+            "clob",
+            "stylus",
+            "buildathon",
+            "arbitrum"
+        ],
+        "highlights": [
+            "Fully on-chain matching & settlement, no operator or off-chain matcher",
+            "Orders mapped to 256-bit EVM storage slots — whole book stays at a few KB",
+            "Up to 99 limit orders in a single transaction"
+        ],
+        "stylusUsage": "Rust contract targeting the Stylus wasm ABI via a custom hostio layer (goblin-hostio; no stylus-sdk dependency), checked and deployed with cargo stylus."
     }
 ]
