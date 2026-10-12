@@ -4489,4 +4489,41 @@
         ],
         "stylusUsage": "The ERC-721 contract is written in Rust and targets the Stylus wasm ABI via a custom bobcat-sdk hostio layer (no stylus-sdk dependency), using storage_load syscalls and no_std EVM calldata builders with Merkle proof verification for claims."
     }
+,
+    {
+        "id": "tidex6",
+        "name": "tidex6",
+        "tagline": "Privacy-by-consent stablecoin payments - ZK shielded pools on Stylus",
+        "description": "Private stablecoin payments with disclosure by consent - transact privately by default (sender, receiver and amount hidden, via a Groth16 shielded pool that seals the amount in a commitment, plus optional viewing keys for selective disclosure so an accountant, auditor, or family member without any freeze. One Rust codebase live on Solana mainnet, Arc, and EVM chains; the Arbitrum deployment runs Rust/WASM (Stylus) contracts serving the same ABI, events and errors as their Solidity twins, so a single client, relayer and prover talks to either without knowing which one it hit.",
+        "url": "https://tidex6.com",
+        "githubUrl": "https://github.com/koshak01/tidex6",
+        "logo": "/images/projects/tidex6.svg",
+        "categories": [
+            "DeFi",
+            "Cryptography"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Community",
+        "status": "building",
+        "tags": [
+            "privacy",
+            "zero-knowledge",
+            "groth16",
+            "shielded-pool",
+            "confidential-transfers",
+            "wasm",
+            "arbitrum-sepolia",
+            "robinhood-chain"
+        ],
+        "highlights": [
+            "Groth16 shielded pool hides sender-receiver links; hidden-amount pool seals the amount in a 64-bit commitment",
+            "Optional viewing keys: selective disclosure to an accountant or auditor, no freeze",
+            "Same ABI, events and errors as the Solidity twins - one client, relayer and prover talks to either",
+            "Privacy as an add-on primitive (~30-line CPI/SDK demo)",
+            "Groth16 verifier + Poseidon run on Stylus via BN254 precompiles"
+        ],
+        "stylusUsage": "The Arbitrum deployment of tidex6 is written in Rust, built with stylus-sdk 0.10.9 to wasm32-unknown-unknown, and deployed via cargo stylus on Arbitrum Sepolia and Robinhood Chain. Contracts: a Groth16 verifier for WithdrawCircuit<20> (curve work via BN254 precompiles 0x06-0x08), a Poseidon-T3 hashing contract, a shielded fixed-denomination pool, a hidden-amount pool with confidential transfers, and a reader-key registry - all matching the ABI/events/errors of their Solidity twins."
+    }
 ]
