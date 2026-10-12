@@ -4456,5 +4456,37 @@
             "Up to 99 limit orders in a single transaction"
         ],
         "stylusUsage": "Rust contract targeting the Stylus wasm ABI via a custom hostio layer (goblin-hostio; no stylus-sdk dependency), checked and deployed with cargo stylus."
+    },
+    {
+        "id": "supercats",
+        "name": "Supercats",
+        "tagline": "5200-piece NFT collection on Arbitrum One via Stylus",
+        "description": "Superposition Supercats is an NFT collection of 5,200 unique cats deployed on Arbitrum One (previously Superposition Mainnet). A full ERC-721 implementation in Rust, claims are enabled with Merkle proof verification, and the metadata assets are served from a CDN at cats-cdn.superposition.so. Built with bobcat-sdk.",
+        "url": "https://supercats.superposition.so",
+        "docsUrl": "https://cats-cdn.superposition.so",
+        "githubUrl": "https://github.com/fluidity-money/supercats.superposition.so",
+        "categories": [
+            "Gaming & NFTs"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Community",
+        "status": "live",
+        "tags": [
+            "nft",
+            "erc721",
+            "superposition",
+            "collectible",
+            "merkle-proof",
+            "bobcat-sdk"
+        ],
+        "highlights": [
+            "5,200-piece NFT collection live on Arbitrum One",
+            "Full ERC-721 in Rust on a custom bobcat-sdk hostio layer",
+            "Merkle-proof based claiming",
+            "Metadata served from a CDN (cats-cdn.superposition.so)"
+        ],
+        "stylusUsage": "The ERC-721 contract is written in Rust and targets the Stylus wasm ABI via a custom bobcat-sdk hostio layer (no stylus-sdk dependency), using storage_load syscalls and no_std EVM calldata builders with Merkle proof verification for claims."
     }
 ]
