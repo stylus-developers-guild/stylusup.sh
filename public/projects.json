@@ -4528,9 +4528,9 @@
     },
     {
         "id": "rfqhub-9lives",
-        "name": "9lives RFQ Hub",
+        "name": "Rfqhub",
         "tagline": "Off-chain RFQ matching and Stylus settlement for 9lives options",
-        "description": "RFQ Hub is a calldata-aggregating middleware bundler and off-chain matching engine for 9lives options. Makers sign orders encoding the option price, expiry, and asset; counterparties match them off-chain, then submit aggregated calldata for on-chain settlement.",
+        "description": "Rfqhub is a calldata-aggregating middleware bundler and off-chain matching engine for 9lives options. Makers sign orders encoding the option price, expiry, and asset; counterparties match them off-chain, then submit aggregated calldata for on-chain settlement.",
         "url": "https://github.com/fluidity-money/rfqhub.9lives.so",
         "githubUrl": "https://github.com/fluidity-money/rfqhub.9lives.so",
         "categories": [
