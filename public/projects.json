@@ -1045,7 +1045,7 @@
     {
         "id": "diu-contracts",
         "name": "DIU OS",
-        "tagline": "Decentralized Scientific Operating System for quantum physics education on Stylus",
+        "tagline": "Scientific operating system for quantum physics education on Stylus",
         "description": "DIU OS is a decentralized Scientific Operating System for interactive quantum physics education, AI-assisted research, and Web3 integration. Its core smart contracts are written in Rust with the Stylus SDK, covering user identity (ORCID linking), reputation/XP tracking, soulbound NFT achievements, an ERC-20 platform token, and simulation progress tracking.",
         "url": "https://github.com/diu-os/diu-contracts",
         "githubUrl": "https://github.com/diu-os/diu-contracts",
@@ -1077,7 +1077,7 @@
     {
         "id": "stylus-hardware-anchor",
         "name": "Stylus Hardware Anchor",
-        "tagline": "Bridge physical ESP32-S3 silicon identity into Arbitrum Stylus for Sybil-resistant DePIN",
+        "tagline": "ESP32-S3 silicon identity on Stylus for Sybil-resistant DePIN",
         "description": "Stylus Hardware Anchor (SHA) is a reusable hardware identity verification primitive for Arbitrum Stylus. It cryptographically binds immutable eFuse identifiers from ESP32-S3 microcontrollers to on-chain execution logic — enabling Sybil-resistant DePIN and verifiable hardware-bound execution without TEEs or expensive secure elements.",
         "url": "https://github.com/orthonode/Stylus-Hardware-Anchor",
         "githubUrl": "https://github.com/orthonode/Stylus-Hardware-Anchor",
@@ -1226,12 +1226,12 @@
     {
         "id": "stylus-workshop-gol",
         "name": "Stylus Workshop: Game of Life",
-        "tagline": "Hands-on workshop comparing Rust Stylus and Solidity smart contracts via Game of Life",
+        "tagline": "Compare Rust Stylus and Solidity contracts through Conway's Game of Life",
         "description": "A practical workshop by the Arbitrum Foundation that teaches developers how to build, deploy, and interact with smart contracts on Arbitrum using both Rust (via Stylus) and Solidity. Participants implement Conway's Game of Life as a smart contract in both languages, deploy to a local Nitro devnode, and connect them to a React frontend — learning Stylus development through direct comparison with Solidity.",
         "url": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
         "githubUrl": "https://github.com/ArbitrumFoundation/stylus-workshop-gol",
         "categories": [
-            "Education"
+            "Dev Tools"
         ],
         "language": [
             "Rust",
@@ -1251,7 +1251,7 @@
     {
         "id": "collateralx",
         "name": "CollateralX",
-        "tagline": "RWA lending protocol turning real-world SME assets into NFT-collateralized USDC loans",
+        "tagline": "RWA lending for NFT-collateralized SME loans in USDC",
         "description": "CollateralX is an RWA lending protocol for SME liquidity that lets small and medium enterprises tokenize movable assets (machinery, trucks, inventory, solar farms) as NFTs and receive instant USDC loans. A Rust/WASM valuation engine computes real-time asset depreciation and risk scoring on-chain across 15 asset classes, with a Bloomberg Terminal-inspired institutional dashboard for portfolio management and governance.",
         "url": "https://collateral-x.vercel.app",
         "githubUrl": "https://github.com/zzzbedream/CollateralX",
@@ -1304,7 +1304,7 @@
     {
         "id": "sebi",
         "name": "SEBI",
-        "tagline": "Deterministic static analysis and preflight safety checks for Stylus WASM contracts",
+        "tagline": "Static analysis and preflight safety checks for Stylus WASM contracts",
         "description": "SEBI (Stylus Execution Boundary Inspector) is a deterministic static analysis engine for Stylus-compiled WASM smart contracts. It inspects WebAssembly binaries before deployment to detect execution-boundary risks — unbounded memory growth, dynamic dispatch via call_indirect, loop constructs, and oversized artifacts — without executing the contract or relying on chain state. Reports are stable, reproducible JSON with CI-gating exit codes.",
         "url": "https://github.com/Qeyphen/sebi",
         "githubUrl": "https://github.com/Qeyphen/sebi",
@@ -1334,7 +1334,7 @@
         "url": "https://speedrunstylus.com",
         "githubUrl": "https://github.com/abhi152003/speedrun-stylus",
         "categories": [
-            "Education"
+            "Dev Tools"
         ],
         "language": [
             "Rust",
@@ -4525,5 +4525,37 @@
             "Groth16 verifier + Poseidon run on Stylus via BN254 precompiles"
         ],
         "stylusUsage": "The Arbitrum deployment of tidex6 is written in Rust, built with stylus-sdk 0.10.9 to wasm32-unknown-unknown, and deployed via cargo stylus on Arbitrum Sepolia and Robinhood Chain. Contracts: a Groth16 verifier for WithdrawCircuit<20> (curve work via BN254 precompiles 0x06-0x08), a Poseidon-T3 hashing contract, a shielded fixed-denomination pool, a hidden-amount pool with confidential transfers, and a reader-key registry - all matching the ABI/events/errors of their Solidity twins."
+    },
+    {
+        "id": "rfqhub-9lives",
+        "name": "9lives RFQ Hub",
+        "tagline": "Off-chain RFQ matching and Stylus settlement for 9lives options",
+        "description": "RFQ Hub is a calldata-aggregating middleware bundler and off-chain matching engine for 9lives options. Makers sign orders encoding the option price, expiry, and asset; counterparties match them off-chain, then submit aggregated calldata for on-chain settlement.",
+        "url": "https://github.com/fluidity-money/rfqhub.9lives.so",
+        "githubUrl": "https://github.com/fluidity-money/rfqhub.9lives.so",
+        "categories": [
+            "DeFi",
+            "Infrastructure"
+        ],
+        "language": [
+            "Rust"
+        ],
+        "fundingSource": "Community",
+        "status": "live",
+        "tags": [
+            "rfq",
+            "options",
+            "prediction-markets",
+            "off-chain-matching",
+            "calldata",
+            "9lives"
+        ],
+        "highlights": [
+            "Deployed on Arbitrum One mainnet",
+            "Off-chain order matching with permissionless calldata submission",
+            "Signed orders encode option price, expiry, and asset",
+            "Aggregates matched orders for on-chain settlement"
+        ],
+        "stylusUsage": "The settlement contract is a no_std Rust program compiled for Stylus through the custom bobcat-sdk hostio layer. It accepts Borsh-encoded calls, validates server and user signatures, and executes matched 9lives option orders on-chain."
     }
 ]
